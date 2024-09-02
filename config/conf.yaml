@@ -1,0 +1,3 @@
+BASE:
+  test:
+    url: "https://test-napi.bangdao-tech.com/charging-maintenance-server/maintenance"
