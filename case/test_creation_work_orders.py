@@ -1,5 +1,5 @@
 import requests
-from utils.Requests_util import RequestsUtil
+from utils.RequestsUtil import RequestsUtil
 
 
 def Create_order():

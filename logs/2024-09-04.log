@@ -1,0 +1,4 @@
+2024-09-04 01:12:54,468 E:\ApiTest\utils\LogUtil.py DEBUG this is a debug message 
+2024-09-04 01:19:29,479 E:\ApiTest\utils\LogUtil.py INFO this is a debug message 
+2024-09-04 01:19:50,962 E:\ApiTest\utils\LogUtil.py INFO 发送get请求 
+2024-09-04 01:19:51,162 E:\ApiTest\utils\LogUtil.py INFO 发送post请求 

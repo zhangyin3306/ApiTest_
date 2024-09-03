@@ -1,3 +1,8 @@
 BASE:
+  # 日志等级
+  log_lever: "debug"
+  # 扩展名
+  log_extension: ".log"
   test:
+    # 地址
     url: "https://test-napi.bangdao-tech.com/charging-maintenance-server/maintenance"
