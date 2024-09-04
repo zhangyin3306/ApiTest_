@@ -1,8 +1,8 @@
-import requests
+import pytest
 from utils.RequestsUtil import RequestsUtil
+from utils.AssertUtil import AssertUtil
 
-
-def Create_order():
+def test_Create_order():
     requestsUtil = RequestsUtil()
     # 创建工单
     url = "https://test-napi.bangdao-tech.com/charging-maintenance-server/maintenance/orderNo?orderTypeId=453622917134237696"
@@ -11,8 +11,7 @@ def Create_order():
         'Authorization':'Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6IjEwMDAwLWU3YjZlOGU4LWY5NmQtNGMyZS05ZjU3LTM3Yzk1YWJjNGVhNSJ9.0yNLEltGYz0f1jAlj0K_dqrOtWtBwu3ogL17ZAtHpxd-pV5vJ6EN3tq6NxvXgpwGgj18WHm3WwkdT0E7HhYwsg'
     }
     response = requestsUtil.requests_api(url=url,method='get',headers=headers)
-    print(response)
-    print(response["body"]["data"])
+    AssertUtil().assert_code(response["code"],"200")
     # 提交工单
     data = {
     "orderTypeParentId": "453622917134237696",
@@ -64,6 +63,7 @@ def Create_order():
     "handleUserName": "系统管理员"
     }
     response_submit = requestsUtil.requests_api(url=submit_url,method='post',headers=headers,json=data)
-    print(response_submit)
+    AssertUtil().assert_code(response_submit["code"], "200")
+
 if __name__ == '__main__':
-    Create_order()
+    pytest.main("test_creation_work_orders.py")

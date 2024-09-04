@@ -2,3 +2,20 @@
 2024-09-04 01:19:29,479 E:\ApiTest\utils\LogUtil.py INFO this is a debug message 
 2024-09-04 01:19:50,962 E:\ApiTest\utils\LogUtil.py INFO 发送get请求 
 2024-09-04 01:19:51,162 E:\ApiTest\utils\LogUtil.py INFO 发送post请求 
+2024-09-04 16:31:22,308 C:\Users\bdYinZhang\ApiTest_\utils\LogUtil.py INFO 发送get请求 
+2024-09-04 16:31:22,486 C:\Users\bdYinZhang\ApiTest_\utils\LogUtil.py INFO 发送post请求 
+2024-09-04 16:31:57,735 C:\Users\bdYinZhang\ApiTest_\utils\LogUtil.py INFO 发送get请求 
+2024-09-04 16:31:58,021 C:\Users\bdYinZhang\ApiTest_\utils\LogUtil.py INFO 发送post请求 
+2024-09-04 17:39:22,870 AssertUtil ERROR code error,code is 1,expected_code is 2 
+2024-09-04 17:39:41,254 AssertUtil ERROR code error,code is 1,expected_code is 2 
+2024-09-04 17:46:25,163 C:\Users\bdYinZhang\ApiTest_\utils\LogUtil.py INFO 发送get请求 
+2024-09-04 17:46:25,339 C:\Users\bdYinZhang\ApiTest_\utils\LogUtil.py INFO 发送post请求 
+2024-09-04 17:48:17,443 C:\Users\bdYinZhang\ApiTest_\utils\LogUtil.py INFO 发送get请求 
+2024-09-04 17:48:34,131 C:\Users\bdYinZhang\ApiTest_\utils\LogUtil.py INFO 发送get请求 
+2024-09-04 17:48:59,408 C:\Users\bdYinZhang\ApiTest_\utils\LogUtil.py INFO 发送get请求 
+2024-09-04 17:48:59,530 C:\Users\bdYinZhang\ApiTest_\utils\LogUtil.py INFO 发送post请求 
+2024-09-04 17:51:12,076 C:\Users\bdYinZhang\ApiTest_\utils\LogUtil.py INFO 发送get请求 
+2024-09-04 17:51:36,992 C:\Users\bdYinZhang\ApiTest_\utils\LogUtil.py INFO 发送get请求 
+2024-09-04 17:51:37,131 C:\Users\bdYinZhang\ApiTest_\utils\LogUtil.py INFO 发送post请求 
+2024-09-04 17:52:41,160 C:\Users\bdYinZhang\ApiTest_\utils\LogUtil.py INFO 发送get请求 
+2024-09-04 17:52:41,276 C:\Users\bdYinZhang\ApiTest_\utils\LogUtil.py INFO 发送post请求 

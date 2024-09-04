@@ -30,7 +30,7 @@ class Logger:
             formatter = logging.Formatter('%(asctime)s %(name)s %(levelname)s %(message)s ')
             fh_stream.setFormatter(formatter)
             # 写入文件
-            fh_file = logging.FileHandler(self.log_file)
+            fh_file = logging.FileHandler(self.log_file,encoding="utf-8")
             fh_file.setLevel(log_l[self.log_level])
             fh_file.setFormatter(formatter)
             # 添加handler
