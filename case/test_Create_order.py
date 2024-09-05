@@ -1,6 +1,11 @@
+from ctypes.wintypes import POINT
+
 import pytest
+
+from common.Base import init_db
 from utils.RequestsUtil import RequestsUtil
 from utils.AssertUtil import AssertUtil
+from common import Base
 
 def test_Create_order():
     requestsUtil = RequestsUtil()
@@ -8,10 +13,18 @@ def test_Create_order():
     url = "https://test-napi.bangdao-tech.com/charging-maintenance-server/maintenance/orderNo?orderTypeId=453622917134237696"
     submit_url = "https://test-napi.bangdao-tech.com/charging-maintenance-server/maintenance/saveOrderInfo"
     headers = {
-        'Authorization':'Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6IjEwMDAwLWU3YjZlOGU4LWY5NmQtNGMyZS05ZjU3LTM3Yzk1YWJjNGVhNSJ9.0yNLEltGYz0f1jAlj0K_dqrOtWtBwu3ogL17ZAtHpxd-pV5vJ6EN3tq6NxvXgpwGgj18WHm3WwkdT0E7HhYwsg'
+        'Authorization':'Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6IjEwMDAwLTM1MzkwZGNiLWM5ZTMtNDFkYS1hZGJmLWYwMmE2MmQ4YjA0NiJ9.'
+                        'DjM4yAKdUxAE1feKkuiC6vpa8rFX-2VaSOiWpy-CuEsnMbn5Re5xBPeoh2HVCi_lHLaX1xQzF2PcQ4x9jJ6wTw'
     }
     response = requestsUtil.requests_api(url=url,method='get',headers=headers)
     AssertUtil().assert_code(response["code"],"200")
+
+    # 数据库-断言
+    # con = init_db("db_1")
+    # res_db = con.fetchone("SELECT * FROM `cm_order_info` ")
+    # print(res_db)
+    # assert response["body"]["data"] == res_db["order_no"]
+
     # 提交工单
     data = {
     "orderTypeParentId": "453622917134237696",
@@ -65,5 +78,13 @@ def test_Create_order():
     response_submit = requestsUtil.requests_api(url=submit_url,method='post',headers=headers,json=data)
     AssertUtil().assert_code(response_submit["code"], "200")
 
+
+
+
+
+
+
+
+
 if __name__ == '__main__':
-    pytest.main("test_creation_work_orders.py")
+    pytest.main("test_Create_order.py")

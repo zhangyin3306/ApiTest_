@@ -11,7 +11,7 @@ class RequestsUtil:
     def requests_api(self,url,method,json=None,headers=None):
         if method == 'get':
             self.log.info("发送get请求")
-            r = requests.get(url, headers=headers)
+            r = requests.get(url,headers=headers)
         elif method == 'post':
             self.log.info("发送post请求")
             r = requests.post(url,json= json,headers=headers)
