@@ -1,0 +1,7 @@
+# 假设你有一个 YAML 文件如下：
+"case": "test_login_1"
+"url": "https://test-napi.bangdao-tech.com/charging-maintenance-ui/login"
+"data":
+   username: "python"
+   password: "12345678"
+   uuid: "uuid"
