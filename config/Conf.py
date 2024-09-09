@@ -17,6 +17,8 @@ _config_file = _config_path+os.sep+ "conf.yaml"
 _log_path = base_dir +os.sep+ "logs"
 # 定义mysql路径
 _db_config_file = _config_path+os.sep+ "db_sql.yaml"
+# 定义登录路径
+_login_file = _config_path+os.sep+ "TestLogin.yaml"
 
 
 def get_config_path():
@@ -32,14 +34,15 @@ def get_log_path():
 
 def db_config_file():
     return _db_config_file
-
+def get_login_path():
+    return _login_file
 
 # 2、读取配置文件
 class ConfigYaml:
     def __init__(self):
         self.config = YamlReader(get_config_file()).data()
         self.db_sql = YamlReader(db_config_file()).data()
-        # self.TestLogin = YamlReader(get_login_path()).data()
+        self.TestLogin = YamlReader(get_login_path()).data()
     def get_config_url(self):
         return self.config["BASE"]["test"]["url"]
     def get_conf_log(self):
@@ -50,10 +53,12 @@ class ConfigYaml:
         return self.db_sql[db_host]
     # def get_conf_login_path(self,data):
     #     return self.TestLogin[data]
+
 if __name__ == '__main__':
     config  = ConfigYaml()
     # print(config.get_config_url())
     # print(config.get_conf_log())
     # print(config.get_conf_log_extension())
     # print(config.get_conf_db("db_1"))
-    print(config.get_conf_login_path("test"))
+    print(config.TestLogin["data"]["username"])
+    print(config.TestLogin["data"]["password"])
