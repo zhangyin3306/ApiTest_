@@ -15,8 +15,7 @@ _config_data_path = base_dir+os.sep+"data"
 _config_file = _config_path+os.sep+ "conf.yaml"
 # 定义日志路径
 _log_path = base_dir +os.sep+ "logs"
-# 定义mysql路径
-_db_config_file = _config_path+os.sep+ "db_sql.yaml"
+
 
 
 
@@ -31,8 +30,7 @@ def get_config_file():
 def get_log_path():
     return _log_path
 
-def db_config_file():
-    return _db_config_file
+
 
 
 # 2、读取配置文件
@@ -48,6 +46,9 @@ class ConfigYaml:
     def get_conf_email(self):
         return self.config["email"]
 
+    def get_conf_db(self):
+        return self.config["db_1"]
+
 
 
 if __name__ == '__main__':
@@ -55,7 +56,7 @@ if __name__ == '__main__':
     # print(config.get_config_url())
     # print(config.get_conf_log())
     # print(config.get_conf_log_extension())
-    # print(config.get_conf_db("db_1"))
+    print(config.get_conf_db())
     # print(config.config["url"])
-    print(config.get_conf_email())
+    # print(config.get_conf_email())
 

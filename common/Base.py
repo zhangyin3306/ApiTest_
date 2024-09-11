@@ -1,11 +1,18 @@
 #1、定义init_db
+import datetime,os
+from config import Conf
 from utils.EmaillUtil import SendUtil
+from utils.LogUtil import Logger
 from utils.MysqlUtil import mysqlutil
 from config.Conf import ConfigYaml
 
-def init_db(db_alias):
-    #2、初始数据化信息，通过配置
-    db_info = ConfigYaml().get_conf_db(db_alias)
+def init_db():
+    """
+    初始化测试库信息
+    :param :
+    :return:
+    """
+    db_info = ConfigYaml().get_conf_db()
     host = db_info["db_host"]
     user = db_info["db_user"]
     password = db_info["db_password"]
@@ -16,7 +23,7 @@ def init_db(db_alias):
     return conn
 def send_email(report_html_path="",content="",title="测试"):
     """
-    发送测试报告
+    发送测试报告-邮件
     :param report_html_path: 测试报告
     :param content:
     :param title:
@@ -37,5 +44,23 @@ def send_email(report_html_path="",content="",title="测试"):
         file = report_html_path
         )
     email.send()
+
+def my_log(log_name = __file__):
+    # 1、初始化参数数据
+    # 日志文件名称，日志文件级别
+    # 日志文件名称 = logs目录 + 当前时间+扩展名
+    # log目录
+    log_path = Conf.get_log_path()
+    # 当前时间
+    current_time = datetime.datetime.now().strftime("%Y-%m-%d")
+    # 扩展名
+    log_extension = ConfigYaml().get_conf_log_extension()
+    logfile = os.path.join(log_path, current_time + log_extension)
+    # print(logfile)
+    # 日志文件级别
+    loglevel = ConfigYaml().get_conf_log()
+    return Logger(log_file=logfile,log_name=log_name,log_level=loglevel).logger
+
 if __name__ == '__main__':
-    init_db("db_1")
+    # init_db()
+    my_log().info("this is a debug message")

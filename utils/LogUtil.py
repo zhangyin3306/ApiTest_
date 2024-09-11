@@ -36,23 +36,7 @@ class Logger:
             # 添加handler
             self.logger.addHandler(fh_stream)
             self.logger.addHandler(fh_file)
-#1、初始化参数数据
-#日志文件名称，日志文件级别
-#日志文件名称 = logs目录 + 当前时间+扩展名
-#log目录
-log_path = Conf.get_log_path()
-#当前时间
-current_time = datetime.datetime.now().strftime("%Y-%m-%d")
-#扩展名
-log_extension = ConfigYaml().get_conf_log_extension()
-logfile = os.path.join(log_path,current_time+log_extension)
-# print(logfile)
-#日志文件级别
-loglevel = ConfigYaml().get_conf_log()
-#print(loglevel)
-#2、对外方法，初始log工具类，提供其它类使用
-def my_log(log_name = __file__):
-    return Logger(log_file=logfile,log_name=log_name,log_level=loglevel).logger
 
-if __name__ == '__main__':
-    my_log().info("this is a debug message")
+
+
+
