@@ -1,7 +1,0 @@
-# 假设你有一个 YAML 文件如下：
-"case": "test_login_1"
-"url": "https://test-napi.bangdao-tech.com/charging-maintenance-ui/login"
-"data":
-   username: "69965"
-   password: "Admin123"
-   uuid: "uuid"

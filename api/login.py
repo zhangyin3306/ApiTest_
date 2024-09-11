@@ -8,16 +8,15 @@ from config.Conf import ConfigYaml
 
 logger = my_log()
 class Login:
-
     def __init__(self, username=None, password=None):
-        self.config = ConfigYaml()
+        self.conf = ConfigYaml()
         self.logger = my_log()
-        self.username = self.config.TestLogin["data"]["username"]
-        self.password = self.config.TestLogin["data"]["password"]
+        self.username = self.conf.config["data"]['username']
+        self.password = self.conf.config["data"]['password']
         if username and password:
-            self.username = self.config.TestLogin["data"]["username"]
-            self.password = self.config.TestLogin["data"]["password"]
-        self.base_url = "https://test-napi.bangdao-tech.com/charging-maintenance-server"
+            self.username = self.conf.config["data"]['username']
+            self.password = self.conf.config["data"]['password']
+        self.base_url = self.conf.config["url"]
         self.captcha_url = self.base_url + "/captchaImage"
         self.login_url = self.base_url + "/login"
         self.headers = {
@@ -27,8 +26,8 @@ class Login:
         self.session = requests.Session()
 
     def login_ll(self):
-        self.username = self.config.TestLogin["data"]["username"]
-        self.password = self.config.TestLogin["data"]["password"]
+        self.username = self.conf.config["data"]["username"]
+        self.password = self.conf.config["data"]["password"]
         print(self.password+"and "+self.username)
 
     def get_captcha_and_uuid(self):

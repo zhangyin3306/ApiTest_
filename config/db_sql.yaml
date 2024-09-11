@@ -1,6 +1,0 @@
-# 数据库连接信息
-db_1:
-  db_host: "rm-bp1mtvx6w7igg28e9.mysql.rds.aliyuncs.com"
-  db_user: "shangfu_charge"
-  db_password: "2Ote#v5PfoVsQniw"
-  db_name: "shangfu_charge"
