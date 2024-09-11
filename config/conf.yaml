@@ -18,3 +18,11 @@ data:
    username: "69965"
    password: "Admin123"
    uuid: "uuid"
+
+email:
+  #发送邮件信息
+  smtpserver : "smtp.163.com"
+  receiver : "zhangyin3306@163.com"
+  username : "zhangyin3306@163.com"
+  # 授权码有效期180天
+  password : "ZAGBUTASIAVXPAEY"

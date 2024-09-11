@@ -45,6 +45,8 @@ class ConfigYaml:
         return self.config["BASE"]["log_lever"]
     def get_conf_log_extension(self):
         return self.config["BASE"]["log_extension"]
+    def get_conf_email(self):
+        return self.config["email"]
 
 
 
@@ -54,5 +56,6 @@ if __name__ == '__main__':
     # print(config.get_conf_log())
     # print(config.get_conf_log_extension())
     # print(config.get_conf_db("db_1"))
-    print(config.config["url"])
+    # print(config.config["url"])
+    print(config.get_conf_email())
 
