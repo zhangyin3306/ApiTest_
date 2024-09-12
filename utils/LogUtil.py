@@ -37,6 +37,3 @@ class Logger:
             self.logger.addHandler(fh_stream)
             self.logger.addHandler(fh_file)
 
-
-
-

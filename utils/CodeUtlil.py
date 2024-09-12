@@ -1,6 +1,6 @@
 import random
 from datetime import datetime
-from utils.LogUtil import my_log
+from common.Base import my_log
 
 import ddddocr
 

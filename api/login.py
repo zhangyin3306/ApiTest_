@@ -3,7 +3,7 @@ from requests.utils import unquote_header_value
 
 from utils.EncryptUtil import Encrypt
 from utils.CodeUtlil import ocr
-from utils.LogUtil import my_log
+from common.Base import my_log
 from config.Conf import ConfigYaml
 
 logger = my_log()

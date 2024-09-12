@@ -39,10 +39,10 @@ class ConfigYaml:
         self.config = YamlReader(get_config_file()).data()
     def get_config_url(self):
         return self.config["BASE"]["test"]["url"]
-    def get_conf_log(self):
-        return self.config["BASE"]["log_lever"]
-    def get_conf_log_extension(self):
-        return self.config["BASE"]["log_extension"]
+    # def get_conf_log(self):
+    #     return self.config["BASE"]["log_lever"]
+    # def get_conf_log_extension(self):
+    #     return self.config["BASE"]["log_extension"]
     def get_conf_email(self):
         return self.config["email"]
 
@@ -51,12 +51,9 @@ class ConfigYaml:
 
 
 
+
+
 if __name__ == '__main__':
-    config  = ConfigYaml()
-    # print(config.get_config_url())
-    # print(config.get_conf_log())
-    # print(config.get_conf_log_extension())
-    print(config.get_conf_db())
-    # print(config.config["url"])
-    # print(config.get_conf_email())
+    data = ConfigYaml()
+    print(data.config["excel"])
 

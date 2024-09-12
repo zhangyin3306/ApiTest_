@@ -1,5 +1,5 @@
 import pymysql
-from utils.LogUtil import my_log
+from common.Base import my_log
 class mysqlutil:
     def __init__(self,host,user,password,database):
         self.log = my_log()
