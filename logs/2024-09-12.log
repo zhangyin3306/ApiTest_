@@ -1,0 +1,3 @@
+2024-09-12 00:39:01,669 E:\ApiTest_\utils\LogUtil.py INFO this is a debug message 
+2024-09-12 00:40:11,049 E:\ApiTest_\utils\LogUtil.py INFO this is a debug message 
+2024-09-12 00:43:30,684 E:\ApiTest_\common\Base.py INFO this is a debug message 

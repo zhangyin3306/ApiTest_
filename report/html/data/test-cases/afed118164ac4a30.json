@@ -1,0 +1,55 @@
+{
+  "uid" : "afed118164ac4a30",
+  "name" : "用例2",
+  "fullName" : "case.allure_demo#test_2",
+  "historyId" : "4cb1efbc9577efee7b1f4dab795a6cfd",
+  "time" : {
+    "start" : 1726146719349,
+    "stop" : 1726146719349,
+    "duration" : 0
+  },
+  "description" : "测试用例结果test2",
+  "descriptionHtml" : "<p>测试用例结果test2</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "case"
+  }, {
+    "name" : "suite",
+    "value" : "allure_demo"
+  }, {
+    "name" : "host",
+    "value" : "张引电脑"
+  }, {
+    "name" : "thread",
+    "value" : "16504-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "case.allure_demo"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "afed118164ac4a30.json",
+  "parameterValues" : [ ]
+}
