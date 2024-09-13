@@ -1,0 +1,1 @@
+INFO     E:\ApiTest_\common\Base.py:RequestsUtil.py:13 发送get请求

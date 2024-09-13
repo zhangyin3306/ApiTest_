@@ -1,6 +1,6 @@
 import requests
 
-from utils.LogUtil import my_log
+from common.Base import my_log
 
 
 

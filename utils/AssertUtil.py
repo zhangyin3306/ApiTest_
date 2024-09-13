@@ -1,4 +1,4 @@
-from utils.LogUtil import my_log
+from common.Base import my_log
 import json
 #1、定义封装类
 class AssertUtil:

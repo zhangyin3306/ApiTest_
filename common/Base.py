@@ -1,4 +1,6 @@
 import datetime,os
+import re
+
 from config import Conf
 from config.Conf import ConfigYaml
 from utils.EmaillUtil import SendUtil
@@ -58,6 +60,63 @@ def excel_is_Y_run(file=conf_path["case_file"],sheet_by=conf_path["sheet_by"]):
         if line[conf_path["excel"]['is_run']] == "Y":
             run_list.append(line)
     return run_list
+def get_case_list(file=conf_path["case_file"],sheet_by=conf_path["sheet_by"]):
+    reader = ExcelReader(file, sheet_by)
+    run_list = []
+    for line in reader.data():
+            run_list.append(line)
+    return run_list
+
+def get_case_pre(pre):
+    """
+    根据前置条件,从全部测试用例,找到对应的测试用例
+    :param pre:
+    :return:
+    """
+    run_list = get_case_list()
+    for line in run_list:
+        if pre in dict(line).values():
+            return line
+    return None
+def res_find(data,pattern_data='\${(.*)}\$'):
+    """
+    查询
+    :param data:
+    :param pattern_data:
+    :return:
+    """
+    pattern = re.compile(pattern_data)
+    re_res = pattern.findall(data)
+    return re_res
+def res_sub(data,replace,pattern_data='\${(.*)}\$'):
+    """
+    替换
+    :param data:
+    :param replace:
+    :param pattern_data:
+    :return:
+    """
+    pattern = re.compile(pattern_data)
+    re_res = pattern.findall(data)
+    if re_res:
+        return re.sub(pattern,replace,data)
+    return replace
+
+def params_find(headers,cookies):
+    """
+    验证请求中是否有${}$需要结果关联的
+    :param headers:
+    :param cookie:
+    :return:
+    """
+    if "${" in headers:
+        headers = res_find(headers)
+    if "${" in cookies:
+        cookies = res_sub(cookies)
+    return headers,cookies
+
 
 if __name__ == '__main__':
-    print(my_log().info("这是一个日志"))
+    # print(my_log().info("这是一个日志"))
+    print(res_find('{"Author":"jwt ${token}$"}'))
+    print(res_sub('{"Author":"jwt ${token}$"}',"123"))

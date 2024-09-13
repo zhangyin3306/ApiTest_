@@ -98,6 +98,7 @@ class Order:
 if __name__ == '__main__':
     Order_c  = Order()
     Order_c_s  =Order_c.Create("453622917134237696")
+    print(Order_c_s)
     Order_submit = Order_c.Submit(Order_c_s["body"]["data"])
     print(Order_submit)
 
