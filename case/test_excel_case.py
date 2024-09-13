@@ -1,0 +1,70 @@
+import pytest,jsonpath,json,allure
+from common.Base import excel_is_Y_run
+from config.Conf import ConfigYaml
+from case.global_dict import GlobalDict
+from utils.RequestUtil import RequestsUtil
+from string import Template
+
+case_info  = ConfigYaml().config
+util = RequestsUtil()
+case_file = case_info["case_file"]
+sheet_by = case_info["sheet_by"]
+run_list = excel_is_Y_run(case_file, sheet_by)
+
+
+
+class TestExcel_case:
+    # @allure.title("维保通接口回归")
+    # @allure.description("维保通平台接口回归,涵盖系统主要模块的正向流程,包括:运维工单.需求管理.")
+    @pytest.mark.parametrize("case",run_list)
+    def test_run_excel_case(self,case):
+        """
+        运用pytest参数化读取excel中的接口用例,
+        执行封装后request判断method类型调用接口用例,
+        解决接口依赖:提取接口响应内容存入字典,利用Template方法将字典内容与参数占位符替换
+        :param case:
+        :return:
+        """
+
+        url = case_info["url"] + case[case_info["excel"]["url"]]
+        headers = json.loads(case[case_info["excel"]["headers"]])
+        method = case[case_info["excel"]["method"]]
+        extract = case[case_info["excel"]["extract"]]
+        json_data = case[case_info["excel"]["json_data"]]
+        params = case[case_info["excel"]["params"]]
+        case_id = case[case_info["excel"]["case_id"]]
+        case_name = case[case_info["excel"]["case_name"]]
+        dic = GlobalDict().show_dict()
+        if "$" in json_data:
+            try:
+                # 替换模板中的变量
+                json_data = Template(json_data).substitute(dic)
+                # print(f"Substituted json_data: {json_data}")  # 打印替换后的json_data以便调试
+            except json.JSONDecodeError as e:
+                print(f"Failed to decode JSON: {e}")
+                raise
+
+
+        res = util.requests_api(url, method, json=json_data, headers=headers, params=params)
+        print(res.json())
+
+        # allure测试报告中的标题和描述
+        allure.dynamic.title(f'{case_name +"-"+ case_id}')
+        allure.dynamic.description(f'{res.json()}')
+
+
+        if extract:
+            lst =jsonpath.jsonpath(res.json(),'$..'+extract)
+            GlobalDict().set_dict(extract,lst[0])
+
+
+
+
+
+
+
+
+if __name__ == '__main__':
+    pytest.main(["-s","test_excel_case.py"])
+
+

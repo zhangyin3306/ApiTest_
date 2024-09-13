@@ -1,4 +1,5 @@
 import datetime,os
+import re
 from config import Conf
 from config.Conf import ConfigYaml
 from utils.EmaillUtil import SendUtil
@@ -8,7 +9,7 @@ from utils.LogUtil import Logger
 # 下面两个方法都用到这个对象，放在外面实例化
 conf = ConfigYaml()
 conf_path = conf.config
-
+_global_dict = {}
 
 def send_email(report_html_path="",content="",title="测试"):
     """
@@ -48,9 +49,6 @@ def my_log(log_name = __file__):
     # 日志文件级别
     loglevel = conf_path["BASE"]["log_lever"]
     return Logger(log_file=logfile,log_name=log_name,log_level=loglevel).logger
-
-
-
 def excel_is_Y_run(file=conf_path["case_file"],sheet_by=conf_path["sheet_by"]):
     reader = ExcelReader(file, sheet_by)
     run_list = []
@@ -58,6 +56,12 @@ def excel_is_Y_run(file=conf_path["case_file"],sheet_by=conf_path["sheet_by"]):
         if line[conf_path["excel"]['is_run']] == "Y":
             run_list.append(line)
     return run_list
-
+# def GlobalDict(key,value):
+#     _global_dict[key] = value
+#     return _global_dict.items()
 if __name__ == '__main__':
     print(my_log().info("这是一个日志"))
+    # print(GlobalDict(1,1))
+    # print(GlobalDict(2,2))
+    # print(GlobalDict())
+

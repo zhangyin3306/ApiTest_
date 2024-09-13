@@ -1,6 +1,6 @@
 from api.login import Login
 from utils.AssertUtil import AssertUtil
-from utils.RequestsUtil import RequestsUtil
+from utils.RequestUtil import RequestsUtil
 from config.Conf import ConfigYaml
 from login import Login
 
@@ -17,10 +17,10 @@ class Order:
            "Authorization" : "Bearer "+self.login.login()["data"]
         }
         print(self.headers)
-        # self.headers = {
-        #     'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6IjEwMDAwLTM1MzkwZGNiLWM5ZTMtNDFkYS1hZGJmLWYwMmE2MmQ4YjA0NiJ9.'
-        #                      'DjM4yAKdUxAE1feKkuiC6vpa8rFX-2VaSOiWpy-CuEsnMbn5Re5xBPeoh2HVCi_lHLaX1xQzF2PcQ4x9jJ6wTw'
-        # }
+        self.headers = {
+            'Authorization': 'Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6IjEwMDAwLTM1MzkwZGNiLWM5ZTMtNDFkYS1hZGJmLWYwMmE2MmQ4YjA0NiJ9.'
+                             'DjM4yAKdUxAE1feKkuiC6vpa8rFX-2VaSOiWpy-CuEsnMbn5Re5xBPeoh2HVCi_lHLaX1xQzF2PcQ4x9jJ6wTw'
+        }
     def Create(self,orderTypeId):
         """
         这个是工单创建接口。。。
@@ -32,7 +32,7 @@ class Order:
         }
         create = self.url + "/maintenance/orderNo"
         response = self.request_util.requests_api(url=create, method='get', headers=self.headers,params = params )
-        AssertUtil().assert_code(response["code"], "200")
+        AssertUtil().assert_code(response.status_code, "200")
         return response
     def Submit(self,orderNo):
         """
@@ -91,15 +91,16 @@ class Order:
         }
         submit_address = self.url+"/maintenance/saveOrderInfo"
         response_submit = self.request_util.requests_api(url=submit_address, method='post', headers=self.headers, json=data)
-        AssertUtil().assert_code(response_submit["code"], "200")
+        AssertUtil().assert_code(response_submit.status_code, "200")
         return response_submit
 
 
 if __name__ == '__main__':
     Order_c  = Order()
     Order_c_s  =Order_c.Create("453622917134237696")
-    Order_submit = Order_c.Submit(Order_c_s["body"]["data"])
-    print(Order_submit)
+    print(Order_c.Create("453622917134237696"))
+    # Order_submit = Order_c.Submit(Order_c_s["body"]["data"])
+    # print(Order_submit)
 
 
 
