@@ -1,5 +1,9 @@
 import datetime,os
+import subprocess
 import re
+
+import pytest
+
 from config import Conf
 from config.Conf import ConfigYaml
 from utils.EmaillUtil import SendUtil
@@ -9,6 +13,7 @@ from utils.LogUtil import Logger
 # 下面两个方法都用到这个对象，放在外面实例化
 conf = ConfigYaml()
 conf_path = conf.config
+
 
 
 def send_email(report_html_path="",content="",title="测试"):
@@ -52,13 +57,30 @@ def my_log(log_name = __file__):
 
 
 
-def excel_is_Y_run(file=conf_path["case_file"],sheet_by=conf_path["sheet_by"]):
-    reader = ExcelReader(file, sheet_by)
+def excel_is_Y_run():
+    reader = ExcelReader(conf_path["case_file"], conf_path["sheet_by"])
     run_list = []
     for line in reader.data():
         if line[conf_path["excel"]['is_run']] == "Y":
             run_list.append(line)
     return run_list
 
+
+def report_html(report_result,report_html):
+    report_path = f'allure generate {report_result} -o {report_html} --clean'
+    subprocess.call(report_path, shell=True)
+
+
+
+
+
+
+
+
 if __name__ == '__main__':
-    print(my_log().info("这是一个日志"))
+    reader = ExcelReader(conf_path["case_file"],conf_path["sheet_by"])
+    print(reader.data())
+
+
+
+

@@ -8,6 +8,8 @@ base_dir =os.path.dirname(os.path.dirname(current))
 # 定义config目录的路径
 _config_path = base_dir+os.sep+"config"
 
+_case = base_dir+os.sep+"case"
+
 # 定义config目录的路径
 _config_data_path = base_dir+os.sep+"data"
 
@@ -16,8 +18,14 @@ _config_file = _config_path+os.sep+ "conf.yaml"
 # 定义日志路径
 _log_path = base_dir +os.sep+ "logs"
 
+# 绝对路径 report
+_report_path = base_dir+os.sep+"report"
 
+def get_report_path():
+    return _report_path
 
+def get_case():
+    return _case
 
 def get_config_path():
     return _config_path

@@ -1,5 +1,9 @@
+import os
+import subprocess
+
 import pytest,jsonpath,json,allure
-from common.Base import excel_is_Y_run
+from common.Base import excel_is_Y_run, report_html
+from config import Conf
 from config.Conf import ConfigYaml
 from case.global_dict import GlobalDict
 from utils.RequestUtil import RequestsUtil
@@ -7,15 +11,17 @@ from string import Template
 
 case_info  = ConfigYaml().config
 util = RequestsUtil()
-case_file = case_info["case_file"]
-sheet_by = case_info["sheet_by"]
-run_list = excel_is_Y_run(case_file, sheet_by)
+
+html_path = Conf.get_report_path() + os.sep + "html"
+report_result_path = Conf.get_report_path() + os.sep + "result"
 
 
 
 class TestExcel_case:
     # @allure.title("维保通接口回归")
     # @allure.description("维保通平台接口回归,涵盖系统主要模块的正向流程,包括:运维工单.需求管理.")
+    run_list = excel_is_Y_run()
+
     @pytest.mark.parametrize("case",run_list)
     def test_run_excel_case(self,case):
         """
@@ -48,8 +54,8 @@ class TestExcel_case:
         res = util.requests_api(url, method, json=json_data, headers=headers, params=params)
         print(res.json())
 
-        # allure测试报告中的标题和描述
-        allure.dynamic.title(f'{case_name +"-"+ case_id}')
+        #allure测试报告中的标题和描述
+        allure.dynamic.title(f'{case_name +"-2-"+ case_id}')
         allure.dynamic.description(f'{res.json()}')
 
 
@@ -60,11 +66,13 @@ class TestExcel_case:
 
 
 
-
-
-
-
 if __name__ == '__main__':
-    pytest.main(["-s","test_excel_case.py"])
+   # allure generate report/result -o ../report/html --clean
+   pytest.main(['-s',"--alluredir",report_result_path])
+   # report_html(report_result_path,html_path)
+   # subprocess.call('allure open -h 127.0.0.1 -p 9999 ./report/html', shell=True)
+
+
+
 
 
