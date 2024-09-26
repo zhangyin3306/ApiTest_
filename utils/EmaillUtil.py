@@ -1,6 +1,8 @@
 import smtplib
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
+from importlib.resources import contents
+
 from config.Conf import ConfigYaml
 
 class SendUtil:
@@ -14,17 +16,24 @@ class SendUtil:
         self.file = file
     def send(self):
         msg = MIMEMultipart()
+        msg.attach(MIMEText(self.content, 'plain', 'utf-8'))
         msg['Subject'] = self.title
         msg['From'] = self.username
         msg['To'] = self.recv
         if self.file:
-            att = MIMEText(open(self.file).read(), 'plain', 'utf-8')
+            att = MIMEText(open(self.file).read(),'plain', 'utf-8')
             att["Content-Type"] = 'application/octet-stream'
             att["Content-Disposition"] = 'attachment; filename="%s"' % self.file
             msg.attach(att)
-        self.smtp = smtplib.SMTP(self.smtp_addr, port=25,local_hostname='utf-8')
-        self.smtp.login(self.username, self.password)
-        self.smtp.sendmail(self.username, self.recv, msg.as_string())
+        try:
+            self.smtp = smtplib.SMTP(self.smtp_addr, port=25,local_hostname='utf-8')
+            self.smtp.login(self.username, self.password)
+            self.smtp.sendmail(self.username, self.recv, msg.as_string())
+        except Exception as e:
+            print("发送失败！")
+        finally:
+            self.smtp.quit()
+
 if __name__ == '__main__':
    from config.Conf import ConfigYaml
    email_info = ConfigYaml().get_conf_email()

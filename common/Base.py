@@ -77,9 +77,6 @@ def report_html(report_result,report_html):
 
 
 
-if __name__ == '__main__':
-    reader = ExcelReader(conf_path["case_file"],conf_path["sheet_by"])
-    print(reader.data())
 
 
 
