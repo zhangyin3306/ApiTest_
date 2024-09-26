@@ -41,6 +41,9 @@ class TestExcel_case:
         case_id = case[case_info["excel"]["case_id"]]
         case_name = case[case_info["excel"]["case_name"]]
         dic = GlobalDict().show_dict()
+
+
+
         if "$" in json_data:
             try:
                 # 替换模板中的变量

@@ -12,7 +12,7 @@ class RequestsUtil:
 
         # excel表格中传递的字符串,需要它转化为字典进行传参.
         self.json=json.loads
-    def requests_api(self, url, method, json, params,headers=None):
+    def requests_api(self, url, method, json=None, params=None,headers=None):
         """
         发送 HTTP 请求并返回响应对象。
 
@@ -34,17 +34,18 @@ class RequestsUtil:
 
         try:
             if method == 'get':
-                params = self.json(params)
+                if type(params) != dict:
+                    params = self.json(params)
                 response = requests.get(url, headers=headers, params=params)
             elif method == 'post':
-                json_data = self.json(json)
+                if type(json) != dict:
+                    json_data = self.json(json)
                 response = requests.post(url, json=json_data, headers=headers)
             else:
                 raise ValueError(f"Unsupported HTTP method: {method}")
         except requests.RequestException as e:
             self.log.error(f"请求失败: {e}")
             raise
-
         return response
 
 

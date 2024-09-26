@@ -31,7 +31,7 @@ class Order:
             "orderTypeId":orderTypeId
         }
         create = self.url + "/maintenance/orderNo"
-        response = self.request_util.requests_api(url=create, method='get', headers=self.headers,params = params )
+        response = self.request_util.requests_api(url=create, method='get', headers=self.headers,params =params)
         AssertUtil().assert_code(response.status_code, "200")
         return response
     def Submit(self,orderNo):
@@ -90,7 +90,7 @@ class Order:
             "handleUserName": "系统管理员"
         }
         submit_address = self.url+"/maintenance/saveOrderInfo"
-        response_submit = self.request_util.requests_api(url=submit_address, method='post', headers=self.headers, json=data)
+        response_submit = self.request_util.requests_api(url=submit_address, method='post', headers=self.headers,json=data)
         AssertUtil().assert_code(response_submit.status_code, "200")
         return response_submit
 
@@ -98,7 +98,7 @@ class Order:
 if __name__ == '__main__':
     Order_c  = Order()
     Order_c_s  =Order_c.Create("453622917134237696")
-    print(Order_c.Create("453622917134237696"))
+    print(Order_c_s.json())
     # Order_submit = Order_c.Submit(Order_c_s["body"]["data"])
     # print(Order_submit)
 
