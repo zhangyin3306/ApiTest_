@@ -1,7 +1,8 @@
+import sys
+sys.path.append("E:\ApiTest_")
+from common.Base import report_html, send_email
 import os
 import pytest
-
-from common.Base import report_html, send_email
 from config import Conf
 
 
