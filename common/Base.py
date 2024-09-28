@@ -16,6 +16,7 @@ conf_path = conf.config
 
 
 
+
 def send_email(report_html_path="",content="",title="测试"):
     """
     发送测试报告-邮件
@@ -58,7 +59,9 @@ def my_log(log_name = __file__):
 
 
 def excel_is_Y_run():
-    reader = ExcelReader(conf_path["case_file"], conf_path["sheet_by"])
+    # 这里需要写绝对路径,否则Jenkins读取不到
+    absolute_path = os.path.abspath(conf_path["case_file"])
+    reader = ExcelReader(absolute_path, conf_path["sheet_by"])
     run_list = []
     for line in reader.data():
         if line[conf_path["excel"]['is_run']] == "Y":
