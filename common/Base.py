@@ -60,8 +60,9 @@ def my_log(log_name = __file__):
 
 def excel_is_Y_run():
     # 这里需要写绝对路径,否则Jenkins读取不到
-    absolute_path = os.path.abspath(conf_path["case_file"])
-    reader = ExcelReader(absolute_path, conf_path["sheet_by"])
+    # absolute_path = os.path.abspath(conf_path["case_file"])
+    # print(absolute_path)
+    reader = ExcelReader(r"E:\ApiTest\data\test.xlsx", conf_path["sheet_by"])
     run_list = []
     for line in reader.data():
         if line[conf_path["excel"]['is_run']] == "Y":
@@ -72,6 +73,9 @@ def excel_is_Y_run():
 def report_html(report_result,report_html):
     report_path = f'allure generate {report_result} -o {report_html} --clean'
     subprocess.call(report_path, shell=True)
+
+if __name__ == '__main__':
+    excel_is_Y_run()
 
 
 

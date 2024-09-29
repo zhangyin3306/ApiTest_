@@ -1,12 +1,11 @@
 import sys
-sys.path.append("E:\ApiTest_")
+sys.path.append(r"E:\ApiTest")
 import os
-import subprocess
 import pytest,jsonpath,json,allure
-from common.Base import excel_is_Y_run, report_html
+from common.Base import excel_is_Y_run
 from config import Conf
 from config.Conf import ConfigYaml
-from case.global_dict import GlobalDict
+from common.global_dict import GlobalDict
 from utils.RequestUtil import RequestsUtil
 from string import Template
 
@@ -59,7 +58,7 @@ class TestExcel_case:
         print(res.json())
 
         #allure测试报告中的标题和描述
-        allure.dynamic.title(f'{case_name +"-2-"+ case_id}')
+        allure.dynamic.title(f'{case_name +"-3"+ case_id}')
         allure.dynamic.description(f'{res.json()}')
 
 

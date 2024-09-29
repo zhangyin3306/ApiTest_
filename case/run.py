@@ -1,9 +1,11 @@
+import subprocess
 import sys
-sys.path.append("E:\ApiTest_")
+sys.path.append(r"E:\ApiTest")
 from common.Base import report_html, send_email
 import os
 import pytest
 from config import Conf
+
 
 
 
