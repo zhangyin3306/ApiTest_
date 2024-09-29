@@ -1,5 +1,5 @@
 import sys
-sys.path.append("..")
+sys.path.append("E:\\ApiTest_")
 import subprocess
 from common.Base import report_html, send_email
 import os

@@ -1,5 +1,5 @@
 import sys
-sys.path.append("..")
+sys.path.append("E:\\ApiTest_")
 import os
 import pytest,jsonpath,json,allure
 from common.Base import excel_is_Y_run
