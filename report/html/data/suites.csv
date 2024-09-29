@@ -1,3 +1,5 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Sun Sep 29 11:14:22 CST 2024","Sun Sep 29 11:14:24 CST 2024","2127","case","test_excel_case","TestExcel_case","","","提交工单-2-word_2","{'code': '10000', 'message': 'SUCCESS', 'success': True, 'traceId': '0AE968B017275796626541008'}"
+"passed","Sun Sep 29 11:14:22 CST 2024","Sun Sep 29 11:14:22 CST 2024","210","case","test_excel_case","TestExcel_case","","","创建工单-2-word_1","{'code': '10000', 'data': 'TY20240929111422387', 'message': 'SUCCESS', 'success': True, 'traceId': '0AE968B017275796624831007'}"
 "passed","Thu Sep 19 15:30:03 CST 2024","Thu Sep 19 15:30:03 CST 2024","418","case","test_excel_case","TestExcel_case","","","提交工单-2-word_2","{'code': '10000', 'message': 'SUCCESS', 'success': True, 'traceId': '0AE95BA917267310030871046'}"
 "passed","Thu Sep 19 15:30:02 CST 2024","Thu Sep 19 15:30:03 CST 2024","149","case","test_excel_case","TestExcel_case","","","创建工单-2-word_1","{'code': '10000', 'data': 'TY20240919153002232', 'message': 'SUCCESS', 'success': True, 'traceId': '0AE95BA917267310029181045'}"

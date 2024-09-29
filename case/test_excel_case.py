@@ -1,12 +1,11 @@
 import sys
-sys.path.append("E:\ApiTest_")
+sys.path.append(r"E:\ApiTest")
 import os
-import subprocess
 import pytest,jsonpath,json,allure
-from common.Base import excel_is_Y_run, report_html
+from common.Base import excel_is_Y_run
 from config import Conf
 from config.Conf import ConfigYaml
-from case.global_dict import GlobalDict
+from common.global_dict import GlobalDict
 from utils.RequestUtil import RequestsUtil
 from string import Template
 
