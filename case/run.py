@@ -1,6 +1,6 @@
-import subprocess
 import sys
-sys.path.append(r"E:\ApiTest")
+sys.path.append("..")
+import subprocess
 from common.Base import report_html, send_email
 import os
 import pytest

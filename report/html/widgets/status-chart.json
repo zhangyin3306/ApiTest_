@@ -1,40 +1,60 @@
 [ {
-  "uid" : "c76b9ab605e804ec",
+  "uid" : "41671d2676b2c16e",
+  "name" : "test_run_excel_case[case1]",
+  "time" : {
+    "start" : 1727363956482,
+    "stop" : 1727363956482,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "c7161ee7f4fe888b",
   "name" : "提交工单-2-word_2",
   "time" : {
-    "start" : 1727579662537,
-    "stop" : 1727579664664,
-    "duration" : 2127
+    "start" : 1727499759590,
+    "stop" : 1727499760035,
+    "duration" : 445
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "c980a1c681f9e43c",
+  "uid" : "429172a6f2684bdc",
   "name" : "创建工单-2-word_1",
   "time" : {
-    "start" : 1727579662320,
-    "stop" : 1727579662530,
-    "duration" : 210
+    "start" : 1727363956019,
+    "stop" : 1727363956191,
+    "duration" : 172
   },
-  "status" : "passed",
+  "status" : "broken",
   "severity" : "normal"
 }, {
-  "uid" : "c5441a3d2979ad50",
-  "name" : "提交工单-2-word_2",
-  "time" : {
-    "start" : 1726731003071,
-    "stop" : 1726731003489,
-    "duration" : 418
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "a6048388ebf7185e",
+  "uid" : "7dee3a1e7d848325",
   "name" : "创建工单-2-word_1",
   "time" : {
-    "start" : 1726731002905,
-    "stop" : 1726731003054,
-    "duration" : 149
+    "start" : 1727364097408,
+    "stop" : 1727364097528,
+    "duration" : 120
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "203d39e553c43c2b",
+  "name" : "test_run_excel_case[case1]",
+  "time" : {
+    "start" : 1727364097864,
+    "stop" : 1727364097864,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "2020e66b47a4bf8",
+  "name" : "创建工单-2-word_1",
+  "time" : {
+    "start" : 1727499759424,
+    "stop" : 1727499759583,
+    "duration" : 159
   },
   "status" : "passed",
   "severity" : "normal"

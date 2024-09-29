@@ -1,5 +1,19 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Sun Sep 29 11:14:22 CST 2024","Sun Sep 29 11:14:24 CST 2024","2127","case","test_excel_case","TestExcel_case","","","提交工单-2-word_2","{'code': '10000', 'message': 'SUCCESS', 'success': True, 'traceId': '0AE968B017275796626541008'}"
-"passed","Sun Sep 29 11:14:22 CST 2024","Sun Sep 29 11:14:22 CST 2024","210","case","test_excel_case","TestExcel_case","","","创建工单-2-word_1","{'code': '10000', 'data': 'TY20240929111422387', 'message': 'SUCCESS', 'success': True, 'traceId': '0AE968B017275796624831007'}"
-"passed","Thu Sep 19 15:30:03 CST 2024","Thu Sep 19 15:30:03 CST 2024","418","case","test_excel_case","TestExcel_case","","","提交工单-2-word_2","{'code': '10000', 'message': 'SUCCESS', 'success': True, 'traceId': '0AE95BA917267310030871046'}"
-"passed","Thu Sep 19 15:30:02 CST 2024","Thu Sep 19 15:30:03 CST 2024","149","case","test_excel_case","TestExcel_case","","","创建工单-2-word_1","{'code': '10000', 'data': 'TY20240919153002232', 'message': 'SUCCESS', 'success': True, 'traceId': '0AE95BA917267310029181045'}"
+"broken","Thu Sep 26 23:19:16 GMT+08:00 2024","Thu Sep 26 23:19:16 GMT+08:00 2024","0","case","test_excel_case","TestExcel_case","","","test_run_excel_case[case1]","
+        运用pytest参数化读取excel中的接口用例,
+        执行封装后request判断method类型调用接口用例,
+        解决接口依赖:提取接口响应内容存入字典,利用Template方法将字典内容与参数占位符替换
+        :param case:
+        :return:
+        "
+"passed","Sat Sep 28 13:02:39 GMT+08:00 2024","Sat Sep 28 13:02:40 GMT+08:00 2024","445","case","test_excel_case","TestExcel_case","","","提交工单-2-word_2","{'code': '10000', 'message': 'SUCCESS', 'success': True, 'traceId': '0AE964EB17274997609741163'}"
+"broken","Thu Sep 26 23:19:16 GMT+08:00 2024","Thu Sep 26 23:19:16 GMT+08:00 2024","172","case","test_excel_case","TestExcel_case","","","创建工单-2-word_1","{'code': '40000', 'message': '请求访问：/charging-maintenance-server/error，认证失败，无法访问系统资源', 'success': False}"
+"broken","Thu Sep 26 23:21:37 GMT+08:00 2024","Thu Sep 26 23:21:37 GMT+08:00 2024","120","case","test_excel_case","TestExcel_case","","","创建工单-2-word_1","{'code': '40000', 'message': '请求访问：/charging-maintenance-server/error，认证失败，无法访问系统资源', 'success': False}"
+"broken","Thu Sep 26 23:21:37 GMT+08:00 2024","Thu Sep 26 23:21:37 GMT+08:00 2024","0","case","test_excel_case","TestExcel_case","","","test_run_excel_case[case1]","
+        运用pytest参数化读取excel中的接口用例,
+        执行封装后request判断method类型调用接口用例,
+        解决接口依赖:提取接口响应内容存入字典,利用Template方法将字典内容与参数占位符替换
+        :param case:
+        :return:
+        "
+"passed","Sat Sep 28 13:02:39 GMT+08:00 2024","Sat Sep 28 13:02:39 GMT+08:00 2024","159","case","test_excel_case","TestExcel_case","","","创建工单-2-word_1","{'code': '10000', 'data': 'TY20240928130240907', 'message': 'SUCCESS', 'success': True, 'traceId': '0AE964EB17274997608391162'}"

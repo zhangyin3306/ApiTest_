@@ -2,137 +2,557 @@
   "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
   "name" : "timeline",
   "children" : [ {
-    "name" : "BD-000536",
+    "name" : "张引电脑",
     "children" : [ {
-      "name" : "7172-MainThread",
+      "name" : "3348-MainThread",
       "children" : [ {
-        "name" : "提交工单-2-word_2",
-        "uid" : "174c949ee376838f",
-        "parentUid" : "e83aafdcec6b0bcf83646577c9b7aef9",
+        "name" : "创建工单-2-word_1",
+        "uid" : "9cb4290e295e169e",
+        "parentUid" : "671c0502f3f9b0c8b2505f11b78b1703",
         "status" : "passed",
         "time" : {
-          "start" : 1727578041883,
-          "stop" : 1727578042296,
-          "duration" : 413
+          "start" : 1727364280210,
+          "stop" : 1727364280352,
+          "duration" : 142
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'用例ID': 'word_1', '模块': '运维工单', '接口名称': '创建工单', '请求URL': '/maintenance/orderNo', '请求类型': 'get', 'params': '{\\n            \"orderTypeId\":\"453622917134237696\"\\n        }', 'json请求参数': '', '是否运行': 'Y', '请求头': '{\\n           \"Authorization\" : \"Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6IjEwMDAwLWMwOTIyMWQ4LWExMjctNDIzZS1iNDFjLTk1NzU1NmFkNTlhNiJ9.1a2mtjYTKkplp02zyoG4eBcGeFw91Vo5EwuGvQZjKr8fgZUqaIQYWCB6kTWSYs1x_3O06OkCAzt8RDoMOn_02A\"\\n        }', '预期状态码': 200.0, '提取参数': 'data', '需要参数': ''}" ]
+      }, {
+        "name" : "提交工单-2-word_2",
+        "uid" : "242a43111b3f681a",
+        "parentUid" : "671c0502f3f9b0c8b2505f11b78b1703",
+        "status" : "passed",
+        "time" : {
+          "start" : 1727364280383,
+          "stop" : 1727364281118,
+          "duration" : 735
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'用例ID': 'word_2', '模块': '运维工单', '接口名称': '提交工单', '请求URL': '/maintenance/saveOrderInfo', '请求类型': 'post', 'params': '', 'json请求参数': '{\\n            \"orderTypeParentId\": \"453622917134237696\",\\n            \"orderTypeId\": \"\",\\n            \"threeOrderTypeId\": \"\",\\n            \"urgencyLevel\": \"1\",\\n            \"orderDesc\": \"<p>对地点</p>\",\\n            \"stationName\": \"桩企测试专用站\",\\n            \"region\": [\\n                \"13\",\\n                \"1310\",\\n                \"131082\"\\n            ],\\n            \"address\": \"燕郊站\",\\n            \"checkGroupIds\": [],\\n            \"deviceNo\": \"\",\\n            \"deviceTypeName\": \"\",\\n            \"deviceModelName\": \"\",\\n            \"customerName\": \"\",\\n            \"contact\": \"\",\\n            \"contactTel\": \"\",\\n            \"carBrand\": \"\",\\n            \"carModel\": \"\",\\n            \"appointmentTime\": \"\",\\n            \"shelfLife\": \"0\",\\n            \"installMethod\": \"\",\\n            \"mainUser\": \"\",\\n            \"platform\": \"\",\\n            \"projectType\": \"\",\\n            \"projectCode\": \"\",\\n            \"installUnit\": \"\",\\n            \"enableMethod\": \"\",\\n            \"salesmanName\": \"\",\\n            \"businessType\": \"1\",\\n            \"businessTypeName\": \"充电\",\\n            \"city\": \"1310\",\\n            \"county\": \"131082\",\\n            \"deptName\": \"江南水务\",\\n            \"onlineDate\": \"2024-06-25\",\\n            \"operationMode\": \"1\",\\n            \"province\": \"13\",\\n            \"regionName\": \"江南水务\",\\n            \"stationAddress\": \"燕郊站\",\\n            \"stationCode\": \"zhang\",\\n            \"stationId\": \"463385701627645952\",\\n            \"status\": \"02\",\\n            \"orderNo\": \"${data}\",\\n            \"handleUser\": \"10000\",\\n            \"handleUserName\": \"系统管理员\"\\n        }', '是否运行': 'Y', '请求头': '{\\n           \"Authorization\" : \"Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6IjEwMDAwLWMwOTIyMWQ4LWExMjctNDIzZS1iNDFjLTk1NzU1NmFkNTlhNiJ9.1a2mtjYTKkplp02zyoG4eBcGeFw91Vo5EwuGvQZjKr8fgZUqaIQYWCB6kTWSYs1x_3O06OkCAzt8RDoMOn_02A\"\\n        }', '预期状态码': 200.0, '提取参数': '', '需要参数': 'data'}" ]
+      } ],
+      "uid" : "671c0502f3f9b0c8b2505f11b78b1703"
+    }, {
+      "name" : "17484-MainThread",
+      "children" : [ {
+        "name" : "提交工单-2-word_2",
+        "uid" : "86a40eb314e4d14b",
+        "parentUid" : "8d89d3db8307398d00dbae6ff51fb82e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1727372401812,
+          "stop" : 1727372402207,
+          "duration" : 395
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ "{'用例ID': 'word_2', '模块': '运维工单', '接口名称': '提交工单', '请求URL': '/maintenance/saveOrderInfo', '请求类型': 'post', 'params': '', 'json请求参数': '{\\n            \"orderTypeParentId\": \"453622917134237696\",\\n            \"orderTypeId\": \"\",\\n            \"threeOrderTypeId\": \"\",\\n            \"urgencyLevel\": \"1\",\\n            \"orderDesc\": \"<p>对地点</p>\",\\n            \"stationName\": \"桩企测试专用站\",\\n            \"region\": [\\n                \"13\",\\n                \"1310\",\\n                \"131082\"\\n            ],\\n            \"address\": \"燕郊站\",\\n            \"checkGroupIds\": [],\\n            \"deviceNo\": \"\",\\n            \"deviceTypeName\": \"\",\\n            \"deviceModelName\": \"\",\\n            \"customerName\": \"\",\\n            \"contact\": \"\",\\n            \"contactTel\": \"\",\\n            \"carBrand\": \"\",\\n            \"carModel\": \"\",\\n            \"appointmentTime\": \"\",\\n            \"shelfLife\": \"0\",\\n            \"installMethod\": \"\",\\n            \"mainUser\": \"\",\\n            \"platform\": \"\",\\n            \"projectType\": \"\",\\n            \"projectCode\": \"\",\\n            \"installUnit\": \"\",\\n            \"enableMethod\": \"\",\\n            \"salesmanName\": \"\",\\n            \"businessType\": \"1\",\\n            \"businessTypeName\": \"充电\",\\n            \"city\": \"1310\",\\n            \"county\": \"131082\",\\n            \"deptName\": \"江南水务\",\\n            \"onlineDate\": \"2024-06-25\",\\n            \"operationMode\": \"1\",\\n            \"province\": \"13\",\\n            \"regionName\": \"江南水务\",\\n            \"stationAddress\": \"燕郊站\",\\n            \"stationCode\": \"zhang\",\\n            \"stationId\": \"463385701627645952\",\\n            \"status\": \"02\",\\n            \"orderNo\": \"${data}\",\\n            \"handleUser\": \"10000\",\\n            \"handleUserName\": \"系统管理员\"\\n        }', '是否运行': 'Y', '请求头': '{\\n           \"Authorization\" : \"Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6IjEwMDAwLWMwOTIyMWQ4LWExMjctNDIzZS1iNDFjLTk1NzU1NmFkNTlhNiJ9.1a2mtjYTKkplp02zyoG4eBcGeFw91Vo5EwuGvQZjKr8fgZUqaIQYWCB6kTWSYs1x_3O06OkCAzt8RDoMOn_02A\"\\n        }', '预期状态码': 200.0, '提取参数': '', '需要参数': 'data'}" ]
       }, {
         "name" : "创建工单-2-word_1",
-        "uid" : "f2334aa27b966920",
-        "parentUid" : "e83aafdcec6b0bcf83646577c9b7aef9",
+        "uid" : "df923ee75667a736",
+        "parentUid" : "8d89d3db8307398d00dbae6ff51fb82e",
         "status" : "passed",
         "time" : {
-          "start" : 1727578041650,
-          "stop" : 1727578041862,
-          "duration" : 212
+          "start" : 1727372401653,
+          "stop" : 1727372401810,
+          "duration" : 157
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ "{'用例ID': 'word_1', '模块': '运维工单', '接口名称': '创建工单', '请求URL': '/maintenance/orderNo', '请求类型': 'get', 'params': '{\\n            \"orderTypeId\":\"453622917134237696\"\\n        }', 'json请求参数': '', '是否运行': 'Y', '请求头': '{\\n           \"Authorization\" : \"Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6IjEwMDAwLWMwOTIyMWQ4LWExMjctNDIzZS1iNDFjLTk1NzU1NmFkNTlhNiJ9.1a2mtjYTKkplp02zyoG4eBcGeFw91Vo5EwuGvQZjKr8fgZUqaIQYWCB6kTWSYs1x_3O06OkCAzt8RDoMOn_02A\"\\n        }', '预期状态码': 200.0, '提取参数': 'data', '需要参数': ''}" ]
       } ],
-      "uid" : "e83aafdcec6b0bcf83646577c9b7aef9"
+      "uid" : "8d89d3db8307398d00dbae6ff51fb82e"
     }, {
-      "name" : "7596-MainThread",
+      "name" : "9392-MainThread",
       "children" : [ {
-        "name" : "提交工单-2-word_2",
-        "uid" : "d49c1fc6f6486095",
-        "parentUid" : "ef35e7854cd1dcf4371b30e249ba4eb0",
+        "name" : "test_run_excel_case[case0]",
+        "uid" : "2df8a96ba3f6fdbc",
+        "parentUid" : "413177723d529620f90d1ddf524cabd0",
+        "status" : "broken",
+        "time" : {
+          "start" : 1727373453449,
+          "stop" : 1727373453449,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'用例ID': 'word_1', '模块': '运维工单', '接口名称': '创建工单', '请求URL': '/maintenance/orderNo', '请求类型': 'get', 'params': '{\\n            \"orderTypeId\":\"453622917134237696\"\\n        }', 'json请求参数': '', '是否运行': 'Y', '请求头': '{\\n           \"Authorization\" : \"Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6IjEwMDAwLWMwOTIyMWQ4LWExMjctNDIzZS1iNDFjLTk1NzU1NmFkNTlhNiJ9.1a2mtjYTKkplp02zyoG4eBcGeFw91Vo5EwuGvQZjKr8fgZUqaIQYWCB6kTWSYs1x_3O06OkCAzt8RDoMOn_02A\"\\n        }', '预期状态码': 200.0, '提取参数': 'data', '需要参数': ''}" ]
+      }, {
+        "name" : "test_run_excel_case[case1]",
+        "uid" : "e1758ae70ff8a564",
+        "parentUid" : "413177723d529620f90d1ddf524cabd0",
+        "status" : "broken",
+        "time" : {
+          "start" : 1727373453734,
+          "stop" : 1727373453734,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'用例ID': 'word_2', '模块': '运维工单', '接口名称': '提交工单', '请求URL': '/maintenance/saveOrderInfo', '请求类型': 'post', 'params': '', 'json请求参数': '{\\n            \"orderTypeParentId\": \"453622917134237696\",\\n            \"orderTypeId\": \"\",\\n            \"threeOrderTypeId\": \"\",\\n            \"urgencyLevel\": \"1\",\\n            \"orderDesc\": \"<p>对地点</p>\",\\n            \"stationName\": \"桩企测试专用站\",\\n            \"region\": [\\n                \"13\",\\n                \"1310\",\\n                \"131082\"\\n            ],\\n            \"address\": \"燕郊站\",\\n            \"checkGroupIds\": [],\\n            \"deviceNo\": \"\",\\n            \"deviceTypeName\": \"\",\\n            \"deviceModelName\": \"\",\\n            \"customerName\": \"\",\\n            \"contact\": \"\",\\n            \"contactTel\": \"\",\\n            \"carBrand\": \"\",\\n            \"carModel\": \"\",\\n            \"appointmentTime\": \"\",\\n            \"shelfLife\": \"0\",\\n            \"installMethod\": \"\",\\n            \"mainUser\": \"\",\\n            \"platform\": \"\",\\n            \"projectType\": \"\",\\n            \"projectCode\": \"\",\\n            \"installUnit\": \"\",\\n            \"enableMethod\": \"\",\\n            \"salesmanName\": \"\",\\n            \"businessType\": \"1\",\\n            \"businessTypeName\": \"充电\",\\n            \"city\": \"1310\",\\n            \"county\": \"131082\",\\n            \"deptName\": \"江南水务\",\\n            \"onlineDate\": \"2024-06-25\",\\n            \"operationMode\": \"1\",\\n            \"province\": \"13\",\\n            \"regionName\": \"江南水务\",\\n            \"stationAddress\": \"燕郊站\",\\n            \"stationCode\": \"zhang\",\\n            \"stationId\": \"463385701627645952\",\\n            \"status\": \"02\",\\n            \"orderNo\": \"${data}\",\\n            \"handleUser\": \"10000\",\\n            \"handleUserName\": \"系统管理员\"\\n        }', '是否运行': 'Y', '请求头': '{\\n           \"Authorization\" : \"Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6IjEwMDAwLWMwOTIyMWQ4LWExMjctNDIzZS1iNDFjLTk1NzU1NmFkNTlhNiJ9.1a2mtjYTKkplp02zyoG4eBcGeFw91Vo5EwuGvQZjKr8fgZUqaIQYWCB6kTWSYs1x_3O06OkCAzt8RDoMOn_02A\"\\n        }', '预期状态码': 200.0, '提取参数': '', '需要参数': 'data'}" ]
+      } ],
+      "uid" : "413177723d529620f90d1ddf524cabd0"
+    }, {
+      "name" : "8000-MainThread",
+      "children" : [ {
+        "name" : "创建工单-2-word_1",
+        "uid" : "340b6c528a169826",
+        "parentUid" : "d593010e3f0874f253e8102dc320f65d",
         "status" : "passed",
         "time" : {
-          "start" : 1727577269044,
-          "stop" : 1727577269464,
-          "duration" : 420
+          "start" : 1727499233681,
+          "stop" : 1727499233825,
+          "duration" : 144
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'用例ID': 'word_1', '模块': '运维工单', '接口名称': '创建工单', '请求URL': '/maintenance/orderNo', '请求类型': 'get', 'params': '{\\n            \"orderTypeId\":\"453622917134237696\"\\n        }', 'json请求参数': '', '是否运行': 'Y', '请求头': '{\\n           \"Authorization\" : \"Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6IjEwMDAwLWMwOTIyMWQ4LWExMjctNDIzZS1iNDFjLTk1NzU1NmFkNTlhNiJ9.1a2mtjYTKkplp02zyoG4eBcGeFw91Vo5EwuGvQZjKr8fgZUqaIQYWCB6kTWSYs1x_3O06OkCAzt8RDoMOn_02A\"\\n        }', '预期状态码': 200.0, '提取参数': 'data', '需要参数': ''}" ]
+      }, {
+        "name" : "提交工单-2-word_2",
+        "uid" : "4c95cf11b6cfdd75",
+        "parentUid" : "d593010e3f0874f253e8102dc320f65d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1727499234109,
+          "stop" : 1727499234506,
+          "duration" : 397
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'用例ID': 'word_2', '模块': '运维工单', '接口名称': '提交工单', '请求URL': '/maintenance/saveOrderInfo', '请求类型': 'post', 'params': '', 'json请求参数': '{\\n            \"orderTypeParentId\": \"453622917134237696\",\\n            \"orderTypeId\": \"\",\\n            \"threeOrderTypeId\": \"\",\\n            \"urgencyLevel\": \"1\",\\n            \"orderDesc\": \"<p>对地点</p>\",\\n            \"stationName\": \"桩企测试专用站\",\\n            \"region\": [\\n                \"13\",\\n                \"1310\",\\n                \"131082\"\\n            ],\\n            \"address\": \"燕郊站\",\\n            \"checkGroupIds\": [],\\n            \"deviceNo\": \"\",\\n            \"deviceTypeName\": \"\",\\n            \"deviceModelName\": \"\",\\n            \"customerName\": \"\",\\n            \"contact\": \"\",\\n            \"contactTel\": \"\",\\n            \"carBrand\": \"\",\\n            \"carModel\": \"\",\\n            \"appointmentTime\": \"\",\\n            \"shelfLife\": \"0\",\\n            \"installMethod\": \"\",\\n            \"mainUser\": \"\",\\n            \"platform\": \"\",\\n            \"projectType\": \"\",\\n            \"projectCode\": \"\",\\n            \"installUnit\": \"\",\\n            \"enableMethod\": \"\",\\n            \"salesmanName\": \"\",\\n            \"businessType\": \"1\",\\n            \"businessTypeName\": \"充电\",\\n            \"city\": \"1310\",\\n            \"county\": \"131082\",\\n            \"deptName\": \"江南水务\",\\n            \"onlineDate\": \"2024-06-25\",\\n            \"operationMode\": \"1\",\\n            \"province\": \"13\",\\n            \"regionName\": \"江南水务\",\\n            \"stationAddress\": \"燕郊站\",\\n            \"stationCode\": \"zhang\",\\n            \"stationId\": \"463385701627645952\",\\n            \"status\": \"02\",\\n            \"orderNo\": \"${data}\",\\n            \"handleUser\": \"10000\",\\n            \"handleUserName\": \"系统管理员\"\\n        }', '是否运行': 'Y', '请求头': '{\\n           \"Authorization\" : \"Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6IjEwMDAwLWMwOTIyMWQ4LWExMjctNDIzZS1iNDFjLTk1NzU1NmFkNTlhNiJ9.1a2mtjYTKkplp02zyoG4eBcGeFw91Vo5EwuGvQZjKr8fgZUqaIQYWCB6kTWSYs1x_3O06OkCAzt8RDoMOn_02A\"\\n        }', '预期状态码': 200.0, '提取参数': '', '需要参数': 'data'}" ]
+      } ],
+      "uid" : "d593010e3f0874f253e8102dc320f65d"
+    }, {
+      "name" : "16116-MainThread",
+      "children" : [ {
+        "name" : "创建工单-2-word_1",
+        "uid" : "5900f84bb99f4bad",
+        "parentUid" : "f8df65816cf5506ea16889a1061b7997",
+        "status" : "passed",
+        "time" : {
+          "start" : 1727374592806,
+          "stop" : 1727374592960,
+          "duration" : 154
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'用例ID': 'word_1', '模块': '运维工单', '接口名称': '创建工单', '请求URL': '/maintenance/orderNo', '请求类型': 'get', 'params': '{\\n            \"orderTypeId\":\"453622917134237696\"\\n        }', 'json请求参数': '', '是否运行': 'Y', '请求头': '{\\n           \"Authorization\" : \"Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6IjEwMDAwLWMwOTIyMWQ4LWExMjctNDIzZS1iNDFjLTk1NzU1NmFkNTlhNiJ9.1a2mtjYTKkplp02zyoG4eBcGeFw91Vo5EwuGvQZjKr8fgZUqaIQYWCB6kTWSYs1x_3O06OkCAzt8RDoMOn_02A\"\\n        }', '预期状态码': 200.0, '提取参数': 'data', '需要参数': ''}" ]
+      }, {
+        "name" : "提交工单-2-word_2",
+        "uid" : "b8488c92eda6f955",
+        "parentUid" : "f8df65816cf5506ea16889a1061b7997",
+        "status" : "passed",
+        "time" : {
+          "start" : 1727374592965,
+          "stop" : 1727374593391,
+          "duration" : 426
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'用例ID': 'word_2', '模块': '运维工单', '接口名称': '提交工单', '请求URL': '/maintenance/saveOrderInfo', '请求类型': 'post', 'params': '', 'json请求参数': '{\\n            \"orderTypeParentId\": \"453622917134237696\",\\n            \"orderTypeId\": \"\",\\n            \"threeOrderTypeId\": \"\",\\n            \"urgencyLevel\": \"1\",\\n            \"orderDesc\": \"<p>对地点</p>\",\\n            \"stationName\": \"桩企测试专用站\",\\n            \"region\": [\\n                \"13\",\\n                \"1310\",\\n                \"131082\"\\n            ],\\n            \"address\": \"燕郊站\",\\n            \"checkGroupIds\": [],\\n            \"deviceNo\": \"\",\\n            \"deviceTypeName\": \"\",\\n            \"deviceModelName\": \"\",\\n            \"customerName\": \"\",\\n            \"contact\": \"\",\\n            \"contactTel\": \"\",\\n            \"carBrand\": \"\",\\n            \"carModel\": \"\",\\n            \"appointmentTime\": \"\",\\n            \"shelfLife\": \"0\",\\n            \"installMethod\": \"\",\\n            \"mainUser\": \"\",\\n            \"platform\": \"\",\\n            \"projectType\": \"\",\\n            \"projectCode\": \"\",\\n            \"installUnit\": \"\",\\n            \"enableMethod\": \"\",\\n            \"salesmanName\": \"\",\\n            \"businessType\": \"1\",\\n            \"businessTypeName\": \"充电\",\\n            \"city\": \"1310\",\\n            \"county\": \"131082\",\\n            \"deptName\": \"江南水务\",\\n            \"onlineDate\": \"2024-06-25\",\\n            \"operationMode\": \"1\",\\n            \"province\": \"13\",\\n            \"regionName\": \"江南水务\",\\n            \"stationAddress\": \"燕郊站\",\\n            \"stationCode\": \"zhang\",\\n            \"stationId\": \"463385701627645952\",\\n            \"status\": \"02\",\\n            \"orderNo\": \"${data}\",\\n            \"handleUser\": \"10000\",\\n            \"handleUserName\": \"系统管理员\"\\n        }', '是否运行': 'Y', '请求头': '{\\n           \"Authorization\" : \"Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6IjEwMDAwLWMwOTIyMWQ4LWExMjctNDIzZS1iNDFjLTk1NzU1NmFkNTlhNiJ9.1a2mtjYTKkplp02zyoG4eBcGeFw91Vo5EwuGvQZjKr8fgZUqaIQYWCB6kTWSYs1x_3O06OkCAzt8RDoMOn_02A\"\\n        }', '预期状态码': 200.0, '提取参数': '', '需要参数': 'data'}" ]
+      } ],
+      "uid" : "f8df65816cf5506ea16889a1061b7997"
+    }, {
+      "name" : "8120-MainThread",
+      "children" : [ {
+        "name" : "提交工单-2-word_2",
+        "uid" : "c7161ee7f4fe888b",
+        "parentUid" : "b9cf1b9ddeb0a3dfb0f1df3b57faf24e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1727499759590,
+          "stop" : 1727499760035,
+          "duration" : 445
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ "{'用例ID': 'word_2', '模块': '运维工单', '接口名称': '提交工单', '请求URL': '/maintenance/saveOrderInfo', '请求类型': 'post', 'params': '', 'json请求参数': '{\\n            \"orderTypeParentId\": \"453622917134237696\",\\n            \"orderTypeId\": \"\",\\n            \"threeOrderTypeId\": \"\",\\n            \"urgencyLevel\": \"1\",\\n            \"orderDesc\": \"<p>对地点</p>\",\\n            \"stationName\": \"桩企测试专用站\",\\n            \"region\": [\\n                \"13\",\\n                \"1310\",\\n                \"131082\"\\n            ],\\n            \"address\": \"燕郊站\",\\n            \"checkGroupIds\": [],\\n            \"deviceNo\": \"\",\\n            \"deviceTypeName\": \"\",\\n            \"deviceModelName\": \"\",\\n            \"customerName\": \"\",\\n            \"contact\": \"\",\\n            \"contactTel\": \"\",\\n            \"carBrand\": \"\",\\n            \"carModel\": \"\",\\n            \"appointmentTime\": \"\",\\n            \"shelfLife\": \"0\",\\n            \"installMethod\": \"\",\\n            \"mainUser\": \"\",\\n            \"platform\": \"\",\\n            \"projectType\": \"\",\\n            \"projectCode\": \"\",\\n            \"installUnit\": \"\",\\n            \"enableMethod\": \"\",\\n            \"salesmanName\": \"\",\\n            \"businessType\": \"1\",\\n            \"businessTypeName\": \"充电\",\\n            \"city\": \"1310\",\\n            \"county\": \"131082\",\\n            \"deptName\": \"江南水务\",\\n            \"onlineDate\": \"2024-06-25\",\\n            \"operationMode\": \"1\",\\n            \"province\": \"13\",\\n            \"regionName\": \"江南水务\",\\n            \"stationAddress\": \"燕郊站\",\\n            \"stationCode\": \"zhang\",\\n            \"stationId\": \"463385701627645952\",\\n            \"status\": \"02\",\\n            \"orderNo\": \"${data}\",\\n            \"handleUser\": \"10000\",\\n            \"handleUserName\": \"系统管理员\"\\n        }', '是否运行': 'Y', '请求头': '{\\n           \"Authorization\" : \"Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6IjEwMDAwLWMwOTIyMWQ4LWExMjctNDIzZS1iNDFjLTk1NzU1NmFkNTlhNiJ9.1a2mtjYTKkplp02zyoG4eBcGeFw91Vo5EwuGvQZjKr8fgZUqaIQYWCB6kTWSYs1x_3O06OkCAzt8RDoMOn_02A\"\\n        }', '预期状态码': 200.0, '提取参数': '', '需要参数': 'data'}" ]
       }, {
         "name" : "创建工单-2-word_1",
-        "uid" : "64674d400debb348",
-        "parentUid" : "ef35e7854cd1dcf4371b30e249ba4eb0",
+        "uid" : "2020e66b47a4bf8",
+        "parentUid" : "b9cf1b9ddeb0a3dfb0f1df3b57faf24e",
         "status" : "passed",
         "time" : {
-          "start" : 1727577268900,
-          "stop" : 1727577269037,
-          "duration" : 137
+          "start" : 1727499759424,
+          "stop" : 1727499759583,
+          "duration" : 159
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ "{'用例ID': 'word_1', '模块': '运维工单', '接口名称': '创建工单', '请求URL': '/maintenance/orderNo', '请求类型': 'get', 'params': '{\\n            \"orderTypeId\":\"453622917134237696\"\\n        }', 'json请求参数': '', '是否运行': 'Y', '请求头': '{\\n           \"Authorization\" : \"Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6IjEwMDAwLWMwOTIyMWQ4LWExMjctNDIzZS1iNDFjLTk1NzU1NmFkNTlhNiJ9.1a2mtjYTKkplp02zyoG4eBcGeFw91Vo5EwuGvQZjKr8fgZUqaIQYWCB6kTWSYs1x_3O06OkCAzt8RDoMOn_02A\"\\n        }', '预期状态码': 200.0, '提取参数': 'data', '需要参数': ''}" ]
       } ],
-      "uid" : "ef35e7854cd1dcf4371b30e249ba4eb0"
+      "uid" : "b9cf1b9ddeb0a3dfb0f1df3b57faf24e"
     }, {
-      "name" : "12292-MainThread",
+      "name" : "10952-MainThread",
       "children" : [ {
-        "name" : "提交工单-2-word_2",
-        "uid" : "33d25b2e96bc95a4",
-        "parentUid" : "dd2ad52720aec2bafbbf23c6f8797fab",
+        "name" : "创建工单-2-word_1",
+        "uid" : "95e36e7e3cdbd953",
+        "parentUid" : "cddbb1c5dcf7641a55d8c54bff47fa48",
         "status" : "passed",
         "time" : {
-          "start" : 1726728283817,
-          "stop" : 1726728284309,
-          "duration" : 492
+          "start" : 1727374543198,
+          "stop" : 1727374543342,
+          "duration" : 144
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'用例ID': 'word_1', '模块': '运维工单', '接口名称': '创建工单', '请求URL': '/maintenance/orderNo', '请求类型': 'get', 'params': '{\\n            \"orderTypeId\":\"453622917134237696\"\\n        }', 'json请求参数': '', '是否运行': 'Y', '请求头': '{\\n           \"Authorization\" : \"Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6IjEwMDAwLWMwOTIyMWQ4LWExMjctNDIzZS1iNDFjLTk1NzU1NmFkNTlhNiJ9.1a2mtjYTKkplp02zyoG4eBcGeFw91Vo5EwuGvQZjKr8fgZUqaIQYWCB6kTWSYs1x_3O06OkCAzt8RDoMOn_02A\"\\n        }', '预期状态码': 200.0, '提取参数': 'data', '需要参数': ''}" ]
+      }, {
+        "name" : "提交工单-2-word_2",
+        "uid" : "3c18f250a71737",
+        "parentUid" : "cddbb1c5dcf7641a55d8c54bff47fa48",
+        "status" : "passed",
+        "time" : {
+          "start" : 1727374543349,
+          "stop" : 1727374543760,
+          "duration" : 411
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'用例ID': 'word_2', '模块': '运维工单', '接口名称': '提交工单', '请求URL': '/maintenance/saveOrderInfo', '请求类型': 'post', 'params': '', 'json请求参数': '{\\n            \"orderTypeParentId\": \"453622917134237696\",\\n            \"orderTypeId\": \"\",\\n            \"threeOrderTypeId\": \"\",\\n            \"urgencyLevel\": \"1\",\\n            \"orderDesc\": \"<p>对地点</p>\",\\n            \"stationName\": \"桩企测试专用站\",\\n            \"region\": [\\n                \"13\",\\n                \"1310\",\\n                \"131082\"\\n            ],\\n            \"address\": \"燕郊站\",\\n            \"checkGroupIds\": [],\\n            \"deviceNo\": \"\",\\n            \"deviceTypeName\": \"\",\\n            \"deviceModelName\": \"\",\\n            \"customerName\": \"\",\\n            \"contact\": \"\",\\n            \"contactTel\": \"\",\\n            \"carBrand\": \"\",\\n            \"carModel\": \"\",\\n            \"appointmentTime\": \"\",\\n            \"shelfLife\": \"0\",\\n            \"installMethod\": \"\",\\n            \"mainUser\": \"\",\\n            \"platform\": \"\",\\n            \"projectType\": \"\",\\n            \"projectCode\": \"\",\\n            \"installUnit\": \"\",\\n            \"enableMethod\": \"\",\\n            \"salesmanName\": \"\",\\n            \"businessType\": \"1\",\\n            \"businessTypeName\": \"充电\",\\n            \"city\": \"1310\",\\n            \"county\": \"131082\",\\n            \"deptName\": \"江南水务\",\\n            \"onlineDate\": \"2024-06-25\",\\n            \"operationMode\": \"1\",\\n            \"province\": \"13\",\\n            \"regionName\": \"江南水务\",\\n            \"stationAddress\": \"燕郊站\",\\n            \"stationCode\": \"zhang\",\\n            \"stationId\": \"463385701627645952\",\\n            \"status\": \"02\",\\n            \"orderNo\": \"${data}\",\\n            \"handleUser\": \"10000\",\\n            \"handleUserName\": \"系统管理员\"\\n        }', '是否运行': 'Y', '请求头': '{\\n           \"Authorization\" : \"Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6IjEwMDAwLWMwOTIyMWQ4LWExMjctNDIzZS1iNDFjLTk1NzU1NmFkNTlhNiJ9.1a2mtjYTKkplp02zyoG4eBcGeFw91Vo5EwuGvQZjKr8fgZUqaIQYWCB6kTWSYs1x_3O06OkCAzt8RDoMOn_02A\"\\n        }', '预期状态码': 200.0, '提取参数': '', '需要参数': 'data'}" ]
+      } ],
+      "uid" : "cddbb1c5dcf7641a55d8c54bff47fa48"
+    }, {
+      "name" : "11424-MainThread",
+      "children" : [ {
+        "name" : "创建工单-2-word_1",
+        "uid" : "31a0a097d8f8c168",
+        "parentUid" : "6b594250a02122a6bab0020e706a9f69",
+        "status" : "broken",
+        "time" : {
+          "start" : 1727371518576,
+          "stop" : 1727371518699,
+          "duration" : 123
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'用例ID': 'word_1', '模块': '运维工单', '接口名称': '创建工单', '请求URL': '/maintenance/orderNo', '请求类型': 'get', 'params': '{\\n            \"orderTypeId\":\"453622917134237696\"\\n        }', 'json请求参数': '', '是否运行': 'Y', '请求头': '{\\n           \"Authorization\" : \"Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6IjEwMDAwLWMwOTIyMWQ4LWExMjctNDIzZS1iNDFjLTk1NzU1NmFkNTlhNiJ9.1a2mtjYTKkplp02zyoG4eBcGeFw91Vo5EwuGvQZjKr8fgZUqaIQYWCB6kTWSYs1x_3O06OkCAzt8RDoMOn_02A\"\\n        }', '预期状态码': 200.0, '提取参数': 'data', '需要参数': ''}" ]
+      }, {
+        "name" : "test_run_excel_case[case1]",
+        "uid" : "fca2f5a3348fad14",
+        "parentUid" : "6b594250a02122a6bab0020e706a9f69",
+        "status" : "broken",
+        "time" : {
+          "start" : 1727371518974,
+          "stop" : 1727371518974,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'用例ID': 'word_2', '模块': '运维工单', '接口名称': '提交工单', '请求URL': '/maintenance/saveOrderInfo', '请求类型': 'post', 'params': '', 'json请求参数': '{\\n            \"orderTypeParentId\": \"453622917134237696\",\\n            \"orderTypeId\": \"\",\\n            \"threeOrderTypeId\": \"\",\\n            \"urgencyLevel\": \"1\",\\n            \"orderDesc\": \"<p>对地点</p>\",\\n            \"stationName\": \"桩企测试专用站\",\\n            \"region\": [\\n                \"13\",\\n                \"1310\",\\n                \"131082\"\\n            ],\\n            \"address\": \"燕郊站\",\\n            \"checkGroupIds\": [],\\n            \"deviceNo\": \"\",\\n            \"deviceTypeName\": \"\",\\n            \"deviceModelName\": \"\",\\n            \"customerName\": \"\",\\n            \"contact\": \"\",\\n            \"contactTel\": \"\",\\n            \"carBrand\": \"\",\\n            \"carModel\": \"\",\\n            \"appointmentTime\": \"\",\\n            \"shelfLife\": \"0\",\\n            \"installMethod\": \"\",\\n            \"mainUser\": \"\",\\n            \"platform\": \"\",\\n            \"projectType\": \"\",\\n            \"projectCode\": \"\",\\n            \"installUnit\": \"\",\\n            \"enableMethod\": \"\",\\n            \"salesmanName\": \"\",\\n            \"businessType\": \"1\",\\n            \"businessTypeName\": \"充电\",\\n            \"city\": \"1310\",\\n            \"county\": \"131082\",\\n            \"deptName\": \"江南水务\",\\n            \"onlineDate\": \"2024-06-25\",\\n            \"operationMode\": \"1\",\\n            \"province\": \"13\",\\n            \"regionName\": \"江南水务\",\\n            \"stationAddress\": \"燕郊站\",\\n            \"stationCode\": \"zhang\",\\n            \"stationId\": \"463385701627645952\",\\n            \"status\": \"02\",\\n            \"orderNo\": \"${data}\",\\n            \"handleUser\": \"10000\",\\n            \"handleUserName\": \"系统管理员\"\\n        }', '是否运行': 'Y', '请求头': '{\\n           \"Authorization\" : \"Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6IjEwMDAwLWMwOTIyMWQ4LWExMjctNDIzZS1iNDFjLTk1NzU1NmFkNTlhNiJ9.1a2mtjYTKkplp02zyoG4eBcGeFw91Vo5EwuGvQZjKr8fgZUqaIQYWCB6kTWSYs1x_3O06OkCAzt8RDoMOn_02A\"\\n        }', '预期状态码': 200.0, '提取参数': '', '需要参数': 'data'}" ]
+      } ],
+      "uid" : "6b594250a02122a6bab0020e706a9f69"
+    }, {
+      "name" : "13756-MainThread",
+      "children" : [ {
+        "name" : "创建工单-2-word_1",
+        "uid" : "152684d20565cb4c",
+        "parentUid" : "a484b3703b9735e5863463fc95a0cd7e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1727372432641,
+          "stop" : 1727372432748,
+          "duration" : 107
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'用例ID': 'word_1', '模块': '运维工单', '接口名称': '创建工单', '请求URL': '/maintenance/orderNo', '请求类型': 'get', 'params': '{\\n            \"orderTypeId\":\"453622917134237696\"\\n        }', 'json请求参数': '', '是否运行': 'Y', '请求头': '{\\n           \"Authorization\" : \"Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6IjEwMDAwLWMwOTIyMWQ4LWExMjctNDIzZS1iNDFjLTk1NzU1NmFkNTlhNiJ9.1a2mtjYTKkplp02zyoG4eBcGeFw91Vo5EwuGvQZjKr8fgZUqaIQYWCB6kTWSYs1x_3O06OkCAzt8RDoMOn_02A\"\\n        }', '预期状态码': 200.0, '提取参数': 'data', '需要参数': ''}" ]
+      }, {
+        "name" : "提交工单-2-word_2",
+        "uid" : "e3e6c85ec506688b",
+        "parentUid" : "a484b3703b9735e5863463fc95a0cd7e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1727372432752,
+          "stop" : 1727372433147,
+          "duration" : 395
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'用例ID': 'word_2', '模块': '运维工单', '接口名称': '提交工单', '请求URL': '/maintenance/saveOrderInfo', '请求类型': 'post', 'params': '', 'json请求参数': '{\\n            \"orderTypeParentId\": \"453622917134237696\",\\n            \"orderTypeId\": \"\",\\n            \"threeOrderTypeId\": \"\",\\n            \"urgencyLevel\": \"1\",\\n            \"orderDesc\": \"<p>对地点</p>\",\\n            \"stationName\": \"桩企测试专用站\",\\n            \"region\": [\\n                \"13\",\\n                \"1310\",\\n                \"131082\"\\n            ],\\n            \"address\": \"燕郊站\",\\n            \"checkGroupIds\": [],\\n            \"deviceNo\": \"\",\\n            \"deviceTypeName\": \"\",\\n            \"deviceModelName\": \"\",\\n            \"customerName\": \"\",\\n            \"contact\": \"\",\\n            \"contactTel\": \"\",\\n            \"carBrand\": \"\",\\n            \"carModel\": \"\",\\n            \"appointmentTime\": \"\",\\n            \"shelfLife\": \"0\",\\n            \"installMethod\": \"\",\\n            \"mainUser\": \"\",\\n            \"platform\": \"\",\\n            \"projectType\": \"\",\\n            \"projectCode\": \"\",\\n            \"installUnit\": \"\",\\n            \"enableMethod\": \"\",\\n            \"salesmanName\": \"\",\\n            \"businessType\": \"1\",\\n            \"businessTypeName\": \"充电\",\\n            \"city\": \"1310\",\\n            \"county\": \"131082\",\\n            \"deptName\": \"江南水务\",\\n            \"onlineDate\": \"2024-06-25\",\\n            \"operationMode\": \"1\",\\n            \"province\": \"13\",\\n            \"regionName\": \"江南水务\",\\n            \"stationAddress\": \"燕郊站\",\\n            \"stationCode\": \"zhang\",\\n            \"stationId\": \"463385701627645952\",\\n            \"status\": \"02\",\\n            \"orderNo\": \"${data}\",\\n            \"handleUser\": \"10000\",\\n            \"handleUserName\": \"系统管理员\"\\n        }', '是否运行': 'Y', '请求头': '{\\n           \"Authorization\" : \"Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6IjEwMDAwLWMwOTIyMWQ4LWExMjctNDIzZS1iNDFjLTk1NzU1NmFkNTlhNiJ9.1a2mtjYTKkplp02zyoG4eBcGeFw91Vo5EwuGvQZjKr8fgZUqaIQYWCB6kTWSYs1x_3O06OkCAzt8RDoMOn_02A\"\\n        }', '预期状态码': 200.0, '提取参数': '', '需要参数': 'data'}" ]
+      } ],
+      "uid" : "a484b3703b9735e5863463fc95a0cd7e"
+    }, {
+      "name" : "2792-MainThread",
+      "children" : [ {
+        "name" : "test_run_excel_case[case1]",
+        "uid" : "875b7be2395bf1ec",
+        "parentUid" : "cf5337934f01a5f90cd69abb477c5525",
+        "status" : "broken",
+        "time" : {
+          "start" : 1727373865562,
+          "stop" : 1727373865562,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'用例ID': 'word_2', '模块': '运维工单', '接口名称': '提交工单', '请求URL': '/maintenance/saveOrderInfo', '请求类型': 'post', 'params': '', 'json请求参数': '{\\n            \"orderTypeParentId\": \"453622917134237696\",\\n            \"orderTypeId\": \"\",\\n            \"threeOrderTypeId\": \"\",\\n            \"urgencyLevel\": \"1\",\\n            \"orderDesc\": \"<p>对地点</p>\",\\n            \"stationName\": \"桩企测试专用站\",\\n            \"region\": [\\n                \"13\",\\n                \"1310\",\\n                \"131082\"\\n            ],\\n            \"address\": \"燕郊站\",\\n            \"checkGroupIds\": [],\\n            \"deviceNo\": \"\",\\n            \"deviceTypeName\": \"\",\\n            \"deviceModelName\": \"\",\\n            \"customerName\": \"\",\\n            \"contact\": \"\",\\n            \"contactTel\": \"\",\\n            \"carBrand\": \"\",\\n            \"carModel\": \"\",\\n            \"appointmentTime\": \"\",\\n            \"shelfLife\": \"0\",\\n            \"installMethod\": \"\",\\n            \"mainUser\": \"\",\\n            \"platform\": \"\",\\n            \"projectType\": \"\",\\n            \"projectCode\": \"\",\\n            \"installUnit\": \"\",\\n            \"enableMethod\": \"\",\\n            \"salesmanName\": \"\",\\n            \"businessType\": \"1\",\\n            \"businessTypeName\": \"充电\",\\n            \"city\": \"1310\",\\n            \"county\": \"131082\",\\n            \"deptName\": \"江南水务\",\\n            \"onlineDate\": \"2024-06-25\",\\n            \"operationMode\": \"1\",\\n            \"province\": \"13\",\\n            \"regionName\": \"江南水务\",\\n            \"stationAddress\": \"燕郊站\",\\n            \"stationCode\": \"zhang\",\\n            \"stationId\": \"463385701627645952\",\\n            \"status\": \"02\",\\n            \"orderNo\": \"${data}\",\\n            \"handleUser\": \"10000\",\\n            \"handleUserName\": \"系统管理员\"\\n        }', '是否运行': 'Y', '请求头': '{\\n           \"Authorization\" : \"Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6IjEwMDAwLWMwOTIyMWQ4LWExMjctNDIzZS1iNDFjLTk1NzU1NmFkNTlhNiJ9.1a2mtjYTKkplp02zyoG4eBcGeFw91Vo5EwuGvQZjKr8fgZUqaIQYWCB6kTWSYs1x_3O06OkCAzt8RDoMOn_02A\"\\n        }', '预期状态码': 200.0, '提取参数': '', '需要参数': 'data'}" ]
+      }, {
+        "name" : "创建工单-2-word_1",
+        "uid" : "da419006a89d4c09",
+        "parentUid" : "cf5337934f01a5f90cd69abb477c5525",
+        "status" : "broken",
+        "time" : {
+          "start" : 1727373865172,
+          "stop" : 1727373865290,
+          "duration" : 118
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'用例ID': 'word_1', '模块': '运维工单', '接口名称': '创建工单', '请求URL': '/maintenance/orderNo', '请求类型': 'get', 'params': '{\\n            \"orderTypeId\":\"453622917134237696\"\\n        }', 'json请求参数': '', '是否运行': 'Y', '请求头': '{\\n           \"Authorization\" : \"Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6IjEwMDAwLWMwOTIyMWQ4LWExMjctNDIzZS1iNDFjLTk1NzU1NmFkNTlhNiJ9.1a2mtjYTKkplp02zyoG4eBcGeFw91Vo5EwuGvQZjKr8fgZUqaIQYWCB6kTWSYs1x_3O06OkCAzt8RDoMOn_02A\"\\n        }', '预期状态码': 200.0, '提取参数': 'data', '需要参数': ''}" ]
+      } ],
+      "uid" : "cf5337934f01a5f90cd69abb477c5525"
+    }, {
+      "name" : "18004-MainThread",
+      "children" : [ {
+        "name" : "test_run_excel_case[case1]",
+        "uid" : "3ff77c3bb50a44f",
+        "parentUid" : "48b8f0bbf10650d881db91ed14bd3a64",
+        "status" : "broken",
+        "time" : {
+          "start" : 1727373535325,
+          "stop" : 1727373535325,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'用例ID': 'word_2', '模块': '运维工单', '接口名称': '提交工单', '请求URL': '/maintenance/saveOrderInfo', '请求类型': 'post', 'params': '', 'json请求参数': '{\\n            \"orderTypeParentId\": \"453622917134237696\",\\n            \"orderTypeId\": \"\",\\n            \"threeOrderTypeId\": \"\",\\n            \"urgencyLevel\": \"1\",\\n            \"orderDesc\": \"<p>对地点</p>\",\\n            \"stationName\": \"桩企测试专用站\",\\n            \"region\": [\\n                \"13\",\\n                \"1310\",\\n                \"131082\"\\n            ],\\n            \"address\": \"燕郊站\",\\n            \"checkGroupIds\": [],\\n            \"deviceNo\": \"\",\\n            \"deviceTypeName\": \"\",\\n            \"deviceModelName\": \"\",\\n            \"customerName\": \"\",\\n            \"contact\": \"\",\\n            \"contactTel\": \"\",\\n            \"carBrand\": \"\",\\n            \"carModel\": \"\",\\n            \"appointmentTime\": \"\",\\n            \"shelfLife\": \"0\",\\n            \"installMethod\": \"\",\\n            \"mainUser\": \"\",\\n            \"platform\": \"\",\\n            \"projectType\": \"\",\\n            \"projectCode\": \"\",\\n            \"installUnit\": \"\",\\n            \"enableMethod\": \"\",\\n            \"salesmanName\": \"\",\\n            \"businessType\": \"1\",\\n            \"businessTypeName\": \"充电\",\\n            \"city\": \"1310\",\\n            \"county\": \"131082\",\\n            \"deptName\": \"江南水务\",\\n            \"onlineDate\": \"2024-06-25\",\\n            \"operationMode\": \"1\",\\n            \"province\": \"13\",\\n            \"regionName\": \"江南水务\",\\n            \"stationAddress\": \"燕郊站\",\\n            \"stationCode\": \"zhang\",\\n            \"stationId\": \"463385701627645952\",\\n            \"status\": \"02\",\\n            \"orderNo\": \"${data}\",\\n            \"handleUser\": \"10000\",\\n            \"handleUserName\": \"系统管理员\"\\n        }', '是否运行': 'Y', '请求头': '{\\n           \"Authorization\" : \"Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6IjEwMDAwLWMwOTIyMWQ4LWExMjctNDIzZS1iNDFjLTk1NzU1NmFkNTlhNiJ9.1a2mtjYTKkplp02zyoG4eBcGeFw91Vo5EwuGvQZjKr8fgZUqaIQYWCB6kTWSYs1x_3O06OkCAzt8RDoMOn_02A\"\\n        }', '预期状态码': 200.0, '提取参数': '', '需要参数': 'data'}" ]
+      }, {
+        "name" : "test_run_excel_case[case0]",
+        "uid" : "a5d8a7946612fea9",
+        "parentUid" : "48b8f0bbf10650d881db91ed14bd3a64",
+        "status" : "broken",
+        "time" : {
+          "start" : 1727373535036,
+          "stop" : 1727373535036,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'用例ID': 'word_1', '模块': '运维工单', '接口名称': '创建工单', '请求URL': '/maintenance/orderNo', '请求类型': 'get', 'params': '{\\n            \"orderTypeId\":\"453622917134237696\"\\n        }', 'json请求参数': '', '是否运行': 'Y', '请求头': '{\\n           \"Authorization\" : \"Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6IjEwMDAwLWMwOTIyMWQ4LWExMjctNDIzZS1iNDFjLTk1NzU1NmFkNTlhNiJ9.1a2mtjYTKkplp02zyoG4eBcGeFw91Vo5EwuGvQZjKr8fgZUqaIQYWCB6kTWSYs1x_3O06OkCAzt8RDoMOn_02A\"\\n        }', '预期状态码': 200.0, '提取参数': 'data', '需要参数': ''}" ]
+      } ],
+      "uid" : "48b8f0bbf10650d881db91ed14bd3a64"
+    }, {
+      "name" : "9364-MainThread",
+      "children" : [ {
+        "name" : "创建工单-2-word_1",
+        "uid" : "f6425ad0bdc4742a",
+        "parentUid" : "854909a3b8b4a54fbab5fca42dd5a7a3",
+        "status" : "broken",
+        "time" : {
+          "start" : 1727373309314,
+          "stop" : 1727373309446,
+          "duration" : 132
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'用例ID': 'word_1', '模块': '运维工单', '接口名称': '创建工单', '请求URL': '/maintenance/orderNo', '请求类型': 'get', 'params': '{\\n            \"orderTypeId\":\"453622917134237696\"\\n        }', 'json请求参数': '', '是否运行': 'Y', '请求头': '{\\n           \"Authorization\" : \"Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6IjEwMDAwLWMwOTIyMWQ4LWExMjctNDIzZS1iNDFjLTk1NzU1NmFkNTlhNiJ9.1a2mtjYTKkplp02zyoG4eBcGeFw91Vo5EwuGvQZjKr8fgZUqaIQYWCB6kTWSYs1x_3O06OkCAzt8RDoMOn_02A\"\\n        }', '预期状态码': 200.0, '提取参数': 'data', '需要参数': ''}" ]
+      }, {
+        "name" : "test_run_excel_case[case1]",
+        "uid" : "d23a64339935c020",
+        "parentUid" : "854909a3b8b4a54fbab5fca42dd5a7a3",
+        "status" : "broken",
+        "time" : {
+          "start" : 1727373309751,
+          "stop" : 1727373309751,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'用例ID': 'word_2', '模块': '运维工单', '接口名称': '提交工单', '请求URL': '/maintenance/saveOrderInfo', '请求类型': 'post', 'params': '', 'json请求参数': '{\\n            \"orderTypeParentId\": \"453622917134237696\",\\n            \"orderTypeId\": \"\",\\n            \"threeOrderTypeId\": \"\",\\n            \"urgencyLevel\": \"1\",\\n            \"orderDesc\": \"<p>对地点</p>\",\\n            \"stationName\": \"桩企测试专用站\",\\n            \"region\": [\\n                \"13\",\\n                \"1310\",\\n                \"131082\"\\n            ],\\n            \"address\": \"燕郊站\",\\n            \"checkGroupIds\": [],\\n            \"deviceNo\": \"\",\\n            \"deviceTypeName\": \"\",\\n            \"deviceModelName\": \"\",\\n            \"customerName\": \"\",\\n            \"contact\": \"\",\\n            \"contactTel\": \"\",\\n            \"carBrand\": \"\",\\n            \"carModel\": \"\",\\n            \"appointmentTime\": \"\",\\n            \"shelfLife\": \"0\",\\n            \"installMethod\": \"\",\\n            \"mainUser\": \"\",\\n            \"platform\": \"\",\\n            \"projectType\": \"\",\\n            \"projectCode\": \"\",\\n            \"installUnit\": \"\",\\n            \"enableMethod\": \"\",\\n            \"salesmanName\": \"\",\\n            \"businessType\": \"1\",\\n            \"businessTypeName\": \"充电\",\\n            \"city\": \"1310\",\\n            \"county\": \"131082\",\\n            \"deptName\": \"江南水务\",\\n            \"onlineDate\": \"2024-06-25\",\\n            \"operationMode\": \"1\",\\n            \"province\": \"13\",\\n            \"regionName\": \"江南水务\",\\n            \"stationAddress\": \"燕郊站\",\\n            \"stationCode\": \"zhang\",\\n            \"stationId\": \"463385701627645952\",\\n            \"status\": \"02\",\\n            \"orderNo\": \"${data}\",\\n            \"handleUser\": \"10000\",\\n            \"handleUserName\": \"系统管理员\"\\n        }', '是否运行': 'Y', '请求头': '{\\n           \"Authorization\" : \"Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6IjEwMDAwLWMwOTIyMWQ4LWExMjctNDIzZS1iNDFjLTk1NzU1NmFkNTlhNiJ9.1a2mtjYTKkplp02zyoG4eBcGeFw91Vo5EwuGvQZjKr8fgZUqaIQYWCB6kTWSYs1x_3O06OkCAzt8RDoMOn_02A\"\\n        }', '预期状态码': 200.0, '提取参数': '', '需要参数': 'data'}" ]
+      } ],
+      "uid" : "854909a3b8b4a54fbab5fca42dd5a7a3"
+    }, {
+      "name" : "2592-MainThread",
+      "children" : [ {
+        "name" : "test_run_excel_case[case1]",
+        "uid" : "203d39e553c43c2b",
+        "parentUid" : "2295f7aa2539d1093f47805a6721b15e",
+        "status" : "broken",
+        "time" : {
+          "start" : 1727364097864,
+          "stop" : 1727364097864,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'用例ID': 'word_2', '模块': '运维工单', '接口名称': '提交工单', '请求URL': '/maintenance/saveOrderInfo', '请求类型': 'post', 'params': '', 'json请求参数': '{\\n            \"orderTypeParentId\": \"453622917134237696\",\\n            \"orderTypeId\": \"\",\\n            \"threeOrderTypeId\": \"\",\\n            \"urgencyLevel\": \"1\",\\n            \"orderDesc\": \"<p>对地点</p>\",\\n            \"stationName\": \"桩企测试专用站\",\\n            \"region\": [\\n                \"13\",\\n                \"1310\",\\n                \"131082\"\\n            ],\\n            \"address\": \"燕郊站\",\\n            \"checkGroupIds\": [],\\n            \"deviceNo\": \"\",\\n            \"deviceTypeName\": \"\",\\n            \"deviceModelName\": \"\",\\n            \"customerName\": \"\",\\n            \"contact\": \"\",\\n            \"contactTel\": \"\",\\n            \"carBrand\": \"\",\\n            \"carModel\": \"\",\\n            \"appointmentTime\": \"\",\\n            \"shelfLife\": \"0\",\\n            \"installMethod\": \"\",\\n            \"mainUser\": \"\",\\n            \"platform\": \"\",\\n            \"projectType\": \"\",\\n            \"projectCode\": \"\",\\n            \"installUnit\": \"\",\\n            \"enableMethod\": \"\",\\n            \"salesmanName\": \"\",\\n            \"businessType\": \"1\",\\n            \"businessTypeName\": \"充电\",\\n            \"city\": \"1310\",\\n            \"county\": \"131082\",\\n            \"deptName\": \"江南水务\",\\n            \"onlineDate\": \"2024-06-25\",\\n            \"operationMode\": \"1\",\\n            \"province\": \"13\",\\n            \"regionName\": \"江南水务\",\\n            \"stationAddress\": \"燕郊站\",\\n            \"stationCode\": \"zhang\",\\n            \"stationId\": \"463385701627645952\",\\n            \"status\": \"02\",\\n            \"orderNo\": \"${data}\",\\n            \"handleUser\": \"10000\",\\n            \"handleUserName\": \"系统管理员\"\\n        }', '是否运行': 'Y', '请求头': '{\\n           \"Authorization\" : \"Bearer eyJhbGciOiJFUzI1NiIsImtpZCI6ImtleTEiLCJ0eXAiOiJKV1QifQ.eyJyZWdpb24iOiJnbG9iYWwiLCJzdWJzY3JpcHRpb24taWQiOiI2ZjY1YjliY2JkNjA0ZDg4ODhiZWI2M2I4MTM4ODZlZSIsInByb2R1Y3QtaWQiOiJUZXh0VHJhbnNsYXRvci5TMyIsImNvZ25pdGl2ZS1zZXJ2aWNlcy1lbmRwb2ludCI6Imh0dHBzOi8vYXBpLmNvZ25pdGl2ZS5taWNyb3NvZnQuY29tL2ludGVybmFsL3YxLjAvIiwiYXp1cmUtcmVzb3VyY2UtaWQiOiIvc3Vic2NyaXB0aW9ucy84MWZjMTU3Yi0zMDdlLTRjMjEtOWY3MS0zM2QxMDMwNGRmMzMvcmVzb3VyY2VHcm91cHMvRWRnZV9UcmFuc2xhdGVfUkcvcHJvdmlkZXJzL01pY3Jvc29mdC5Db2duaXRpdmVTZXJ2aWNlcy9hY2NvdW50cy9UcmFuc2xhdGUiLCJzY29wZSI6Imh0dHBzOi8vYXBpLm1pY3Jvc29mdHRyYW5zbGF0b3IuY29tLyIsImF1ZCI6InVybjptcy5taWNyb3NvZnR0cmFuc2xhdG9yIiwiZXhwIjoxNzI3MzY0NTc1LCJpc3MiOiJ1cm46bXMuY29nbml0aXZlc2VydmljZXMifQ.qZHCGzQjQMtdgH4RRp89icJEdDbemW-QITrZQOSAP7QjKMP2sdDsxFDM8cqIMq2rqUma0KM9xYUAExFtHI2Dpw\"\\n        }', '预期状态码': 200.0, '提取参数': '', '需要参数': 'data'}" ]
+      }, {
+        "name" : "创建工单-2-word_1",
+        "uid" : "7dee3a1e7d848325",
+        "parentUid" : "2295f7aa2539d1093f47805a6721b15e",
+        "status" : "broken",
+        "time" : {
+          "start" : 1727364097408,
+          "stop" : 1727364097528,
+          "duration" : 120
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'用例ID': 'word_1', '模块': '运维工单', '接口名称': '创建工单', '请求URL': '/maintenance/orderNo', '请求类型': 'get', 'params': '{\\n            \"orderTypeId\":\"453622917134237696\"\\n        }', 'json请求参数': '', '是否运行': 'Y', '请求头': '{\\n           \"Authorization\" : \"Bearer eyJhbGciOiJFUzI1NiIsImtpZCI6ImtleTEiLCJ0eXAiOiJKV1QifQ.eyJyZWdpb24iOiJnbG9iYWwiLCJzdWJzY3JpcHRpb24taWQiOiI2ZjY1YjliY2JkNjA0ZDg4ODhiZWI2M2I4MTM4ODZlZSIsInByb2R1Y3QtaWQiOiJUZXh0VHJhbnNsYXRvci5TMyIsImNvZ25pdGl2ZS1zZXJ2aWNlcy1lbmRwb2ludCI6Imh0dHBzOi8vYXBpLmNvZ25pdGl2ZS5taWNyb3NvZnQuY29tL2ludGVybmFsL3YxLjAvIiwiYXp1cmUtcmVzb3VyY2UtaWQiOiIvc3Vic2NyaXB0aW9ucy84MWZjMTU3Yi0zMDdlLTRjMjEtOWY3MS0zM2QxMDMwNGRmMzMvcmVzb3VyY2VHcm91cHMvRWRnZV9UcmFuc2xhdGVfUkcvcHJvdmlkZXJzL01pY3Jvc29mdC5Db2duaXRpdmVTZXJ2aWNlcy9hY2NvdW50cy9UcmFuc2xhdGUiLCJzY29wZSI6Imh0dHBzOi8vYXBpLm1pY3Jvc29mdHRyYW5zbGF0b3IuY29tLyIsImF1ZCI6InVybjptcy5taWNyb3NvZnR0cmFuc2xhdG9yIiwiZXhwIjoxNzI3MzY0NTc1LCJpc3MiOiJ1cm46bXMuY29nbml0aXZlc2VydmljZXMifQ.qZHCGzQjQMtdgH4RRp89icJEdDbemW-QITrZQOSAP7QjKMP2sdDsxFDM8cqIMq2rqUma0KM9xYUAExFtHI2Dpw\"\\n        }', '预期状态码': 200.0, '提取参数': 'data', '需要参数': ''}" ]
+      } ],
+      "uid" : "2295f7aa2539d1093f47805a6721b15e"
+    }, {
+      "name" : "11920-MainThread",
+      "children" : [ {
+        "name" : "test_run_excel_case[case1]",
+        "uid" : "f42b696e7cb7733",
+        "parentUid" : "454a6589bb7684164aef691a488dfcc6",
+        "status" : "broken",
+        "time" : {
+          "start" : 1727371408279,
+          "stop" : 1727371408279,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'用例ID': 'word_2', '模块': '运维工单', '接口名称': '提交工单', '请求URL': '/maintenance/saveOrderInfo', '请求类型': 'post', 'params': '', 'json请求参数': '{\\n            \"orderTypeParentId\": \"453622917134237696\",\\n            \"orderTypeId\": \"\",\\n            \"threeOrderTypeId\": \"\",\\n            \"urgencyLevel\": \"1\",\\n            \"orderDesc\": \"<p>对地点</p>\",\\n            \"stationName\": \"桩企测试专用站\",\\n            \"region\": [\\n                \"13\",\\n                \"1310\",\\n                \"131082\"\\n            ],\\n            \"address\": \"燕郊站\",\\n            \"checkGroupIds\": [],\\n            \"deviceNo\": \"\",\\n            \"deviceTypeName\": \"\",\\n            \"deviceModelName\": \"\",\\n            \"customerName\": \"\",\\n            \"contact\": \"\",\\n            \"contactTel\": \"\",\\n            \"carBrand\": \"\",\\n            \"carModel\": \"\",\\n            \"appointmentTime\": \"\",\\n            \"shelfLife\": \"0\",\\n            \"installMethod\": \"\",\\n            \"mainUser\": \"\",\\n            \"platform\": \"\",\\n            \"projectType\": \"\",\\n            \"projectCode\": \"\",\\n            \"installUnit\": \"\",\\n            \"enableMethod\": \"\",\\n            \"salesmanName\": \"\",\\n            \"businessType\": \"1\",\\n            \"businessTypeName\": \"充电\",\\n            \"city\": \"1310\",\\n            \"county\": \"131082\",\\n            \"deptName\": \"江南水务\",\\n            \"onlineDate\": \"2024-06-25\",\\n            \"operationMode\": \"1\",\\n            \"province\": \"13\",\\n            \"regionName\": \"江南水务\",\\n            \"stationAddress\": \"燕郊站\",\\n            \"stationCode\": \"zhang\",\\n            \"stationId\": \"463385701627645952\",\\n            \"status\": \"02\",\\n            \"orderNo\": \"${data}\",\\n            \"handleUser\": \"10000\",\\n            \"handleUserName\": \"系统管理员\"\\n        }', '是否运行': 'Y', '请求头': '{\\n           \"Authorization\" : \"Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6IjEwMDAwLWMwOTIyMWQ4LWExMjctNDIzZS1iNDFjLTk1NzU1NmFkNTlhNiJ9.1a2mtjYTKkplp02zyoG4eBcGeFw91Vo5EwuGvQZjKr8fgZUqaIQYWCB6kTWSYs1x_3O06OkCAzt8RDoMOn_02A\"\\n        }', '预期状态码': 200.0, '提取参数': '', '需要参数': 'data'}" ]
+      }, {
+        "name" : "创建工单-2-word_1",
+        "uid" : "e089bc43532df079",
+        "parentUid" : "454a6589bb7684164aef691a488dfcc6",
+        "status" : "broken",
+        "time" : {
+          "start" : 1727371407832,
+          "stop" : 1727371407936,
+          "duration" : 104
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'用例ID': 'word_1', '模块': '运维工单', '接口名称': '创建工单', '请求URL': '/maintenance/orderNo', '请求类型': 'get', 'params': '{\\n            \"orderTypeId\":\"453622917134237696\"\\n        }', 'json请求参数': '', '是否运行': 'Y', '请求头': '{\\n           \"Authorization\" : \"Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6IjEwMDAwLWMwOTIyMWQ4LWExMjctNDIzZS1iNDFjLTk1NzU1NmFkNTlhNiJ9.1a2mtjYTKkplp02zyoG4eBcGeFw91Vo5EwuGvQZjKr8fgZUqaIQYWCB6kTWSYs1x_3O06OkCAzt8RDoMOn_02A\"\\n        }', '预期状态码': 200.0, '提取参数': 'data', '需要参数': ''}" ]
+      } ],
+      "uid" : "454a6589bb7684164aef691a488dfcc6"
+    }, {
+      "name" : "13512-MainThread",
+      "children" : [ {
+        "name" : "提交工单-2-word_2",
+        "uid" : "c66bf40fb6962cf8",
+        "parentUid" : "bd8ce2a7fc745d9260ce684ebc9a783a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1727373612007,
+          "stop" : 1727373612419,
+          "duration" : 412
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'用例ID': 'word_2', '模块': '运维工单', '接口名称': '提交工单', '请求URL': '/maintenance/saveOrderInfo', '请求类型': 'post', 'params': '', 'json请求参数': '{\\n            \"orderTypeParentId\": \"453622917134237696\",\\n            \"orderTypeId\": \"\",\\n            \"threeOrderTypeId\": \"\",\\n            \"urgencyLevel\": \"1\",\\n            \"orderDesc\": \"<p>对地点</p>\",\\n            \"stationName\": \"桩企测试专用站\",\\n            \"region\": [\\n                \"13\",\\n                \"1310\",\\n                \"131082\"\\n            ],\\n            \"address\": \"燕郊站\",\\n            \"checkGroupIds\": [],\\n            \"deviceNo\": \"\",\\n            \"deviceTypeName\": \"\",\\n            \"deviceModelName\": \"\",\\n            \"customerName\": \"\",\\n            \"contact\": \"\",\\n            \"contactTel\": \"\",\\n            \"carBrand\": \"\",\\n            \"carModel\": \"\",\\n            \"appointmentTime\": \"\",\\n            \"shelfLife\": \"0\",\\n            \"installMethod\": \"\",\\n            \"mainUser\": \"\",\\n            \"platform\": \"\",\\n            \"projectType\": \"\",\\n            \"projectCode\": \"\",\\n            \"installUnit\": \"\",\\n            \"enableMethod\": \"\",\\n            \"salesmanName\": \"\",\\n            \"businessType\": \"1\",\\n            \"businessTypeName\": \"充电\",\\n            \"city\": \"1310\",\\n            \"county\": \"131082\",\\n            \"deptName\": \"江南水务\",\\n            \"onlineDate\": \"2024-06-25\",\\n            \"operationMode\": \"1\",\\n            \"province\": \"13\",\\n            \"regionName\": \"江南水务\",\\n            \"stationAddress\": \"燕郊站\",\\n            \"stationCode\": \"zhang\",\\n            \"stationId\": \"463385701627645952\",\\n            \"status\": \"02\",\\n            \"orderNo\": \"${data}\",\\n            \"handleUser\": \"10000\",\\n            \"handleUserName\": \"系统管理员\"\\n        }', '是否运行': 'Y', '请求头': '{\\n           \"Authorization\" : \"Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6IjEwMDAwLWMwOTIyMWQ4LWExMjctNDIzZS1iNDFjLTk1NzU1NmFkNTlhNiJ9.1a2mtjYTKkplp02zyoG4eBcGeFw91Vo5EwuGvQZjKr8fgZUqaIQYWCB6kTWSYs1x_3O06OkCAzt8RDoMOn_02A\"\\n        }', '预期状态码': 200.0, '提取参数': '', '需要参数': 'data'}" ]
+      }, {
+        "name" : "创建工单-2-word_1",
+        "uid" : "9df670f88892918d",
+        "parentUid" : "bd8ce2a7fc745d9260ce684ebc9a783a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1727373611877,
+          "stop" : 1727373611999,
+          "duration" : 122
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'用例ID': 'word_1', '模块': '运维工单', '接口名称': '创建工单', '请求URL': '/maintenance/orderNo', '请求类型': 'get', 'params': '{\\n            \"orderTypeId\":\"453622917134237696\"\\n        }', 'json请求参数': '', '是否运行': 'Y', '请求头': '{\\n           \"Authorization\" : \"Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6IjEwMDAwLWMwOTIyMWQ4LWExMjctNDIzZS1iNDFjLTk1NzU1NmFkNTlhNiJ9.1a2mtjYTKkplp02zyoG4eBcGeFw91Vo5EwuGvQZjKr8fgZUqaIQYWCB6kTWSYs1x_3O06OkCAzt8RDoMOn_02A\"\\n        }', '预期状态码': 200.0, '提取参数': 'data', '需要参数': ''}" ]
+      } ],
+      "uid" : "bd8ce2a7fc745d9260ce684ebc9a783a"
+    }, {
+      "name" : "13372-MainThread",
+      "children" : [ {
+        "name" : "提交工单-2-word_2",
+        "uid" : "6f1fa0d4c7f6ea43",
+        "parentUid" : "0c21d197a8145aa06847d6b2de5283eb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1727374214136,
+          "stop" : 1727374214543,
+          "duration" : 407
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'用例ID': 'word_2', '模块': '运维工单', '接口名称': '提交工单', '请求URL': '/maintenance/saveOrderInfo', '请求类型': 'post', 'params': '', 'json请求参数': '{\\n            \"orderTypeParentId\": \"453622917134237696\",\\n            \"orderTypeId\": \"\",\\n            \"threeOrderTypeId\": \"\",\\n            \"urgencyLevel\": \"1\",\\n            \"orderDesc\": \"<p>对地点</p>\",\\n            \"stationName\": \"桩企测试专用站\",\\n            \"region\": [\\n                \"13\",\\n                \"1310\",\\n                \"131082\"\\n            ],\\n            \"address\": \"燕郊站\",\\n            \"checkGroupIds\": [],\\n            \"deviceNo\": \"\",\\n            \"deviceTypeName\": \"\",\\n            \"deviceModelName\": \"\",\\n            \"customerName\": \"\",\\n            \"contact\": \"\",\\n            \"contactTel\": \"\",\\n            \"carBrand\": \"\",\\n            \"carModel\": \"\",\\n            \"appointmentTime\": \"\",\\n            \"shelfLife\": \"0\",\\n            \"installMethod\": \"\",\\n            \"mainUser\": \"\",\\n            \"platform\": \"\",\\n            \"projectType\": \"\",\\n            \"projectCode\": \"\",\\n            \"installUnit\": \"\",\\n            \"enableMethod\": \"\",\\n            \"salesmanName\": \"\",\\n            \"businessType\": \"1\",\\n            \"businessTypeName\": \"充电\",\\n            \"city\": \"1310\",\\n            \"county\": \"131082\",\\n            \"deptName\": \"江南水务\",\\n            \"onlineDate\": \"2024-06-25\",\\n            \"operationMode\": \"1\",\\n            \"province\": \"13\",\\n            \"regionName\": \"江南水务\",\\n            \"stationAddress\": \"燕郊站\",\\n            \"stationCode\": \"zhang\",\\n            \"stationId\": \"463385701627645952\",\\n            \"status\": \"02\",\\n            \"orderNo\": \"${data}\",\\n            \"handleUser\": \"10000\",\\n            \"handleUserName\": \"系统管理员\"\\n        }', '是否运行': 'Y', '请求头': '{\\n           \"Authorization\" : \"Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6IjEwMDAwLWMwOTIyMWQ4LWExMjctNDIzZS1iNDFjLTk1NzU1NmFkNTlhNiJ9.1a2mtjYTKkplp02zyoG4eBcGeFw91Vo5EwuGvQZjKr8fgZUqaIQYWCB6kTWSYs1x_3O06OkCAzt8RDoMOn_02A\"\\n        }', '预期状态码': 200.0, '提取参数': '', '需要参数': 'data'}" ]
+      }, {
+        "name" : "创建工单-2-word_1",
+        "uid" : "72c98b72508e0d5f",
+        "parentUid" : "0c21d197a8145aa06847d6b2de5283eb",
+        "status" : "passed",
+        "time" : {
+          "start" : 1727374214018,
+          "stop" : 1727374214133,
+          "duration" : 115
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'用例ID': 'word_1', '模块': '运维工单', '接口名称': '创建工单', '请求URL': '/maintenance/orderNo', '请求类型': 'get', 'params': '{\\n            \"orderTypeId\":\"453622917134237696\"\\n        }', 'json请求参数': '', '是否运行': 'Y', '请求头': '{\\n           \"Authorization\" : \"Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6IjEwMDAwLWMwOTIyMWQ4LWExMjctNDIzZS1iNDFjLTk1NzU1NmFkNTlhNiJ9.1a2mtjYTKkplp02zyoG4eBcGeFw91Vo5EwuGvQZjKr8fgZUqaIQYWCB6kTWSYs1x_3O06OkCAzt8RDoMOn_02A\"\\n        }', '预期状态码': 200.0, '提取参数': 'data', '需要参数': ''}" ]
+      } ],
+      "uid" : "0c21d197a8145aa06847d6b2de5283eb"
+    }, {
+      "name" : "11680-MainThread",
+      "children" : [ {
+        "name" : "test_run_excel_case[case1]",
+        "uid" : "41671d2676b2c16e",
+        "parentUid" : "2d66d0f65e6e55734404c7639d05ae6d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1727363956482,
+          "stop" : 1727363956482,
+          "duration" : 0
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ "{'用例ID': 'word_2', '模块': '运维工单', '接口名称': '提交工单', '请求URL': '/maintenance/saveOrderInfo', '请求类型': 'post', 'params': '', 'json请求参数': '{\\n            \"orderTypeParentId\": \"453622917134237696\",\\n            \"orderTypeId\": \"\",\\n            \"threeOrderTypeId\": \"\",\\n            \"urgencyLevel\": \"1\",\\n            \"orderDesc\": \"<p>对地点</p>\",\\n            \"stationName\": \"桩企测试专用站\",\\n            \"region\": [\\n                \"13\",\\n                \"1310\",\\n                \"131082\"\\n            ],\\n            \"address\": \"燕郊站\",\\n            \"checkGroupIds\": [],\\n            \"deviceNo\": \"\",\\n            \"deviceTypeName\": \"\",\\n            \"deviceModelName\": \"\",\\n            \"customerName\": \"\",\\n            \"contact\": \"\",\\n            \"contactTel\": \"\",\\n            \"carBrand\": \"\",\\n            \"carModel\": \"\",\\n            \"appointmentTime\": \"\",\\n            \"shelfLife\": \"0\",\\n            \"installMethod\": \"\",\\n            \"mainUser\": \"\",\\n            \"platform\": \"\",\\n            \"projectType\": \"\",\\n            \"projectCode\": \"\",\\n            \"installUnit\": \"\",\\n            \"enableMethod\": \"\",\\n            \"salesmanName\": \"\",\\n            \"businessType\": \"1\",\\n            \"businessTypeName\": \"充电\",\\n            \"city\": \"1310\",\\n            \"county\": \"131082\",\\n            \"deptName\": \"江南水务\",\\n            \"onlineDate\": \"2024-06-25\",\\n            \"operationMode\": \"1\",\\n            \"province\": \"13\",\\n            \"regionName\": \"江南水务\",\\n            \"stationAddress\": \"燕郊站\",\\n            \"stationCode\": \"zhang\",\\n            \"stationId\": \"463385701627645952\",\\n            \"status\": \"02\",\\n            \"orderNo\": \"${data}\",\\n            \"handleUser\": \"10000\",\\n            \"handleUserName\": \"系统管理员\"\\n        }', '是否运行': 'Y', '请求头': '{\\n           \"Authorization\" : \"Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6IjEwMDAwLTlkMzRmODNlLTYzYzUtNDIxYi1hNTU1LTI1Yjg2NDViYzY1OSJ9.TEozySz634pmoponZ21fttC6SOsUUl6tMKsvzkEJgKVSZuPJ9Ks4QGM11MYiEGo6Y6oMs7hiEUalW4myzk8m3A\"\\n        }', '预期状态码': 200.0, '提取参数': '', '需要参数': 'data'}" ]
       }, {
         "name" : "创建工单-2-word_1",
-        "uid" : "80feb42b69e9e35",
-        "parentUid" : "dd2ad52720aec2bafbbf23c6f8797fab",
-        "status" : "passed",
+        "uid" : "429172a6f2684bdc",
+        "parentUid" : "2d66d0f65e6e55734404c7639d05ae6d",
+        "status" : "broken",
         "time" : {
-          "start" : 1726728283678,
-          "stop" : 1726728283806,
-          "duration" : 128
+          "start" : 1727363956019,
+          "stop" : 1727363956191,
+          "duration" : 172
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ "{'用例ID': 'word_1', '模块': '运维工单', '接口名称': '创建工单', '请求URL': '/maintenance/orderNo', '请求类型': 'get', 'params': '{\\n            \"orderTypeId\":\"453622917134237696\"\\n        }', 'json请求参数': '', '是否运行': 'Y', '请求头': '{\\n           \"Authorization\" : \"Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6IjEwMDAwLTlkMzRmODNlLTYzYzUtNDIxYi1hNTU1LTI1Yjg2NDViYzY1OSJ9.TEozySz634pmoponZ21fttC6SOsUUl6tMKsvzkEJgKVSZuPJ9Ks4QGM11MYiEGo6Y6oMs7hiEUalW4myzk8m3A\"\\n        }', '预期状态码': 200.0, '提取参数': 'data', '需要参数': ''}" ]
       } ],
-      "uid" : "dd2ad52720aec2bafbbf23c6f8797fab"
+      "uid" : "2d66d0f65e6e55734404c7639d05ae6d"
     }, {
-      "name" : "19640-MainThread",
+      "name" : "15952-MainThread",
       "children" : [ {
         "name" : "提交工单-2-word_2",
-        "uid" : "7766f5a52a07d9b9",
-        "parentUid" : "159e4a97ea1e3205499353ce1fa121f7",
+        "uid" : "fa5ff2aa08e7f055",
+        "parentUid" : "305d663e5fd8fc65b1c6ee7344ead5df",
         "status" : "passed",
         "time" : {
-          "start" : 1726728223384,
-          "stop" : 1726728223783,
-          "duration" : 399
+          "start" : 1727372313912,
+          "stop" : 1727372314322,
+          "duration" : 410
         },
         "flaky" : false,
         "newFailed" : false,
-        "parameters" : [ "{'用例ID': 'word_2', '模块': '运维工单', '接口名称': '提交工单', '请求URL': '/maintenance/saveOrderInfo', '请求类型': 'post', 'params': '', 'json请求参数': '{\\n            \"orderTypeParentId\": \"453622917134237696\",\\n            \"orderTypeId\": \"\",\\n            \"threeOrderTypeId\": \"\",\\n            \"urgencyLevel\": \"1\",\\n            \"orderDesc\": \"<p>对地点</p>\",\\n            \"stationName\": \"桩企测试专用站\",\\n            \"region\": [\\n                \"13\",\\n                \"1310\",\\n                \"131082\"\\n            ],\\n            \"address\": \"燕郊站\",\\n            \"checkGroupIds\": [],\\n            \"deviceNo\": \"\",\\n            \"deviceTypeName\": \"\",\\n            \"deviceModelName\": \"\",\\n            \"customerName\": \"\",\\n            \"contact\": \"\",\\n            \"contactTel\": \"\",\\n            \"carBrand\": \"\",\\n            \"carModel\": \"\",\\n            \"appointmentTime\": \"\",\\n            \"shelfLife\": \"0\",\\n            \"installMethod\": \"\",\\n            \"mainUser\": \"\",\\n            \"platform\": \"\",\\n            \"projectType\": \"\",\\n            \"projectCode\": \"\",\\n            \"installUnit\": \"\",\\n            \"enableMethod\": \"\",\\n            \"salesmanName\": \"\",\\n            \"businessType\": \"1\",\\n            \"businessTypeName\": \"充电\",\\n            \"city\": \"1310\",\\n            \"county\": \"131082\",\\n            \"deptName\": \"江南水务\",\\n            \"onlineDate\": \"2024-06-25\",\\n            \"operationMode\": \"1\",\\n            \"province\": \"13\",\\n            \"regionName\": \"江南水务\",\\n            \"stationAddress\": \"燕郊站\",\\n            \"stationCode\": \"zhang\",\\n            \"stationId\": \"463385701627645952\",\\n            \"status\": \"02\",\\n            \"orderNo\": \"${data}\",\\n            \"handleUser\": \"10000\",\\n            \"handleUserName\": \"系统管理员\"\\n        }', '是否运行': 'Y', '请求头': '{\\n           \"Authorization\" : \"Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6IjEwMDAwLTlkMzRmODNlLTYzYzUtNDIxYi1hNTU1LTI1Yjg2NDViYzY1OSJ9.TEozySz634pmoponZ21fttC6SOsUUl6tMKsvzkEJgKVSZuPJ9Ks4QGM11MYiEGo6Y6oMs7hiEUalW4myzk8m3A\"\\n        }', '预期状态码': 200.0, '提取参数': '', '需要参数': 'data'}" ]
+        "parameters" : [ "{'用例ID': 'word_2', '模块': '运维工单', '接口名称': '提交工单', '请求URL': '/maintenance/saveOrderInfo', '请求类型': 'post', 'params': '', 'json请求参数': '{\\n            \"orderTypeParentId\": \"453622917134237696\",\\n            \"orderTypeId\": \"\",\\n            \"threeOrderTypeId\": \"\",\\n            \"urgencyLevel\": \"1\",\\n            \"orderDesc\": \"<p>对地点</p>\",\\n            \"stationName\": \"桩企测试专用站\",\\n            \"region\": [\\n                \"13\",\\n                \"1310\",\\n                \"131082\"\\n            ],\\n            \"address\": \"燕郊站\",\\n            \"checkGroupIds\": [],\\n            \"deviceNo\": \"\",\\n            \"deviceTypeName\": \"\",\\n            \"deviceModelName\": \"\",\\n            \"customerName\": \"\",\\n            \"contact\": \"\",\\n            \"contactTel\": \"\",\\n            \"carBrand\": \"\",\\n            \"carModel\": \"\",\\n            \"appointmentTime\": \"\",\\n            \"shelfLife\": \"0\",\\n            \"installMethod\": \"\",\\n            \"mainUser\": \"\",\\n            \"platform\": \"\",\\n            \"projectType\": \"\",\\n            \"projectCode\": \"\",\\n            \"installUnit\": \"\",\\n            \"enableMethod\": \"\",\\n            \"salesmanName\": \"\",\\n            \"businessType\": \"1\",\\n            \"businessTypeName\": \"充电\",\\n            \"city\": \"1310\",\\n            \"county\": \"131082\",\\n            \"deptName\": \"江南水务\",\\n            \"onlineDate\": \"2024-06-25\",\\n            \"operationMode\": \"1\",\\n            \"province\": \"13\",\\n            \"regionName\": \"江南水务\",\\n            \"stationAddress\": \"燕郊站\",\\n            \"stationCode\": \"zhang\",\\n            \"stationId\": \"463385701627645952\",\\n            \"status\": \"02\",\\n            \"orderNo\": \"${data}\",\\n            \"handleUser\": \"10000\",\\n            \"handleUserName\": \"系统管理员\"\\n        }', '是否运行': 'Y', '请求头': '{\\n           \"Authorization\" : \"Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6IjEwMDAwLWMwOTIyMWQ4LWExMjctNDIzZS1iNDFjLTk1NzU1NmFkNTlhNiJ9.1a2mtjYTKkplp02zyoG4eBcGeFw91Vo5EwuGvQZjKr8fgZUqaIQYWCB6kTWSYs1x_3O06OkCAzt8RDoMOn_02A\"\\n        }', '预期状态码': 200.0, '提取参数': '', '需要参数': 'data'}" ]
       }, {
         "name" : "创建工单-2-word_1",
-        "uid" : "dc25fc6be3ceb161",
-        "parentUid" : "159e4a97ea1e3205499353ce1fa121f7",
+        "uid" : "b37baa498bc5e48b",
+        "parentUid" : "305d663e5fd8fc65b1c6ee7344ead5df",
         "status" : "passed",
         "time" : {
-          "start" : 1726728223250,
-          "stop" : 1726728223379,
-          "duration" : 129
+          "start" : 1727372313768,
+          "stop" : 1727372313907,
+          "duration" : 139
         },
         "flaky" : false,
         "newFailed" : false,
-        "parameters" : [ "{'用例ID': 'word_1', '模块': '运维工单', '接口名称': '创建工单', '请求URL': '/maintenance/orderNo', '请求类型': 'get', 'params': '{\\n            \"orderTypeId\":\"453622917134237696\"\\n        }', 'json请求参数': '', '是否运行': 'Y', '请求头': '{\\n           \"Authorization\" : \"Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6IjEwMDAwLTlkMzRmODNlLTYzYzUtNDIxYi1hNTU1LTI1Yjg2NDViYzY1OSJ9.TEozySz634pmoponZ21fttC6SOsUUl6tMKsvzkEJgKVSZuPJ9Ks4QGM11MYiEGo6Y6oMs7hiEUalW4myzk8m3A\"\\n        }', '预期状态码': 200.0, '提取参数': 'data', '需要参数': ''}" ]
+        "parameters" : [ "{'用例ID': 'word_1', '模块': '运维工单', '接口名称': '创建工单', '请求URL': '/maintenance/orderNo', '请求类型': 'get', 'params': '{\\n            \"orderTypeId\":\"453622917134237696\"\\n        }', 'json请求参数': '', '是否运行': 'Y', '请求头': '{\\n           \"Authorization\" : \"Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6IjEwMDAwLWMwOTIyMWQ4LWExMjctNDIzZS1iNDFjLTk1NzU1NmFkNTlhNiJ9.1a2mtjYTKkplp02zyoG4eBcGeFw91Vo5EwuGvQZjKr8fgZUqaIQYWCB6kTWSYs1x_3O06OkCAzt8RDoMOn_02A\"\\n        }', '预期状态码': 200.0, '提取参数': 'data', '需要参数': ''}" ]
       } ],
-      "uid" : "159e4a97ea1e3205499353ce1fa121f7"
+      "uid" : "305d663e5fd8fc65b1c6ee7344ead5df"
     }, {
-      "name" : "11600-MainThread",
+      "name" : "13404-MainThread",
       "children" : [ {
         "name" : "创建工单-2-word_1",
-        "uid" : "ab4e1c76b701c709",
-        "parentUid" : "7bbc29c5f98f8f937ca863aef30908ae",
+        "uid" : "ca816448cecfb608",
+        "parentUid" : "b9d4d7b17e4824243974396865550d51",
         "status" : "passed",
         "time" : {
-          "start" : 1727577973994,
-          "stop" : 1727577974154,
+          "start" : 1727498075502,
+          "stop" : 1727498075662,
           "duration" : 160
         },
         "flaky" : false,
@@ -140,409 +560,109 @@
         "parameters" : [ "{'用例ID': 'word_1', '模块': '运维工单', '接口名称': '创建工单', '请求URL': '/maintenance/orderNo', '请求类型': 'get', 'params': '{\\n            \"orderTypeId\":\"453622917134237696\"\\n        }', 'json请求参数': '', '是否运行': 'Y', '请求头': '{\\n           \"Authorization\" : \"Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6IjEwMDAwLWMwOTIyMWQ4LWExMjctNDIzZS1iNDFjLTk1NzU1NmFkNTlhNiJ9.1a2mtjYTKkplp02zyoG4eBcGeFw91Vo5EwuGvQZjKr8fgZUqaIQYWCB6kTWSYs1x_3O06OkCAzt8RDoMOn_02A\"\\n        }', '预期状态码': 200.0, '提取参数': 'data', '需要参数': ''}" ]
       }, {
         "name" : "提交工单-2-word_2",
-        "uid" : "c852957f0297a830",
-        "parentUid" : "7bbc29c5f98f8f937ca863aef30908ae",
+        "uid" : "35fab38feb6075c5",
+        "parentUid" : "b9d4d7b17e4824243974396865550d51",
         "status" : "passed",
         "time" : {
-          "start" : 1727577974164,
-          "stop" : 1727577974669,
-          "duration" : 505
+          "start" : 1727498075704,
+          "stop" : 1727498076102,
+          "duration" : 398
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ "{'用例ID': 'word_2', '模块': '运维工单', '接口名称': '提交工单', '请求URL': '/maintenance/saveOrderInfo', '请求类型': 'post', 'params': '', 'json请求参数': '{\\n            \"orderTypeParentId\": \"453622917134237696\",\\n            \"orderTypeId\": \"\",\\n            \"threeOrderTypeId\": \"\",\\n            \"urgencyLevel\": \"1\",\\n            \"orderDesc\": \"<p>对地点</p>\",\\n            \"stationName\": \"桩企测试专用站\",\\n            \"region\": [\\n                \"13\",\\n                \"1310\",\\n                \"131082\"\\n            ],\\n            \"address\": \"燕郊站\",\\n            \"checkGroupIds\": [],\\n            \"deviceNo\": \"\",\\n            \"deviceTypeName\": \"\",\\n            \"deviceModelName\": \"\",\\n            \"customerName\": \"\",\\n            \"contact\": \"\",\\n            \"contactTel\": \"\",\\n            \"carBrand\": \"\",\\n            \"carModel\": \"\",\\n            \"appointmentTime\": \"\",\\n            \"shelfLife\": \"0\",\\n            \"installMethod\": \"\",\\n            \"mainUser\": \"\",\\n            \"platform\": \"\",\\n            \"projectType\": \"\",\\n            \"projectCode\": \"\",\\n            \"installUnit\": \"\",\\n            \"enableMethod\": \"\",\\n            \"salesmanName\": \"\",\\n            \"businessType\": \"1\",\\n            \"businessTypeName\": \"充电\",\\n            \"city\": \"1310\",\\n            \"county\": \"131082\",\\n            \"deptName\": \"江南水务\",\\n            \"onlineDate\": \"2024-06-25\",\\n            \"operationMode\": \"1\",\\n            \"province\": \"13\",\\n            \"regionName\": \"江南水务\",\\n            \"stationAddress\": \"燕郊站\",\\n            \"stationCode\": \"zhang\",\\n            \"stationId\": \"463385701627645952\",\\n            \"status\": \"02\",\\n            \"orderNo\": \"${data}\",\\n            \"handleUser\": \"10000\",\\n            \"handleUserName\": \"系统管理员\"\\n        }', '是否运行': 'Y', '请求头': '{\\n           \"Authorization\" : \"Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6IjEwMDAwLWMwOTIyMWQ4LWExMjctNDIzZS1iNDFjLTk1NzU1NmFkNTlhNiJ9.1a2mtjYTKkplp02zyoG4eBcGeFw91Vo5EwuGvQZjKr8fgZUqaIQYWCB6kTWSYs1x_3O06OkCAzt8RDoMOn_02A\"\\n        }', '预期状态码': 200.0, '提取参数': '', '需要参数': 'data'}" ]
       } ],
-      "uid" : "7bbc29c5f98f8f937ca863aef30908ae"
+      "uid" : "b9d4d7b17e4824243974396865550d51"
     }, {
-      "name" : "5740-MainThread",
+      "name" : "8912-MainThread",
       "children" : [ {
         "name" : "提交工单-2-word_2",
-        "uid" : "79d71eb2390d325b",
-        "parentUid" : "e3e54d01e1b7b8892c0f148df90f8a58",
+        "uid" : "6b3c9948b4799d4b",
+        "parentUid" : "7a9d1813d4863bc31c4242b8349ea9ee",
         "status" : "passed",
         "time" : {
-          "start" : 1727578398247,
-          "stop" : 1727578398631,
-          "duration" : 384
+          "start" : 1727371112879,
+          "stop" : 1727371113325,
+          "duration" : 446
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ "{'用例ID': 'word_2', '模块': '运维工单', '接口名称': '提交工单', '请求URL': '/maintenance/saveOrderInfo', '请求类型': 'post', 'params': '', 'json请求参数': '{\\n            \"orderTypeParentId\": \"453622917134237696\",\\n            \"orderTypeId\": \"\",\\n            \"threeOrderTypeId\": \"\",\\n            \"urgencyLevel\": \"1\",\\n            \"orderDesc\": \"<p>对地点</p>\",\\n            \"stationName\": \"桩企测试专用站\",\\n            \"region\": [\\n                \"13\",\\n                \"1310\",\\n                \"131082\"\\n            ],\\n            \"address\": \"燕郊站\",\\n            \"checkGroupIds\": [],\\n            \"deviceNo\": \"\",\\n            \"deviceTypeName\": \"\",\\n            \"deviceModelName\": \"\",\\n            \"customerName\": \"\",\\n            \"contact\": \"\",\\n            \"contactTel\": \"\",\\n            \"carBrand\": \"\",\\n            \"carModel\": \"\",\\n            \"appointmentTime\": \"\",\\n            \"shelfLife\": \"0\",\\n            \"installMethod\": \"\",\\n            \"mainUser\": \"\",\\n            \"platform\": \"\",\\n            \"projectType\": \"\",\\n            \"projectCode\": \"\",\\n            \"installUnit\": \"\",\\n            \"enableMethod\": \"\",\\n            \"salesmanName\": \"\",\\n            \"businessType\": \"1\",\\n            \"businessTypeName\": \"充电\",\\n            \"city\": \"1310\",\\n            \"county\": \"131082\",\\n            \"deptName\": \"江南水务\",\\n            \"onlineDate\": \"2024-06-25\",\\n            \"operationMode\": \"1\",\\n            \"province\": \"13\",\\n            \"regionName\": \"江南水务\",\\n            \"stationAddress\": \"燕郊站\",\\n            \"stationCode\": \"zhang\",\\n            \"stationId\": \"463385701627645952\",\\n            \"status\": \"02\",\\n            \"orderNo\": \"${data}\",\\n            \"handleUser\": \"10000\",\\n            \"handleUserName\": \"系统管理员\"\\n        }', '是否运行': 'Y', '请求头': '{\\n           \"Authorization\" : \"Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6IjEwMDAwLWMwOTIyMWQ4LWExMjctNDIzZS1iNDFjLTk1NzU1NmFkNTlhNiJ9.1a2mtjYTKkplp02zyoG4eBcGeFw91Vo5EwuGvQZjKr8fgZUqaIQYWCB6kTWSYs1x_3O06OkCAzt8RDoMOn_02A\"\\n        }', '预期状态码': 200.0, '提取参数': '', '需要参数': 'data'}" ]
       }, {
         "name" : "创建工单-2-word_1",
-        "uid" : "52dcf970f38db6b",
-        "parentUid" : "e3e54d01e1b7b8892c0f148df90f8a58",
+        "uid" : "42f48b220df9dccf",
+        "parentUid" : "7a9d1813d4863bc31c4242b8349ea9ee",
         "status" : "passed",
         "time" : {
-          "start" : 1727578398114,
-          "stop" : 1727578398243,
-          "duration" : 129
+          "start" : 1727371112712,
+          "stop" : 1727371112876,
+          "duration" : 164
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ "{'用例ID': 'word_1', '模块': '运维工单', '接口名称': '创建工单', '请求URL': '/maintenance/orderNo', '请求类型': 'get', 'params': '{\\n            \"orderTypeId\":\"453622917134237696\"\\n        }', 'json请求参数': '', '是否运行': 'Y', '请求头': '{\\n           \"Authorization\" : \"Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6IjEwMDAwLWMwOTIyMWQ4LWExMjctNDIzZS1iNDFjLTk1NzU1NmFkNTlhNiJ9.1a2mtjYTKkplp02zyoG4eBcGeFw91Vo5EwuGvQZjKr8fgZUqaIQYWCB6kTWSYs1x_3O06OkCAzt8RDoMOn_02A\"\\n        }', '预期状态码': 200.0, '提取参数': 'data', '需要参数': ''}" ]
       } ],
-      "uid" : "e3e54d01e1b7b8892c0f148df90f8a58"
+      "uid" : "7a9d1813d4863bc31c4242b8349ea9ee"
     }, {
-      "name" : "9164-MainThread",
+      "name" : "4240-MainThread",
       "children" : [ {
-        "name" : "提交工单-2-word_2",
-        "uid" : "40710610939814b6",
-        "parentUid" : "b7c29cc9b78b87ca23f29fd2b3cfced8",
-        "status" : "passed",
-        "time" : {
-          "start" : 1726728066228,
-          "stop" : 1726728066652,
-          "duration" : 424
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "{'用例ID': 'word_2', '模块': '运维工单', '接口名称': '提交工单', '请求URL': '/maintenance/saveOrderInfo', '请求类型': 'post', 'params': '', 'json请求参数': '{\\n            \"orderTypeParentId\": \"453622917134237696\",\\n            \"orderTypeId\": \"\",\\n            \"threeOrderTypeId\": \"\",\\n            \"urgencyLevel\": \"1\",\\n            \"orderDesc\": \"<p>对地点</p>\",\\n            \"stationName\": \"桩企测试专用站\",\\n            \"region\": [\\n                \"13\",\\n                \"1310\",\\n                \"131082\"\\n            ],\\n            \"address\": \"燕郊站\",\\n            \"checkGroupIds\": [],\\n            \"deviceNo\": \"\",\\n            \"deviceTypeName\": \"\",\\n            \"deviceModelName\": \"\",\\n            \"customerName\": \"\",\\n            \"contact\": \"\",\\n            \"contactTel\": \"\",\\n            \"carBrand\": \"\",\\n            \"carModel\": \"\",\\n            \"appointmentTime\": \"\",\\n            \"shelfLife\": \"0\",\\n            \"installMethod\": \"\",\\n            \"mainUser\": \"\",\\n            \"platform\": \"\",\\n            \"projectType\": \"\",\\n            \"projectCode\": \"\",\\n            \"installUnit\": \"\",\\n            \"enableMethod\": \"\",\\n            \"salesmanName\": \"\",\\n            \"businessType\": \"1\",\\n            \"businessTypeName\": \"充电\",\\n            \"city\": \"1310\",\\n            \"county\": \"131082\",\\n            \"deptName\": \"江南水务\",\\n            \"onlineDate\": \"2024-06-25\",\\n            \"operationMode\": \"1\",\\n            \"province\": \"13\",\\n            \"regionName\": \"江南水务\",\\n            \"stationAddress\": \"燕郊站\",\\n            \"stationCode\": \"zhang\",\\n            \"stationId\": \"463385701627645952\",\\n            \"status\": \"02\",\\n            \"orderNo\": \"${data}\",\\n            \"handleUser\": \"10000\",\\n            \"handleUserName\": \"系统管理员\"\\n        }', '是否运行': 'Y', '请求头': '{\\n           \"Authorization\" : \"Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6IjEwMDAwLTlkMzRmODNlLTYzYzUtNDIxYi1hNTU1LTI1Yjg2NDViYzY1OSJ9.TEozySz634pmoponZ21fttC6SOsUUl6tMKsvzkEJgKVSZuPJ9Ks4QGM11MYiEGo6Y6oMs7hiEUalW4myzk8m3A\"\\n        }', '预期状态码': 200.0, '提取参数': '', '需要参数': 'data'}" ]
-      }, {
-        "name" : "提交工单-2-word_2",
-        "uid" : "5b70fdbd155be202",
-        "parentUid" : "b7c29cc9b78b87ca23f29fd2b3cfced8",
-        "status" : "passed",
-        "time" : {
-          "start" : 1726730835483,
-          "stop" : 1726730835930,
-          "duration" : 447
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "{'用例ID': 'word_2', '模块': '运维工单', '接口名称': '提交工单', '请求URL': '/maintenance/saveOrderInfo', '请求类型': 'post', 'params': '', 'json请求参数': '{\\n            \"orderTypeParentId\": \"453622917134237696\",\\n            \"orderTypeId\": \"\",\\n            \"threeOrderTypeId\": \"\",\\n            \"urgencyLevel\": \"1\",\\n            \"orderDesc\": \"<p>对地点</p>\",\\n            \"stationName\": \"桩企测试专用站\",\\n            \"region\": [\\n                \"13\",\\n                \"1310\",\\n                \"131082\"\\n            ],\\n            \"address\": \"燕郊站\",\\n            \"checkGroupIds\": [],\\n            \"deviceNo\": \"\",\\n            \"deviceTypeName\": \"\",\\n            \"deviceModelName\": \"\",\\n            \"customerName\": \"\",\\n            \"contact\": \"\",\\n            \"contactTel\": \"\",\\n            \"carBrand\": \"\",\\n            \"carModel\": \"\",\\n            \"appointmentTime\": \"\",\\n            \"shelfLife\": \"0\",\\n            \"installMethod\": \"\",\\n            \"mainUser\": \"\",\\n            \"platform\": \"\",\\n            \"projectType\": \"\",\\n            \"projectCode\": \"\",\\n            \"installUnit\": \"\",\\n            \"enableMethod\": \"\",\\n            \"salesmanName\": \"\",\\n            \"businessType\": \"1\",\\n            \"businessTypeName\": \"充电\",\\n            \"city\": \"1310\",\\n            \"county\": \"131082\",\\n            \"deptName\": \"江南水务\",\\n            \"onlineDate\": \"2024-06-25\",\\n            \"operationMode\": \"1\",\\n            \"province\": \"13\",\\n            \"regionName\": \"江南水务\",\\n            \"stationAddress\": \"燕郊站\",\\n            \"stationCode\": \"zhang\",\\n            \"stationId\": \"463385701627645952\",\\n            \"status\": \"02\",\\n            \"orderNo\": \"${data}\",\\n            \"handleUser\": \"10000\",\\n            \"handleUserName\": \"系统管理员\"\\n        }', '是否运行': 'Y', '请求头': '{\\n           \"Authorization\" : \"Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6IjEwMDAwLTlkMzRmODNlLTYzYzUtNDIxYi1hNTU1LTI1Yjg2NDViYzY1OSJ9.TEozySz634pmoponZ21fttC6SOsUUl6tMKsvzkEJgKVSZuPJ9Ks4QGM11MYiEGo6Y6oMs7hiEUalW4myzk8m3A\"\\n        }', '预期状态码': 200.0, '提取参数': '', '需要参数': 'data'}" ]
-      }, {
         "name" : "创建工单-2-word_1",
-        "uid" : "286d1ad7ee37dd51",
-        "parentUid" : "b7c29cc9b78b87ca23f29fd2b3cfced8",
-        "status" : "passed",
+        "uid" : "7cedc4c58eb70e00",
+        "parentUid" : "1c986c71fc4b122c40ce55cbeb4c589e",
+        "status" : "broken",
         "time" : {
-          "start" : 1726730835278,
-          "stop" : 1726730835468,
-          "duration" : 190
+          "start" : 1727371565944,
+          "stop" : 1727371566059,
+          "duration" : 115
         },
         "flaky" : false,
         "newFailed" : false,
-        "parameters" : [ "{'用例ID': 'word_1', '模块': '运维工单', '接口名称': '创建工单', '请求URL': '/maintenance/orderNo', '请求类型': 'get', 'params': '{\\n            \"orderTypeId\":\"453622917134237696\"\\n        }', 'json请求参数': '', '是否运行': 'Y', '请求头': '{\\n           \"Authorization\" : \"Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6IjEwMDAwLTlkMzRmODNlLTYzYzUtNDIxYi1hNTU1LTI1Yjg2NDViYzY1OSJ9.TEozySz634pmoponZ21fttC6SOsUUl6tMKsvzkEJgKVSZuPJ9Ks4QGM11MYiEGo6Y6oMs7hiEUalW4myzk8m3A\"\\n        }', '预期状态码': 200.0, '提取参数': 'data', '需要参数': ''}" ]
+        "parameters" : [ "{'用例ID': 'word_1', '模块': '运维工单', '接口名称': '创建工单', '请求URL': '/maintenance/orderNo', '请求类型': 'get', 'params': '{\\n            \"orderTypeId\":\"453622917134237696\"\\n        }', 'json请求参数': '', '是否运行': 'Y', '请求头': '{\\n           \"Authorization\" : \"Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6IjEwMDAwLWMwOTIyMWQ4LWExMjctNDIzZS1iNDFjLTk1NzU1NmFkNTlhNiJ9.1a2mtjYTKkplp02zyoG4eBcGeFw91Vo5EwuGvQZjKr8fgZUqaIQYWCB6kTWSYs1x_3O06OkCAzt8RDoMOn_02A\"\\n        }', '预期状态码': 200.0, '提取参数': 'data', '需要参数': ''}" ]
       }, {
-        "name" : "创建工单-2-word_1",
-        "uid" : "34aa35a889b57e1f",
-        "parentUid" : "b7c29cc9b78b87ca23f29fd2b3cfced8",
-        "status" : "passed",
+        "name" : "test_run_excel_case[case1]",
+        "uid" : "ea6182278913bf48",
+        "parentUid" : "1c986c71fc4b122c40ce55cbeb4c589e",
+        "status" : "broken",
         "time" : {
-          "start" : 1726728066104,
-          "stop" : 1726728066222,
-          "duration" : 118
+          "start" : 1727371566359,
+          "stop" : 1727371566360,
+          "duration" : 1
         },
         "flaky" : false,
         "newFailed" : false,
-        "parameters" : [ "{'用例ID': 'word_1', '模块': '运维工单', '接口名称': '创建工单', '请求URL': '/maintenance/orderNo', '请求类型': 'get', 'params': '{\\n            \"orderTypeId\":\"453622917134237696\"\\n        }', 'json请求参数': '', '是否运行': 'Y', '请求头': '{\\n           \"Authorization\" : \"Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6IjEwMDAwLTlkMzRmODNlLTYzYzUtNDIxYi1hNTU1LTI1Yjg2NDViYzY1OSJ9.TEozySz634pmoponZ21fttC6SOsUUl6tMKsvzkEJgKVSZuPJ9Ks4QGM11MYiEGo6Y6oMs7hiEUalW4myzk8m3A\"\\n        }', '预期状态码': 200.0, '提取参数': 'data', '需要参数': ''}" ]
+        "parameters" : [ "{'用例ID': 'word_2', '模块': '运维工单', '接口名称': '提交工单', '请求URL': '/maintenance/saveOrderInfo', '请求类型': 'post', 'params': '', 'json请求参数': '{\\n            \"orderTypeParentId\": \"453622917134237696\",\\n            \"orderTypeId\": \"\",\\n            \"threeOrderTypeId\": \"\",\\n            \"urgencyLevel\": \"1\",\\n            \"orderDesc\": \"<p>对地点</p>\",\\n            \"stationName\": \"桩企测试专用站\",\\n            \"region\": [\\n                \"13\",\\n                \"1310\",\\n                \"131082\"\\n            ],\\n            \"address\": \"燕郊站\",\\n            \"checkGroupIds\": [],\\n            \"deviceNo\": \"\",\\n            \"deviceTypeName\": \"\",\\n            \"deviceModelName\": \"\",\\n            \"customerName\": \"\",\\n            \"contact\": \"\",\\n            \"contactTel\": \"\",\\n            \"carBrand\": \"\",\\n            \"carModel\": \"\",\\n            \"appointmentTime\": \"\",\\n            \"shelfLife\": \"0\",\\n            \"installMethod\": \"\",\\n            \"mainUser\": \"\",\\n            \"platform\": \"\",\\n            \"projectType\": \"\",\\n            \"projectCode\": \"\",\\n            \"installUnit\": \"\",\\n            \"enableMethod\": \"\",\\n            \"salesmanName\": \"\",\\n            \"businessType\": \"1\",\\n            \"businessTypeName\": \"充电\",\\n            \"city\": \"1310\",\\n            \"county\": \"131082\",\\n            \"deptName\": \"江南水务\",\\n            \"onlineDate\": \"2024-06-25\",\\n            \"operationMode\": \"1\",\\n            \"province\": \"13\",\\n            \"regionName\": \"江南水务\",\\n            \"stationAddress\": \"燕郊站\",\\n            \"stationCode\": \"zhang\",\\n            \"stationId\": \"463385701627645952\",\\n            \"status\": \"02\",\\n            \"orderNo\": \"${data}\",\\n            \"handleUser\": \"10000\",\\n            \"handleUserName\": \"系统管理员\"\\n        }', '是否运行': 'Y', '请求头': '{\\n           \"Authorization\" : \"Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6IjEwMDAwLWMwOTIyMWQ4LWExMjctNDIzZS1iNDFjLTk1NzU1NmFkNTlhNiJ9.1a2mtjYTKkplp02zyoG4eBcGeFw91Vo5EwuGvQZjKr8fgZUqaIQYWCB6kTWSYs1x_3O06OkCAzt8RDoMOn_02A\"\\n        }', '预期状态码': 200.0, '提取参数': '', '需要参数': 'data'}" ]
       } ],
-      "uid" : "b7c29cc9b78b87ca23f29fd2b3cfced8"
+      "uid" : "1c986c71fc4b122c40ce55cbeb4c589e"
     }, {
-      "name" : "5432-MainThread",
+      "name" : "5936-MainThread",
       "children" : [ {
         "name" : "创建工单-2-word_1",
-        "uid" : "c980a1c681f9e43c",
-        "parentUid" : "55373e8dcc54a2bb321c81eaa9640589",
+        "uid" : "d71843cd6033f7b6",
+        "parentUid" : "4df2aa88de8e77d81d8538d2ab63d661",
         "status" : "passed",
         "time" : {
-          "start" : 1727579662320,
-          "stop" : 1727579662530,
-          "duration" : 210
+          "start" : 1727371719182,
+          "stop" : 1727371719339,
+          "duration" : 157
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ "{'用例ID': 'word_1', '模块': '运维工单', '接口名称': '创建工单', '请求URL': '/maintenance/orderNo', '请求类型': 'get', 'params': '{\\n            \"orderTypeId\":\"453622917134237696\"\\n        }', 'json请求参数': '', '是否运行': 'Y', '请求头': '{\\n           \"Authorization\" : \"Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6IjEwMDAwLWMwOTIyMWQ4LWExMjctNDIzZS1iNDFjLTk1NzU1NmFkNTlhNiJ9.1a2mtjYTKkplp02zyoG4eBcGeFw91Vo5EwuGvQZjKr8fgZUqaIQYWCB6kTWSYs1x_3O06OkCAzt8RDoMOn_02A\"\\n        }', '预期状态码': 200.0, '提取参数': 'data', '需要参数': ''}" ]
       }, {
         "name" : "提交工单-2-word_2",
-        "uid" : "c76b9ab605e804ec",
-        "parentUid" : "55373e8dcc54a2bb321c81eaa9640589",
+        "uid" : "175cd492e6b8874f",
+        "parentUid" : "4df2aa88de8e77d81d8538d2ab63d661",
         "status" : "passed",
         "time" : {
-          "start" : 1727579662537,
-          "stop" : 1727579664664,
-          "duration" : 2127
+          "start" : 1727371719341,
+          "stop" : 1727371719808,
+          "duration" : 467
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ "{'用例ID': 'word_2', '模块': '运维工单', '接口名称': '提交工单', '请求URL': '/maintenance/saveOrderInfo', '请求类型': 'post', 'params': '', 'json请求参数': '{\\n            \"orderTypeParentId\": \"453622917134237696\",\\n            \"orderTypeId\": \"\",\\n            \"threeOrderTypeId\": \"\",\\n            \"urgencyLevel\": \"1\",\\n            \"orderDesc\": \"<p>对地点</p>\",\\n            \"stationName\": \"桩企测试专用站\",\\n            \"region\": [\\n                \"13\",\\n                \"1310\",\\n                \"131082\"\\n            ],\\n            \"address\": \"燕郊站\",\\n            \"checkGroupIds\": [],\\n            \"deviceNo\": \"\",\\n            \"deviceTypeName\": \"\",\\n            \"deviceModelName\": \"\",\\n            \"customerName\": \"\",\\n            \"contact\": \"\",\\n            \"contactTel\": \"\",\\n            \"carBrand\": \"\",\\n            \"carModel\": \"\",\\n            \"appointmentTime\": \"\",\\n            \"shelfLife\": \"0\",\\n            \"installMethod\": \"\",\\n            \"mainUser\": \"\",\\n            \"platform\": \"\",\\n            \"projectType\": \"\",\\n            \"projectCode\": \"\",\\n            \"installUnit\": \"\",\\n            \"enableMethod\": \"\",\\n            \"salesmanName\": \"\",\\n            \"businessType\": \"1\",\\n            \"businessTypeName\": \"充电\",\\n            \"city\": \"1310\",\\n            \"county\": \"131082\",\\n            \"deptName\": \"江南水务\",\\n            \"onlineDate\": \"2024-06-25\",\\n            \"operationMode\": \"1\",\\n            \"province\": \"13\",\\n            \"regionName\": \"江南水务\",\\n            \"stationAddress\": \"燕郊站\",\\n            \"stationCode\": \"zhang\",\\n            \"stationId\": \"463385701627645952\",\\n            \"status\": \"02\",\\n            \"orderNo\": \"${data}\",\\n            \"handleUser\": \"10000\",\\n            \"handleUserName\": \"系统管理员\"\\n        }', '是否运行': 'Y', '请求头': '{\\n           \"Authorization\" : \"Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6IjEwMDAwLWMwOTIyMWQ4LWExMjctNDIzZS1iNDFjLTk1NzU1NmFkNTlhNiJ9.1a2mtjYTKkplp02zyoG4eBcGeFw91Vo5EwuGvQZjKr8fgZUqaIQYWCB6kTWSYs1x_3O06OkCAzt8RDoMOn_02A\"\\n        }', '预期状态码': 200.0, '提取参数': '', '需要参数': 'data'}" ]
       } ],
-      "uid" : "55373e8dcc54a2bb321c81eaa9640589"
-    }, {
-      "name" : "6560-MainThread",
-      "children" : [ {
-        "name" : "提交工单-2-word_2",
-        "uid" : "a7217e7cfff774f6",
-        "parentUid" : "bdcf6157319aa7f3e60ef9c1ade1005d",
-        "status" : "passed",
-        "time" : {
-          "start" : 1727578199303,
-          "stop" : 1727578199694,
-          "duration" : 391
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "{'用例ID': 'word_2', '模块': '运维工单', '接口名称': '提交工单', '请求URL': '/maintenance/saveOrderInfo', '请求类型': 'post', 'params': '', 'json请求参数': '{\\n            \"orderTypeParentId\": \"453622917134237696\",\\n            \"orderTypeId\": \"\",\\n            \"threeOrderTypeId\": \"\",\\n            \"urgencyLevel\": \"1\",\\n            \"orderDesc\": \"<p>对地点</p>\",\\n            \"stationName\": \"桩企测试专用站\",\\n            \"region\": [\\n                \"13\",\\n                \"1310\",\\n                \"131082\"\\n            ],\\n            \"address\": \"燕郊站\",\\n            \"checkGroupIds\": [],\\n            \"deviceNo\": \"\",\\n            \"deviceTypeName\": \"\",\\n            \"deviceModelName\": \"\",\\n            \"customerName\": \"\",\\n            \"contact\": \"\",\\n            \"contactTel\": \"\",\\n            \"carBrand\": \"\",\\n            \"carModel\": \"\",\\n            \"appointmentTime\": \"\",\\n            \"shelfLife\": \"0\",\\n            \"installMethod\": \"\",\\n            \"mainUser\": \"\",\\n            \"platform\": \"\",\\n            \"projectType\": \"\",\\n            \"projectCode\": \"\",\\n            \"installUnit\": \"\",\\n            \"enableMethod\": \"\",\\n            \"salesmanName\": \"\",\\n            \"businessType\": \"1\",\\n            \"businessTypeName\": \"充电\",\\n            \"city\": \"1310\",\\n            \"county\": \"131082\",\\n            \"deptName\": \"江南水务\",\\n            \"onlineDate\": \"2024-06-25\",\\n            \"operationMode\": \"1\",\\n            \"province\": \"13\",\\n            \"regionName\": \"江南水务\",\\n            \"stationAddress\": \"燕郊站\",\\n            \"stationCode\": \"zhang\",\\n            \"stationId\": \"463385701627645952\",\\n            \"status\": \"02\",\\n            \"orderNo\": \"${data}\",\\n            \"handleUser\": \"10000\",\\n            \"handleUserName\": \"系统管理员\"\\n        }', '是否运行': 'Y', '请求头': '{\\n           \"Authorization\" : \"Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6IjEwMDAwLWMwOTIyMWQ4LWExMjctNDIzZS1iNDFjLTk1NzU1NmFkNTlhNiJ9.1a2mtjYTKkplp02zyoG4eBcGeFw91Vo5EwuGvQZjKr8fgZUqaIQYWCB6kTWSYs1x_3O06OkCAzt8RDoMOn_02A\"\\n        }', '预期状态码': 200.0, '提取参数': '', '需要参数': 'data'}" ]
-      }, {
-        "name" : "创建工单-2-word_1",
-        "uid" : "9c98efd6da0ab0a3",
-        "parentUid" : "bdcf6157319aa7f3e60ef9c1ade1005d",
-        "status" : "passed",
-        "time" : {
-          "start" : 1727578199093,
-          "stop" : 1727578199297,
-          "duration" : 204
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "{'用例ID': 'word_1', '模块': '运维工单', '接口名称': '创建工单', '请求URL': '/maintenance/orderNo', '请求类型': 'get', 'params': '{\\n            \"orderTypeId\":\"453622917134237696\"\\n        }', 'json请求参数': '', '是否运行': 'Y', '请求头': '{\\n           \"Authorization\" : \"Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6IjEwMDAwLWMwOTIyMWQ4LWExMjctNDIzZS1iNDFjLTk1NzU1NmFkNTlhNiJ9.1a2mtjYTKkplp02zyoG4eBcGeFw91Vo5EwuGvQZjKr8fgZUqaIQYWCB6kTWSYs1x_3O06OkCAzt8RDoMOn_02A\"\\n        }', '预期状态码': 200.0, '提取参数': 'data', '需要参数': ''}" ]
-      } ],
-      "uid" : "bdcf6157319aa7f3e60ef9c1ade1005d"
-    }, {
-      "name" : "8344-MainThread",
-      "children" : [ {
-        "name" : "创建工单-2-word_1",
-        "uid" : "9bcdef720ef98d50",
-        "parentUid" : "fca9bfe2c574b263cfb34f88ee939054",
-        "status" : "passed",
-        "time" : {
-          "start" : 1726730589872,
-          "stop" : 1726730590035,
-          "duration" : 163
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "{'用例ID': 'word_1', '模块': '运维工单', '接口名称': '创建工单', '请求URL': '/maintenance/orderNo', '请求类型': 'get', 'params': '{\\n            \"orderTypeId\":\"453622917134237696\"\\n        }', 'json请求参数': '', '是否运行': 'Y', '请求头': '{\\n           \"Authorization\" : \"Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6IjEwMDAwLTlkMzRmODNlLTYzYzUtNDIxYi1hNTU1LTI1Yjg2NDViYzY1OSJ9.TEozySz634pmoponZ21fttC6SOsUUl6tMKsvzkEJgKVSZuPJ9Ks4QGM11MYiEGo6Y6oMs7hiEUalW4myzk8m3A\"\\n        }', '预期状态码': 200.0, '提取参数': 'data', '需要参数': ''}" ]
-      }, {
-        "name" : "提交工单-2-word_2",
-        "uid" : "65471825e65fbf7c",
-        "parentUid" : "fca9bfe2c574b263cfb34f88ee939054",
-        "status" : "passed",
-        "time" : {
-          "start" : 1726730590059,
-          "stop" : 1726730590917,
-          "duration" : 858
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "{'用例ID': 'word_2', '模块': '运维工单', '接口名称': '提交工单', '请求URL': '/maintenance/saveOrderInfo', '请求类型': 'post', 'params': '', 'json请求参数': '{\\n            \"orderTypeParentId\": \"453622917134237696\",\\n            \"orderTypeId\": \"\",\\n            \"threeOrderTypeId\": \"\",\\n            \"urgencyLevel\": \"1\",\\n            \"orderDesc\": \"<p>对地点</p>\",\\n            \"stationName\": \"桩企测试专用站\",\\n            \"region\": [\\n                \"13\",\\n                \"1310\",\\n                \"131082\"\\n            ],\\n            \"address\": \"燕郊站\",\\n            \"checkGroupIds\": [],\\n            \"deviceNo\": \"\",\\n            \"deviceTypeName\": \"\",\\n            \"deviceModelName\": \"\",\\n            \"customerName\": \"\",\\n            \"contact\": \"\",\\n            \"contactTel\": \"\",\\n            \"carBrand\": \"\",\\n            \"carModel\": \"\",\\n            \"appointmentTime\": \"\",\\n            \"shelfLife\": \"0\",\\n            \"installMethod\": \"\",\\n            \"mainUser\": \"\",\\n            \"platform\": \"\",\\n            \"projectType\": \"\",\\n            \"projectCode\": \"\",\\n            \"installUnit\": \"\",\\n            \"enableMethod\": \"\",\\n            \"salesmanName\": \"\",\\n            \"businessType\": \"1\",\\n            \"businessTypeName\": \"充电\",\\n            \"city\": \"1310\",\\n            \"county\": \"131082\",\\n            \"deptName\": \"江南水务\",\\n            \"onlineDate\": \"2024-06-25\",\\n            \"operationMode\": \"1\",\\n            \"province\": \"13\",\\n            \"regionName\": \"江南水务\",\\n            \"stationAddress\": \"燕郊站\",\\n            \"stationCode\": \"zhang\",\\n            \"stationId\": \"463385701627645952\",\\n            \"status\": \"02\",\\n            \"orderNo\": \"${data}\",\\n            \"handleUser\": \"10000\",\\n            \"handleUserName\": \"系统管理员\"\\n        }', '是否运行': 'Y', '请求头': '{\\n           \"Authorization\" : \"Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6IjEwMDAwLTlkMzRmODNlLTYzYzUtNDIxYi1hNTU1LTI1Yjg2NDViYzY1OSJ9.TEozySz634pmoponZ21fttC6SOsUUl6tMKsvzkEJgKVSZuPJ9Ks4QGM11MYiEGo6Y6oMs7hiEUalW4myzk8m3A\"\\n        }', '预期状态码': 200.0, '提取参数': '', '需要参数': 'data'}" ]
-      } ],
-      "uid" : "fca9bfe2c574b263cfb34f88ee939054"
-    }, {
-      "name" : "15524-MainThread",
-      "children" : [ {
-        "name" : "创建工单-2-word_1",
-        "uid" : "a6048388ebf7185e",
-        "parentUid" : "fda1adf9064092cfd98a459c5d3c178d",
-        "status" : "passed",
-        "time" : {
-          "start" : 1726731002905,
-          "stop" : 1726731003054,
-          "duration" : 149
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "{'用例ID': 'word_1', '模块': '运维工单', '接口名称': '创建工单', '请求URL': '/maintenance/orderNo', '请求类型': 'get', 'params': '{\\n            \"orderTypeId\":\"453622917134237696\"\\n        }', 'json请求参数': '', '是否运行': 'Y', '请求头': '{\\n           \"Authorization\" : \"Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6IjEwMDAwLTlkMzRmODNlLTYzYzUtNDIxYi1hNTU1LTI1Yjg2NDViYzY1OSJ9.TEozySz634pmoponZ21fttC6SOsUUl6tMKsvzkEJgKVSZuPJ9Ks4QGM11MYiEGo6Y6oMs7hiEUalW4myzk8m3A\"\\n        }', '预期状态码': 200.0, '提取参数': 'data', '需要参数': ''}" ]
-      }, {
-        "name" : "提交工单-2-word_2",
-        "uid" : "c5441a3d2979ad50",
-        "parentUid" : "fda1adf9064092cfd98a459c5d3c178d",
-        "status" : "passed",
-        "time" : {
-          "start" : 1726731003071,
-          "stop" : 1726731003489,
-          "duration" : 418
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "{'用例ID': 'word_2', '模块': '运维工单', '接口名称': '提交工单', '请求URL': '/maintenance/saveOrderInfo', '请求类型': 'post', 'params': '', 'json请求参数': '{\\n            \"orderTypeParentId\": \"453622917134237696\",\\n            \"orderTypeId\": \"\",\\n            \"threeOrderTypeId\": \"\",\\n            \"urgencyLevel\": \"1\",\\n            \"orderDesc\": \"<p>对地点</p>\",\\n            \"stationName\": \"桩企测试专用站\",\\n            \"region\": [\\n                \"13\",\\n                \"1310\",\\n                \"131082\"\\n            ],\\n            \"address\": \"燕郊站\",\\n            \"checkGroupIds\": [],\\n            \"deviceNo\": \"\",\\n            \"deviceTypeName\": \"\",\\n            \"deviceModelName\": \"\",\\n            \"customerName\": \"\",\\n            \"contact\": \"\",\\n            \"contactTel\": \"\",\\n            \"carBrand\": \"\",\\n            \"carModel\": \"\",\\n            \"appointmentTime\": \"\",\\n            \"shelfLife\": \"0\",\\n            \"installMethod\": \"\",\\n            \"mainUser\": \"\",\\n            \"platform\": \"\",\\n            \"projectType\": \"\",\\n            \"projectCode\": \"\",\\n            \"installUnit\": \"\",\\n            \"enableMethod\": \"\",\\n            \"salesmanName\": \"\",\\n            \"businessType\": \"1\",\\n            \"businessTypeName\": \"充电\",\\n            \"city\": \"1310\",\\n            \"county\": \"131082\",\\n            \"deptName\": \"江南水务\",\\n            \"onlineDate\": \"2024-06-25\",\\n            \"operationMode\": \"1\",\\n            \"province\": \"13\",\\n            \"regionName\": \"江南水务\",\\n            \"stationAddress\": \"燕郊站\",\\n            \"stationCode\": \"zhang\",\\n            \"stationId\": \"463385701627645952\",\\n            \"status\": \"02\",\\n            \"orderNo\": \"${data}\",\\n            \"handleUser\": \"10000\",\\n            \"handleUserName\": \"系统管理员\"\\n        }', '是否运行': 'Y', '请求头': '{\\n           \"Authorization\" : \"Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6IjEwMDAwLTlkMzRmODNlLTYzYzUtNDIxYi1hNTU1LTI1Yjg2NDViYzY1OSJ9.TEozySz634pmoponZ21fttC6SOsUUl6tMKsvzkEJgKVSZuPJ9Ks4QGM11MYiEGo6Y6oMs7hiEUalW4myzk8m3A\"\\n        }', '预期状态码': 200.0, '提取参数': '', '需要参数': 'data'}" ]
-      } ],
-      "uid" : "fda1adf9064092cfd98a459c5d3c178d"
-    } ],
-    "uid" : "a8296e70534652cbc5a6980ce7ac3c4c"
-  }, {
-    "name" : "张引电脑",
-    "children" : [ {
-      "name" : "11488-MainThread",
-      "children" : [ {
-        "name" : "提交工单-2-word_2",
-        "uid" : "239323eda36d845c",
-        "parentUid" : "db2c1fcb86bd7b5e1e691fef9e7ea67c",
-        "status" : "passed",
-        "time" : {
-          "start" : 1726721934340,
-          "stop" : 1726721934794,
-          "duration" : 454
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "{'用例ID': 'word_2', '模块': '运维工单', '接口名称': '提交工单', '请求URL': '/maintenance/saveOrderInfo', '请求类型': 'post', 'params': '', 'json请求参数': '{\\n            \"orderTypeParentId\": \"453622917134237696\",\\n            \"orderTypeId\": \"\",\\n            \"threeOrderTypeId\": \"\",\\n            \"urgencyLevel\": \"1\",\\n            \"orderDesc\": \"<p>对地点</p>\",\\n            \"stationName\": \"桩企测试专用站\",\\n            \"region\": [\\n                \"13\",\\n                \"1310\",\\n                \"131082\"\\n            ],\\n            \"address\": \"燕郊站\",\\n            \"checkGroupIds\": [],\\n            \"deviceNo\": \"\",\\n            \"deviceTypeName\": \"\",\\n            \"deviceModelName\": \"\",\\n            \"customerName\": \"\",\\n            \"contact\": \"\",\\n            \"contactTel\": \"\",\\n            \"carBrand\": \"\",\\n            \"carModel\": \"\",\\n            \"appointmentTime\": \"\",\\n            \"shelfLife\": \"0\",\\n            \"installMethod\": \"\",\\n            \"mainUser\": \"\",\\n            \"platform\": \"\",\\n            \"projectType\": \"\",\\n            \"projectCode\": \"\",\\n            \"installUnit\": \"\",\\n            \"enableMethod\": \"\",\\n            \"salesmanName\": \"\",\\n            \"businessType\": \"1\",\\n            \"businessTypeName\": \"充电\",\\n            \"city\": \"1310\",\\n            \"county\": \"131082\",\\n            \"deptName\": \"江南水务\",\\n            \"onlineDate\": \"2024-06-25\",\\n            \"operationMode\": \"1\",\\n            \"province\": \"13\",\\n            \"regionName\": \"江南水务\",\\n            \"stationAddress\": \"燕郊站\",\\n            \"stationCode\": \"zhang\",\\n            \"stationId\": \"463385701627645952\",\\n            \"status\": \"02\",\\n            \"orderNo\": \"${data}\",\\n            \"handleUser\": \"10000\",\\n            \"handleUserName\": \"系统管理员\"\\n        }', '是否运行': 'Y', '请求头': '{\\n           \"Authorization\" : \"Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6IjEwMDAwLTlkMzRmODNlLTYzYzUtNDIxYi1hNTU1LTI1Yjg2NDViYzY1OSJ9.TEozySz634pmoponZ21fttC6SOsUUl6tMKsvzkEJgKVSZuPJ9Ks4QGM11MYiEGo6Y6oMs7hiEUalW4myzk8m3A\"\\n        }', '预期状态码': 200.0, '提取参数': '', '需要参数': 'data'}" ]
-      }, {
-        "name" : "创建工单-2-word_1",
-        "uid" : "683b280aaffab618",
-        "parentUid" : "db2c1fcb86bd7b5e1e691fef9e7ea67c",
-        "status" : "passed",
-        "time" : {
-          "start" : 1726721934208,
-          "stop" : 1726721934333,
-          "duration" : 125
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "{'用例ID': 'word_1', '模块': '运维工单', '接口名称': '创建工单', '请求URL': '/maintenance/orderNo', '请求类型': 'get', 'params': '{\\n            \"orderTypeId\":\"453622917134237696\"\\n        }', 'json请求参数': '', '是否运行': 'Y', '请求头': '{\\n           \"Authorization\" : \"Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6IjEwMDAwLTlkMzRmODNlLTYzYzUtNDIxYi1hNTU1LTI1Yjg2NDViYzY1OSJ9.TEozySz634pmoponZ21fttC6SOsUUl6tMKsvzkEJgKVSZuPJ9Ks4QGM11MYiEGo6Y6oMs7hiEUalW4myzk8m3A\"\\n        }', '预期状态码': 200.0, '提取参数': 'data', '需要参数': ''}" ]
-      } ],
-      "uid" : "db2c1fcb86bd7b5e1e691fef9e7ea67c"
-    }, {
-      "name" : "4688-MainThread",
-      "children" : [ {
-        "name" : "提交工单-2-word_2",
-        "uid" : "5cb8ebcfe9b09783",
-        "parentUid" : "fe664050be0f76c90135243ea6f166cd",
-        "status" : "passed",
-        "time" : {
-          "start" : 1726721143143,
-          "stop" : 1726721143546,
-          "duration" : 403
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "{'用例ID': 'word_2', '模块': '运维工单', '接口名称': '提交工单', '请求URL': '/maintenance/saveOrderInfo', '请求类型': 'post', 'params': '', 'json请求参数': '{\\n            \"orderTypeParentId\": \"453622917134237696\",\\n            \"orderTypeId\": \"\",\\n            \"threeOrderTypeId\": \"\",\\n            \"urgencyLevel\": \"1\",\\n            \"orderDesc\": \"<p>对地点</p>\",\\n            \"stationName\": \"桩企测试专用站\",\\n            \"region\": [\\n                \"13\",\\n                \"1310\",\\n                \"131082\"\\n            ],\\n            \"address\": \"燕郊站\",\\n            \"checkGroupIds\": [],\\n            \"deviceNo\": \"\",\\n            \"deviceTypeName\": \"\",\\n            \"deviceModelName\": \"\",\\n            \"customerName\": \"\",\\n            \"contact\": \"\",\\n            \"contactTel\": \"\",\\n            \"carBrand\": \"\",\\n            \"carModel\": \"\",\\n            \"appointmentTime\": \"\",\\n            \"shelfLife\": \"0\",\\n            \"installMethod\": \"\",\\n            \"mainUser\": \"\",\\n            \"platform\": \"\",\\n            \"projectType\": \"\",\\n            \"projectCode\": \"\",\\n            \"installUnit\": \"\",\\n            \"enableMethod\": \"\",\\n            \"salesmanName\": \"\",\\n            \"businessType\": \"1\",\\n            \"businessTypeName\": \"充电\",\\n            \"city\": \"1310\",\\n            \"county\": \"131082\",\\n            \"deptName\": \"江南水务\",\\n            \"onlineDate\": \"2024-06-25\",\\n            \"operationMode\": \"1\",\\n            \"province\": \"13\",\\n            \"regionName\": \"江南水务\",\\n            \"stationAddress\": \"燕郊站\",\\n            \"stationCode\": \"zhang\",\\n            \"stationId\": \"463385701627645952\",\\n            \"status\": \"02\",\\n            \"orderNo\": \"${data}\",\\n            \"handleUser\": \"10000\",\\n            \"handleUserName\": \"系统管理员\"\\n        }', '是否运行': 'Y', '请求头': '{\\n           \"Authorization\" : \"Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6IjEwMDAwLTlkMzRmODNlLTYzYzUtNDIxYi1hNTU1LTI1Yjg2NDViYzY1OSJ9.TEozySz634pmoponZ21fttC6SOsUUl6tMKsvzkEJgKVSZuPJ9Ks4QGM11MYiEGo6Y6oMs7hiEUalW4myzk8m3A\"\\n        }', '预期状态码': 200.0, '提取参数': '', '需要参数': 'data'}" ]
-      }, {
-        "name" : "创建工单-2-word_1",
-        "uid" : "f126b731ff6d8c2a",
-        "parentUid" : "fe664050be0f76c90135243ea6f166cd",
-        "status" : "passed",
-        "time" : {
-          "start" : 1726721143001,
-          "stop" : 1726721143141,
-          "duration" : 140
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "{'用例ID': 'word_1', '模块': '运维工单', '接口名称': '创建工单', '请求URL': '/maintenance/orderNo', '请求类型': 'get', 'params': '{\\n            \"orderTypeId\":\"453622917134237696\"\\n        }', 'json请求参数': '', '是否运行': 'Y', '请求头': '{\\n           \"Authorization\" : \"Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6IjEwMDAwLTlkMzRmODNlLTYzYzUtNDIxYi1hNTU1LTI1Yjg2NDViYzY1OSJ9.TEozySz634pmoponZ21fttC6SOsUUl6tMKsvzkEJgKVSZuPJ9Ks4QGM11MYiEGo6Y6oMs7hiEUalW4myzk8m3A\"\\n        }', '预期状态码': 200.0, '提取参数': 'data', '需要参数': ''}" ]
-      } ],
-      "uid" : "fe664050be0f76c90135243ea6f166cd"
-    }, {
-      "name" : "308-MainThread",
-      "children" : [ {
-        "name" : "创建工单-2-word_1",
-        "uid" : "6f9238f66a9aabbe",
-        "parentUid" : "4c98fcb28a9a86f81fee99203a443277",
-        "status" : "passed",
-        "time" : {
-          "start" : 1726722389165,
-          "stop" : 1726722389288,
-          "duration" : 123
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "{'用例ID': 'word_1', '模块': '运维工单', '接口名称': '创建工单', '请求URL': '/maintenance/orderNo', '请求类型': 'get', 'params': '{\\n            \"orderTypeId\":\"453622917134237696\"\\n        }', 'json请求参数': '', '是否运行': 'Y', '请求头': '{\\n           \"Authorization\" : \"Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6IjEwMDAwLTlkMzRmODNlLTYzYzUtNDIxYi1hNTU1LTI1Yjg2NDViYzY1OSJ9.TEozySz634pmoponZ21fttC6SOsUUl6tMKsvzkEJgKVSZuPJ9Ks4QGM11MYiEGo6Y6oMs7hiEUalW4myzk8m3A\"\\n        }', '预期状态码': 200.0, '提取参数': 'data', '需要参数': ''}" ]
-      }, {
-        "name" : "提交工单-2-word_2",
-        "uid" : "6958ebb10437db38",
-        "parentUid" : "4c98fcb28a9a86f81fee99203a443277",
-        "status" : "passed",
-        "time" : {
-          "start" : 1726722389294,
-          "stop" : 1726722389725,
-          "duration" : 431
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "{'用例ID': 'word_2', '模块': '运维工单', '接口名称': '提交工单', '请求URL': '/maintenance/saveOrderInfo', '请求类型': 'post', 'params': '', 'json请求参数': '{\\n            \"orderTypeParentId\": \"453622917134237696\",\\n            \"orderTypeId\": \"\",\\n            \"threeOrderTypeId\": \"\",\\n            \"urgencyLevel\": \"1\",\\n            \"orderDesc\": \"<p>对地点</p>\",\\n            \"stationName\": \"桩企测试专用站\",\\n            \"region\": [\\n                \"13\",\\n                \"1310\",\\n                \"131082\"\\n            ],\\n            \"address\": \"燕郊站\",\\n            \"checkGroupIds\": [],\\n            \"deviceNo\": \"\",\\n            \"deviceTypeName\": \"\",\\n            \"deviceModelName\": \"\",\\n            \"customerName\": \"\",\\n            \"contact\": \"\",\\n            \"contactTel\": \"\",\\n            \"carBrand\": \"\",\\n            \"carModel\": \"\",\\n            \"appointmentTime\": \"\",\\n            \"shelfLife\": \"0\",\\n            \"installMethod\": \"\",\\n            \"mainUser\": \"\",\\n            \"platform\": \"\",\\n            \"projectType\": \"\",\\n            \"projectCode\": \"\",\\n            \"installUnit\": \"\",\\n            \"enableMethod\": \"\",\\n            \"salesmanName\": \"\",\\n            \"businessType\": \"1\",\\n            \"businessTypeName\": \"充电\",\\n            \"city\": \"1310\",\\n            \"county\": \"131082\",\\n            \"deptName\": \"江南水务\",\\n            \"onlineDate\": \"2024-06-25\",\\n            \"operationMode\": \"1\",\\n            \"province\": \"13\",\\n            \"regionName\": \"江南水务\",\\n            \"stationAddress\": \"燕郊站\",\\n            \"stationCode\": \"zhang\",\\n            \"stationId\": \"463385701627645952\",\\n            \"status\": \"02\",\\n            \"orderNo\": \"${data}\",\\n            \"handleUser\": \"10000\",\\n            \"handleUserName\": \"系统管理员\"\\n        }', '是否运行': 'Y', '请求头': '{\\n           \"Authorization\" : \"Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6IjEwMDAwLTlkMzRmODNlLTYzYzUtNDIxYi1hNTU1LTI1Yjg2NDViYzY1OSJ9.TEozySz634pmoponZ21fttC6SOsUUl6tMKsvzkEJgKVSZuPJ9Ks4QGM11MYiEGo6Y6oMs7hiEUalW4myzk8m3A\"\\n        }', '预期状态码': 200.0, '提取参数': '', '需要参数': 'data'}" ]
-      } ],
-      "uid" : "4c98fcb28a9a86f81fee99203a443277"
-    }, {
-      "name" : "7124-MainThread",
-      "children" : [ {
-        "name" : "提交工单-2-word_2",
-        "uid" : "dc85d64c51a64e",
-        "parentUid" : "7c6a6deb7d9d3d83eae09c6ab3ca9513",
-        "status" : "passed",
-        "time" : {
-          "start" : 1726722470293,
-          "stop" : 1726722470697,
-          "duration" : 404
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "{'用例ID': 'word_2', '模块': '运维工单', '接口名称': '提交工单', '请求URL': '/maintenance/saveOrderInfo', '请求类型': 'post', 'params': '', 'json请求参数': '{\\n            \"orderTypeParentId\": \"453622917134237696\",\\n            \"orderTypeId\": \"\",\\n            \"threeOrderTypeId\": \"\",\\n            \"urgencyLevel\": \"1\",\\n            \"orderDesc\": \"<p>对地点</p>\",\\n            \"stationName\": \"桩企测试专用站\",\\n            \"region\": [\\n                \"13\",\\n                \"1310\",\\n                \"131082\"\\n            ],\\n            \"address\": \"燕郊站\",\\n            \"checkGroupIds\": [],\\n            \"deviceNo\": \"\",\\n            \"deviceTypeName\": \"\",\\n            \"deviceModelName\": \"\",\\n            \"customerName\": \"\",\\n            \"contact\": \"\",\\n            \"contactTel\": \"\",\\n            \"carBrand\": \"\",\\n            \"carModel\": \"\",\\n            \"appointmentTime\": \"\",\\n            \"shelfLife\": \"0\",\\n            \"installMethod\": \"\",\\n            \"mainUser\": \"\",\\n            \"platform\": \"\",\\n            \"projectType\": \"\",\\n            \"projectCode\": \"\",\\n            \"installUnit\": \"\",\\n            \"enableMethod\": \"\",\\n            \"salesmanName\": \"\",\\n            \"businessType\": \"1\",\\n            \"businessTypeName\": \"充电\",\\n            \"city\": \"1310\",\\n            \"county\": \"131082\",\\n            \"deptName\": \"江南水务\",\\n            \"onlineDate\": \"2024-06-25\",\\n            \"operationMode\": \"1\",\\n            \"province\": \"13\",\\n            \"regionName\": \"江南水务\",\\n            \"stationAddress\": \"燕郊站\",\\n            \"stationCode\": \"zhang\",\\n            \"stationId\": \"463385701627645952\",\\n            \"status\": \"02\",\\n            \"orderNo\": \"${data}\",\\n            \"handleUser\": \"10000\",\\n            \"handleUserName\": \"系统管理员\"\\n        }', '是否运行': 'Y', '请求头': '{\\n           \"Authorization\" : \"Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6IjEwMDAwLTlkMzRmODNlLTYzYzUtNDIxYi1hNTU1LTI1Yjg2NDViYzY1OSJ9.TEozySz634pmoponZ21fttC6SOsUUl6tMKsvzkEJgKVSZuPJ9Ks4QGM11MYiEGo6Y6oMs7hiEUalW4myzk8m3A\"\\n        }', '预期状态码': 200.0, '提取参数': '', '需要参数': 'data'}" ]
-      }, {
-        "name" : "创建工单-2-word_1",
-        "uid" : "82bce4c8bd800808",
-        "parentUid" : "7c6a6deb7d9d3d83eae09c6ab3ca9513",
-        "status" : "passed",
-        "time" : {
-          "start" : 1726722470172,
-          "stop" : 1726722470291,
-          "duration" : 119
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "{'用例ID': 'word_1', '模块': '运维工单', '接口名称': '创建工单', '请求URL': '/maintenance/orderNo', '请求类型': 'get', 'params': '{\\n            \"orderTypeId\":\"453622917134237696\"\\n        }', 'json请求参数': '', '是否运行': 'Y', '请求头': '{\\n           \"Authorization\" : \"Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6IjEwMDAwLTlkMzRmODNlLTYzYzUtNDIxYi1hNTU1LTI1Yjg2NDViYzY1OSJ9.TEozySz634pmoponZ21fttC6SOsUUl6tMKsvzkEJgKVSZuPJ9Ks4QGM11MYiEGo6Y6oMs7hiEUalW4myzk8m3A\"\\n        }', '预期状态码': 200.0, '提取参数': 'data', '需要参数': ''}" ]
-      } ],
-      "uid" : "7c6a6deb7d9d3d83eae09c6ab3ca9513"
-    }, {
-      "name" : "16060-MainThread",
-      "children" : [ {
-        "name" : "提交工单-2-word_2",
-        "uid" : "9b8bbd1bb91b8908",
-        "parentUid" : "4bc95b39eea27e7293d5e076380ca1f7",
-        "status" : "passed",
-        "time" : {
-          "start" : 1726721098535,
-          "stop" : 1726721098995,
-          "duration" : 460
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "{'用例ID': 'word_2', '模块': '运维工单', '接口名称': '提交工单', '请求URL': '/maintenance/saveOrderInfo', '请求类型': 'post', 'params': '', 'json请求参数': '{\\n            \"orderTypeParentId\": \"453622917134237696\",\\n            \"orderTypeId\": \"\",\\n            \"threeOrderTypeId\": \"\",\\n            \"urgencyLevel\": \"1\",\\n            \"orderDesc\": \"<p>对地点</p>\",\\n            \"stationName\": \"桩企测试专用站\",\\n            \"region\": [\\n                \"13\",\\n                \"1310\",\\n                \"131082\"\\n            ],\\n            \"address\": \"燕郊站\",\\n            \"checkGroupIds\": [],\\n            \"deviceNo\": \"\",\\n            \"deviceTypeName\": \"\",\\n            \"deviceModelName\": \"\",\\n            \"customerName\": \"\",\\n            \"contact\": \"\",\\n            \"contactTel\": \"\",\\n            \"carBrand\": \"\",\\n            \"carModel\": \"\",\\n            \"appointmentTime\": \"\",\\n            \"shelfLife\": \"0\",\\n            \"installMethod\": \"\",\\n            \"mainUser\": \"\",\\n            \"platform\": \"\",\\n            \"projectType\": \"\",\\n            \"projectCode\": \"\",\\n            \"installUnit\": \"\",\\n            \"enableMethod\": \"\",\\n            \"salesmanName\": \"\",\\n            \"businessType\": \"1\",\\n            \"businessTypeName\": \"充电\",\\n            \"city\": \"1310\",\\n            \"county\": \"131082\",\\n            \"deptName\": \"江南水务\",\\n            \"onlineDate\": \"2024-06-25\",\\n            \"operationMode\": \"1\",\\n            \"province\": \"13\",\\n            \"regionName\": \"江南水务\",\\n            \"stationAddress\": \"燕郊站\",\\n            \"stationCode\": \"zhang\",\\n            \"stationId\": \"463385701627645952\",\\n            \"status\": \"02\",\\n            \"orderNo\": \"${data}\",\\n            \"handleUser\": \"10000\",\\n            \"handleUserName\": \"系统管理员\"\\n        }', '是否运行': 'Y', '请求头': '{\\n           \"Authorization\" : \"Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6IjEwMDAwLTlkMzRmODNlLTYzYzUtNDIxYi1hNTU1LTI1Yjg2NDViYzY1OSJ9.TEozySz634pmoponZ21fttC6SOsUUl6tMKsvzkEJgKVSZuPJ9Ks4QGM11MYiEGo6Y6oMs7hiEUalW4myzk8m3A\"\\n        }', '预期状态码': 200.0, '提取参数': '', '需要参数': 'data'}" ]
-      }, {
-        "name" : "创建工单-2-word_1",
-        "uid" : "2032c508ed335612",
-        "parentUid" : "4bc95b39eea27e7293d5e076380ca1f7",
-        "status" : "passed",
-        "time" : {
-          "start" : 1726721098388,
-          "stop" : 1726721098527,
-          "duration" : 139
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "{'用例ID': 'word_1', '模块': '运维工单', '接口名称': '创建工单', '请求URL': '/maintenance/orderNo', '请求类型': 'get', 'params': '{\\n            \"orderTypeId\":\"453622917134237696\"\\n        }', 'json请求参数': '', '是否运行': 'Y', '请求头': '{\\n           \"Authorization\" : \"Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6IjEwMDAwLTlkMzRmODNlLTYzYzUtNDIxYi1hNTU1LTI1Yjg2NDViYzY1OSJ9.TEozySz634pmoponZ21fttC6SOsUUl6tMKsvzkEJgKVSZuPJ9Ks4QGM11MYiEGo6Y6oMs7hiEUalW4myzk8m3A\"\\n        }', '预期状态码': 200.0, '提取参数': 'data', '需要参数': ''}" ]
-      } ],
-      "uid" : "4bc95b39eea27e7293d5e076380ca1f7"
-    }, {
-      "name" : "8200-MainThread",
-      "children" : [ {
-        "name" : "创建工单-2-word_1",
-        "uid" : "e737db5c7f312a51",
-        "parentUid" : "bdb17599dd0bc28f688cf5400089e40c",
-        "status" : "passed",
-        "time" : {
-          "start" : 1726722042081,
-          "stop" : 1726722042209,
-          "duration" : 128
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "{'用例ID': 'word_1', '模块': '运维工单', '接口名称': '创建工单', '请求URL': '/maintenance/orderNo', '请求类型': 'get', 'params': '{\\n            \"orderTypeId\":\"453622917134237696\"\\n        }', 'json请求参数': '', '是否运行': 'Y', '请求头': '{\\n           \"Authorization\" : \"Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6IjEwMDAwLTlkMzRmODNlLTYzYzUtNDIxYi1hNTU1LTI1Yjg2NDViYzY1OSJ9.TEozySz634pmoponZ21fttC6SOsUUl6tMKsvzkEJgKVSZuPJ9Ks4QGM11MYiEGo6Y6oMs7hiEUalW4myzk8m3A\"\\n        }', '预期状态码': 200.0, '提取参数': 'data', '需要参数': ''}" ]
-      }, {
-        "name" : "提交工单-2-word_2",
-        "uid" : "e8ce3b8c0012eb76",
-        "parentUid" : "bdb17599dd0bc28f688cf5400089e40c",
-        "status" : "passed",
-        "time" : {
-          "start" : 1726722042214,
-          "stop" : 1726722042626,
-          "duration" : 412
-        },
-        "flaky" : false,
-        "newFailed" : false,
-        "parameters" : [ "{'用例ID': 'word_2', '模块': '运维工单', '接口名称': '提交工单', '请求URL': '/maintenance/saveOrderInfo', '请求类型': 'post', 'params': '', 'json请求参数': '{\\n            \"orderTypeParentId\": \"453622917134237696\",\\n            \"orderTypeId\": \"\",\\n            \"threeOrderTypeId\": \"\",\\n            \"urgencyLevel\": \"1\",\\n            \"orderDesc\": \"<p>对地点</p>\",\\n            \"stationName\": \"桩企测试专用站\",\\n            \"region\": [\\n                \"13\",\\n                \"1310\",\\n                \"131082\"\\n            ],\\n            \"address\": \"燕郊站\",\\n            \"checkGroupIds\": [],\\n            \"deviceNo\": \"\",\\n            \"deviceTypeName\": \"\",\\n            \"deviceModelName\": \"\",\\n            \"customerName\": \"\",\\n            \"contact\": \"\",\\n            \"contactTel\": \"\",\\n            \"carBrand\": \"\",\\n            \"carModel\": \"\",\\n            \"appointmentTime\": \"\",\\n            \"shelfLife\": \"0\",\\n            \"installMethod\": \"\",\\n            \"mainUser\": \"\",\\n            \"platform\": \"\",\\n            \"projectType\": \"\",\\n            \"projectCode\": \"\",\\n            \"installUnit\": \"\",\\n            \"enableMethod\": \"\",\\n            \"salesmanName\": \"\",\\n            \"businessType\": \"1\",\\n            \"businessTypeName\": \"充电\",\\n            \"city\": \"1310\",\\n            \"county\": \"131082\",\\n            \"deptName\": \"江南水务\",\\n            \"onlineDate\": \"2024-06-25\",\\n            \"operationMode\": \"1\",\\n            \"province\": \"13\",\\n            \"regionName\": \"江南水务\",\\n            \"stationAddress\": \"燕郊站\",\\n            \"stationCode\": \"zhang\",\\n            \"stationId\": \"463385701627645952\",\\n            \"status\": \"02\",\\n            \"orderNo\": \"${data}\",\\n            \"handleUser\": \"10000\",\\n            \"handleUserName\": \"系统管理员\"\\n        }', '是否运行': 'Y', '请求头': '{\\n           \"Authorization\" : \"Bearer eyJhbGciOiJIUzUxMiJ9.eyJsb2dpbl91c2VyX2tleSI6IjEwMDAwLTlkMzRmODNlLTYzYzUtNDIxYi1hNTU1LTI1Yjg2NDViYzY1OSJ9.TEozySz634pmoponZ21fttC6SOsUUl6tMKsvzkEJgKVSZuPJ9Ks4QGM11MYiEGo6Y6oMs7hiEUalW4myzk8m3A\"\\n        }', '预期状态码': 200.0, '提取参数': '', '需要参数': 'data'}" ]
-      } ],
-      "uid" : "bdb17599dd0bc28f688cf5400089e40c"
+      "uid" : "4df2aa88de8e77d81d8538d2ab63d661"
     } ],
     "uid" : "bab26cf71ce172f4b9d606df58c9a580"
   } ]
