@@ -60,9 +60,9 @@ def my_log(log_name = __file__):
 
 def excel_is_Y_run():
     # 这里需要写绝对路径,否则Jenkins读取不到
-    absolute_path = os.path.abspath(conf_path["case_file"])
+    # absolute_path = os.path.abspath(conf_path["case_file"])
     # print(absolute_path)
-    reader = ExcelReader(absolute_path, conf_path["sheet_by"])
+    reader = ExcelReader("E:\\ApiTest\\data\\test.xlsx", conf_path["sheet_by"])
     run_list = []
     for line in reader.data():
         if line[conf_path["excel"]['is_run']] == "Y":
