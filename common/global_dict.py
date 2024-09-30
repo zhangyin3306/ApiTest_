@@ -1,4 +1,4 @@
-# 保障全局字典不被污染
+# 保障全局字典不被污染。
 class GlobalDict(object):
     _global_dict = {}
     def  set_dict(self,key,value):
