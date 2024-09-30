@@ -1,5 +1,5 @@
 import sys
-sys.path.append(r"E:\ApiTest")
+sys.path.append(r"C:\ProgramData\Jenkins\.jenkins\workspace\ApiTest")
 import os
 import pytest,jsonpath,json,allure
 from common.Base import excel_is_Y_run

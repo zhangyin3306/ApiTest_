@@ -1,6 +1,6 @@
 import subprocess
 import sys
-sys.path.append(r"E:\ApiTest")
+sys.path.append(r"C:\ProgramData\Jenkins\.jenkins\workspace\ApiTest")
 from common.Base import report_html, send_email
 import os
 import pytest
