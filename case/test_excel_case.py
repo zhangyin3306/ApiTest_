@@ -36,35 +36,46 @@ class TestExcel_case:
         headers = json.loads(case[case_info["excel"]["headers"]])
         method = case[case_info["excel"]["method"]]
         extract = case[case_info["excel"]["extract"]]
+        extract2 = case[case_info["excel"]["extract2"]]
         json_data = case[case_info["excel"]["json_data"]]
         params = case[case_info["excel"]["params"]]
         case_id = case[case_info["excel"]["case_id"]]
         case_name = case[case_info["excel"]["case_name"]]
         dic = GlobalDict().show_dict()
 
-
-
+        # 替换模板中的变量
         if "$" in json_data:
             try:
-                # 替换模板中的变量
                 json_data = Template(json_data).substitute(dic)
-                # print(f"Substituted json_data: {json_data}")  # 打印替换后的json_data以便调试
+                print(f"传递json参数: {json_data}")  # 打印替换后的json_data以便调试
             except json.JSONDecodeError as e:
                 print(f"Failed to decode JSON: {e}")
                 raise
+
+        if "$" in params:
+            try:
+                params = Template(params).substitute(dic)
+                print(f"传递params参数：: {params}")
+            except json.JSONDecodeError as e:
+                print(f"Failed to decode JSON: {e}")
 
 
         res = util.requests_api(url, method, json=json_data, headers=headers, params=params)
         print(res.json())
 
         #allure测试报告中的标题和描述
-        allure.dynamic.title(f'{case_name +"-3"+ case_id}')
-        allure.dynamic.description(f'{res.json()}')
+        allure.dynamic.title(f'{case_name +"-"+ case_id}')
+        # allure.dynamic.description(f'{res.json()}')
 
 
         if extract:
             lst =jsonpath.jsonpath(res.json(),'$..'+extract)
             GlobalDict().set_dict(extract,lst[0])
+            # print("存入字典的值："+GlobalDict().show_dict())
+        if extract2:
+            lst2 = jsonpath.jsonpath(res.json(), '$..' + extract2)
+            GlobalDict().set_dict(extract2, lst2[0])
+
 
 
 

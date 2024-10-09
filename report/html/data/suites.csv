@@ -1,3 +1,50 @@
 "DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
-"{'code': '10000', 'data': 'TY20240929174051943', 'message': 'SUCCESS', 'success': True, 'traceId': '0AE968B017276028510501730'}","336","创建工单-3word_1","case","Sun Sep 29 17:40:51 CST 2024","passed","Sun Sep 29 17:40:51 CST 2024","TestExcel_case","test_excel_case","",""
-"{'code': '10000', 'message': 'SUCCESS', 'success': True, 'traceId': '0AE968B017276028513001731'}","488","提交工单-3word_2","case","Sun Sep 29 17:40:51 CST 2024","passed","Sun Sep 29 17:40:51 CST 2024","TestExcel_case","test_excel_case","",""
+"
+        运用pytest参数化读取excel中的接口用例,
+        执行封装后request判断method类型调用接口用例,
+        解决接口依赖:提取接口响应内容存入字典,利用Template方法将字典内容与参数占位符替换
+        :param case:
+        :return:
+        ","372","工单-提交-test_case_2","case","Wed Oct 09 11:49:42 CST 2024","passed","Wed Oct 09 11:49:42 CST 2024","TestExcel_case","test_excel_case","",""
+"
+        运用pytest参数化读取excel中的接口用例,
+        执行封装后request判断method类型调用接口用例,
+        解决接口依赖:提取接口响应内容存入字典,利用Template方法将字典内容与参数占位符替换
+        :param case:
+        :return:
+        ","143","工单-接单-test_case_3","case","Wed Oct 09 11:49:42 CST 2024","passed","Wed Oct 09 11:49:42 CST 2024","TestExcel_case","test_excel_case","",""
+"
+        运用pytest参数化读取excel中的接口用例,
+        执行封装后request判断method类型调用接口用例,
+        解决接口依赖:提取接口响应内容存入字典,利用Template方法将字典内容与参数占位符替换
+        :param case:
+        :return:
+        ","155","工单- 审核通过-test_case_6","case","Wed Oct 09 11:49:44 CST 2024","passed","Wed Oct 09 11:49:44 CST 2024","TestExcel_case","test_excel_case","",""
+"
+        运用pytest参数化读取excel中的接口用例,
+        执行封装后request判断method类型调用接口用例,
+        解决接口依赖:提取接口响应内容存入字典,利用Template方法将字典内容与参数占位符替换
+        :param case:
+        :return:
+        ","148","工单-创建-test_case_1","case","Wed Oct 09 11:49:41 CST 2024","passed","Wed Oct 09 11:49:42 CST 2024","TestExcel_case","test_excel_case","",""
+"
+        运用pytest参数化读取excel中的接口用例,
+        执行封装后request判断method类型调用接口用例,
+        解决接口依赖:提取接口响应内容存入字典,利用Template方法将字典内容与参数占位符替换
+        :param case:
+        :return:
+        ","1164","工单-处理-test_case_4","case","Wed Oct 09 11:49:42 CST 2024","passed","Wed Oct 09 11:49:43 CST 2024","TestExcel_case","test_excel_case","",""
+"
+        运用pytest参数化读取excel中的接口用例,
+        执行封装后request判断method类型调用接口用例,
+        解决接口依赖:提取接口响应内容存入字典,利用Template方法将字典内容与参数占位符替换
+        :param case:
+        :return:
+        ","261","工单- 评价-test_case_7","case","Wed Oct 09 11:49:44 CST 2024","passed","Wed Oct 09 11:49:44 CST 2024","TestExcel_case","test_excel_case","",""
+"
+        运用pytest参数化读取excel中的接口用例,
+        执行封装后request判断method类型调用接口用例,
+        解决接口依赖:提取接口响应内容存入字典,利用Template方法将字典内容与参数占位符替换
+        :param case:
+        :return:
+        ","260","工单-查询工单-test_case_5","case","Wed Oct 09 11:49:43 CST 2024","passed","Wed Oct 09 11:49:44 CST 2024","TestExcel_case","test_excel_case","",""

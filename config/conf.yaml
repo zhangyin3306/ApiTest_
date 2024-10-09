@@ -42,5 +42,6 @@ excel:
   is_run: "是否运行"
   headers: "请求头"
   static_code: "预期状态码"
+  extract2: "提取参数2"
   extract: "提取参数"
   need: "需要参数"
