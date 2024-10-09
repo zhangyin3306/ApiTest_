@@ -39,8 +39,8 @@ class RequestsUtil:
                 response = requests.get(url, headers=headers, params=params)
             elif method == 'post':
                 if type(json) != dict:
-                    json_data = self.json(json)
-                response = requests.post(url, json=json_data, headers=headers)
+                    json = self.json(json)
+                response = requests.post(url, json=json,headers=headers)
             else:
                 raise ValueError(f"Unsupported HTTP method: {method}")
         except requests.RequestException as e:

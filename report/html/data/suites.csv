@@ -1,3 +1,44 @@
 "DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
-"{'code': '10000', 'data': 'TY20240929174051943', 'message': 'SUCCESS', 'success': True, 'traceId': '0AE968B017276028510501730'}","336","创建工单-3word_1","case","Sun Sep 29 17:40:51 CST 2024","passed","Sun Sep 29 17:40:51 CST 2024","TestExcel_case","test_excel_case","",""
-"{'code': '10000', 'message': 'SUCCESS', 'success': True, 'traceId': '0AE968B017276028513001731'}","488","提交工单-3word_2","case","Sun Sep 29 17:40:51 CST 2024","passed","Sun Sep 29 17:40:51 CST 2024","TestExcel_case","test_excel_case","",""
+"
+        运用pytest参数化读取excel中的接口用例,
+        执行封装后request判断method类型调用接口用例,
+        解决接口依赖:提取接口响应内容存入字典,利用Template方法将字典内容与参数占位符替换
+        :param case:
+        :return:
+        ","0","test_run_excel_case[case4]","case","Tue Oct 08 18:15:44 CST 2024","broken","Tue Oct 08 18:15:44 CST 2024","TestExcel_case","test_excel_case","",""
+"
+        运用pytest参数化读取excel中的接口用例,
+        执行封装后request判断method类型调用接口用例,
+        解决接口依赖:提取接口响应内容存入字典,利用Template方法将字典内容与参数占位符替换
+        :param case:
+        :return:
+        ","0","test_run_excel_case[case1]","case","Tue Oct 08 18:15:44 CST 2024","broken","Tue Oct 08 18:15:44 CST 2024","TestExcel_case","test_excel_case","",""
+"{'code': '10000', 'data': 'TY20241008190713363', 'message': 'SUCCESS', 'success': True, 'traceId': '0AE97E1F17283856331451241'}","126","工单-创建-3word_1","case","Tue Oct 08 19:07:13 CST 2024","broken","Tue Oct 08 19:07:13 CST 2024","TestExcel_case","test_excel_case","",""
+"
+        运用pytest参数化读取excel中的接口用例,
+        执行封装后request判断method类型调用接口用例,
+        解决接口依赖:提取接口响应内容存入字典,利用Template方法将字典内容与参数占位符替换
+        :param case:
+        :return:
+        ","0","test_run_excel_case[case1]","case","Tue Oct 08 18:57:15 CST 2024","broken","Tue Oct 08 18:57:15 CST 2024","TestExcel_case","test_excel_case","",""
+"{'code': '10000', 'data': 'TY20240929185428659', 'message': 'SUCCESS', 'success': True, 'traceId': '0AE968B017276072685241815'}","173","创建工单-2-word_1","case","Sun Sep 29 18:54:28 CST 2024","passed","Sun Sep 29 18:54:28 CST 2024","TestExcel_case","test_excel_case","",""
+"{'code': '10000', 'message': 'SUCCESS', 'success': True, 'traceId': '0AE97E1F17283856334921242'}","564","工单-提交-3word_2","case","Tue Oct 08 19:07:13 CST 2024","passed","Tue Oct 08 19:07:14 CST 2024","TestExcel_case","test_excel_case","",""
+"
+        运用pytest参数化读取excel中的接口用例,
+        执行封装后request判断method类型调用接口用例,
+        解决接口依赖:提取接口响应内容存入字典,利用Template方法将字典内容与参数占位符替换
+        :param case:
+        :return:
+        ","0","test_run_excel_case[case3]","case","Tue Oct 08 18:15:44 CST 2024","broken","Tue Oct 08 18:15:44 CST 2024","TestExcel_case","test_excel_case","",""
+"{'code': '40000', 'message': '请求访问：/charging-maintenance-server/error，认证失败，无法访问系统资源', 'success': False}","119","工单-创建-3word_1","case","Tue Oct 08 18:18:27 CST 2024","broken","Tue Oct 08 18:18:27 CST 2024","TestExcel_case","test_excel_case","",""
+"{'code': '40000', 'message': '请求访问：/charging-maintenance-server/error，认证失败，无法访问系统资源', 'success': False}","103","工单-提交-3word_2","case","Tue Oct 08 18:55:53 CST 2024","passed","Tue Oct 08 18:55:53 CST 2024","TestExcel_case","test_excel_case","",""
+"{'code': '40000', 'message': '请求访问：/charging-maintenance-server/error，认证失败，无法访问系统资源', 'success': False}","88","工单-接单-3word_3","case","Tue Oct 08 18:15:44 CST 2024","passed","Tue Oct 08 18:15:44 CST 2024","TestExcel_case","test_excel_case","",""
+"{'code': '10000', 'message': 'SUCCESS', 'success': True, 'traceId': '0AE968B017276072686381816'}","403","提交工单-2-word_2","case","Sun Sep 29 18:54:28 CST 2024","passed","Sun Sep 29 18:54:29 CST 2024","TestExcel_case","test_excel_case","",""
+"
+        运用pytest参数化读取excel中的接口用例,
+        执行封装后request判断method类型调用接口用例,
+        解决接口依赖:提取接口响应内容存入字典,利用Template方法将字典内容与参数占位符替换
+        :param case:
+        :return:
+        ","0","test_run_excel_case[case1]","case","Tue Oct 08 18:18:28 CST 2024","broken","Tue Oct 08 18:18:28 CST 2024","TestExcel_case","test_excel_case","",""
+"{'code': '40000', 'message': '请求访问：/charging-maintenance-server/error，认证失败，无法访问系统资源', 'success': False}","76","工单-提交-3word_2","case","Tue Oct 08 18:35:37 CST 2024","passed","Tue Oct 08 18:35:37 CST 2024","TestExcel_case","test_excel_case","",""
