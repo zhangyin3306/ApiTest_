@@ -33,7 +33,7 @@ class TestExcel_case:
         """
 
         url = case_info["url"] + case[case_info["excel"]["url"]]
-        headers = json.loads(case[case_info["excel"]["headers"]])
+        # headers = json.loads(case[case_info["excel"]["headers"]])
         method = case[case_info["excel"]["method"]]
         extract = case[case_info["excel"]["extract"]]
         extract2 = case[case_info["excel"]["extract2"]]
@@ -60,7 +60,8 @@ class TestExcel_case:
                 print(f"Failed to decode JSON: {e}")
 
 
-        res = util.requests_api(url, method, json=json_data, headers=headers, params=params)
+        # 请求头默认了，所以不用重新赋值
+        res = util.requests_api(url, method, json=json_data, params=params)
         print(res.json())
 
         #allure测试报告中的标题和描述
@@ -75,6 +76,8 @@ class TestExcel_case:
         if extract2:
             lst2 = jsonpath.jsonpath(res.json(), '$..' + extract2)
             GlobalDict().set_dict(extract2, lst2[0])
+
+
 
 
 
